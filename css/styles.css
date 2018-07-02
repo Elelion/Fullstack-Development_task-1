@@ -30,6 +30,11 @@
 	src: url(../fonts/PTS75F.ttf); 
 }
 
+@font-face { 
+	font-family: "LatoBold";
+	src: url(../fonts/Lato/Lato-Bold.ttf); 
+}
+
 /**/
 
 /*surname*/
@@ -64,7 +69,7 @@
 }
 
 /*profile, contact...*/
-.title__chapper { 
+.title__chapter { 
 	font-family: "PTsans75SF"; 	
 	font-size: 60px; /*33*/
 	letter-spacing: 2.8px;
@@ -75,23 +80,34 @@
 }
 
 /*education -> universiti name. skills -> creative...*/
-.description__chapper {
+.description__chapter {
 	;
 }
 
 /*small text*/
-.text__chapper {
-	;
+.text__chapter {
+	font-family: "PTsans55SF"; 	
+	font-size: 24px; /*33*/	
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+}
+
+.text__chapter b {
+	font-family: "LatoBold";
+	font-size: 22px;
+	text-align: left;	
+	letter-spacing: 0.6px;
 }
 
 
 /*contact -> address, e-mail, phone...*/
-.paragraph__chapper {
+.paragraph__chapter {
 	;
 }
 
 /*//Feb 2011-Jun 2014...*/
-.comment__chapper {
+.comment__chapter {
 	;
 }
 
@@ -112,18 +128,27 @@ html {
 /**/
 
 /*height header*/
-@HeaderHeight: @ContentHeight / 2 + 80px;
+@HeaderHeight: @ContentHeight / 2 + 30px;
 @HeaderWidth: 40%;
 
 /*height footer*/
-@FooterHeight: @ContentHeight / 2 - 80px;
+@FooterHeight: @ContentHeight / 2 - 30px;
 @FooterWidth: 40%;
 
 /*height content*/
 @ContentHeight: 2800px;
 @ContentWidth: 59.7%;
 
+/*chapter profile*/
+@chapterProfileLogoHeight: 120px;
+@chapterProfileLogoWidth: 116px;
 
+@chapterProfileTitleHeight: 120px;
+@chapterProfileTitleWidth: 255px;
+
+@chapterProfileLineHeight: 120px;
+@chapterProfileLineWidth: 268px;
+@chapterProfileLineMinWidth: 150px;
 
 
 /* ___Header___ */
@@ -182,8 +207,59 @@ header {
 	margin-top: 100px;
 }
 
-.header__profile--title {
 
+/**/
+
+.chapter__profile {
+	border: 1px solid black;
+	height: 120px;		
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;
+}
+
+.chapter__profile--logo {
+	border: 1px solid red;
+	height: @chapterProfileLogoHeight;
+	width: @chapterProfileLogoWidth;	
+	float: left;
+	margin-left: 90px;
+}
+
+.chapter__profile--title {
+	border: 1px solid black;
+	height: @chapterProfileTitleHeight;
+	width: @chapterProfileTitleWidth;	
+	float: left;
+}
+
+.chapter__profile--line {
+	border: 1px solid black;
+	height: @chapterProfileLineHeight;
+	width: @chapterProfileLineWidth;	
+	min-width: @chapterProfileLineMinWidth;
+	float: left;
+}
+
+.chapter__profile--text {
+	border: 1px solid black;
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__profile--text blockquote, .chapter__profile--text p {
+	margin: 12px 13px 12px 1px;
 }
 
 
