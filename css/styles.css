@@ -370,3 +370,52 @@ footer {
 
 /**/
 
+.footer__skills {
+	margin-top: 40px;
+	float: left;
+	width: auto;
+}
+
+.chapter__skills--line {
+	border: 1px solid black; border-color: transparent;
+
+	height: @chapterLineHeight;
+	width: @chapterSkillsLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__skills--text {
+	border: 2px solid red; border-color: transparent;
+
+	widows: auto;
+}
+
+.chapter__skills--text li:first-child  {
+	margin-top: 10px;
+}
+
+.chapter__skills--text li {
+	border: 1px solid green; border-color: transparent;
+
+	list-style-type: none;	
+	height: 115px;
+}
+
+.chapter__skills--text li p {
+	margin: 16px 0 0 64px;
+	text-align: center;
+}
+
+.chapter__skills--text li p:nth-child(2n+1) {
+	margin: 16px 0 0 56px;
+}
+
+.skills__point:first-of-type {
+	margin-left: 118px;
+}
+
+.skills__point--template, .skills__point {
+	float: left;
+	margin: 10px 12px 0 0;
+}
