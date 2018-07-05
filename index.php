@@ -150,7 +150,52 @@
 		</div>
 	</div>
 
-	
+	<div class="footer__skills">
+		<div class="chapter">
+			<div class="chapter__logo">
+				<svg width="120px" height="120px">
+					<circle r="56" cx="58" cy="50.7%" 
+							fill="none" stroke="#056cb4" stroke-width="2"></circle>
+
+					<circle r="50" cx="58" cy="50.7%" fill="#056cb4" ></circle>
+					
+					<g transform="translate(32,95) scale(0.100000,-0.100000)"
+						fill="white" stroke="none" x="12" y="-10">
+
+						<path d="M145 642 c-78 -37 -125 -115 -125 -209 0 -68 27 -129 76 -172
+								19 -17 34 -38 34 -46 0 -9 13 -30 29 -46 26 -25 37 -29 88 -29 
+								69 0 97 16 113 65 6 19 24 44 40 55 42 30 80 113 80 176 0 69 
+								-40 145 -98 188 -39 27 -53 31 -120 34 -59 2 -87 -2 -117 -16z"/>
+
+						<path d="M147 92 c-45 -49 -3 -82 103 -82 82 0 120 16 120 50 0 35 -38 
+								50 -126 50 -66 0 -84 -3 -97 -18z"/>
+					</g>				
+				</svg>
+			</div>
+
+			<div class="chapter__title">
+				<p class="title__chapter">skills</p>
+			</div>
+
+			<div class="chapter__skills--line">
+				<svg width="auto" height="120px">
+					<line x1="5" y1="60" x2="302px" y2="60" 
+						  stroke="#056cb4" stroke-width="8"></line>
+				</svg>
+			</div>			
+		</div>
+
+		<div class="chapter__skills--text">			
+			<ul>				
+				<?php 
+					addSkillsBlock('creative', '9');
+					addSkillsBlock('teamwork', '11');
+					addSkillsBlock('innovate', '6');
+					addSkillsBlock('communication', '11');
+				?>
+			</ul>			
+		</div>
+	</div>
 </footer>
 
 </BODY>
