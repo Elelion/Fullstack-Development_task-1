@@ -1,5 +1,5 @@
 <?php
-//skills block
+/* skills block */
 function addSkillsBlock($name, $point) {		
 	?>
 		<li>
@@ -22,6 +22,21 @@ function addSkillsBlock($name, $point) {
 					</svg>
 				</div>
 			<?php }  ?>
+		</li>
+	<?php
+}
+
+/* education block */
+function addEducationBlock($organization, $data, $name, $desc) {
+	?>
+		<li>			
+			<b class="paragraph__chapter"> <?= $organization ?> </b> 
+			<p class="comment__chapter"> // <?= $data ?> </p>
+			<p class="description__chapter"> <?= $name ?> </p>
+
+			<p class="smallText__chapter">
+				<?= $desc ?>
+			</p>			
 		</li>
 	<?php
 }
