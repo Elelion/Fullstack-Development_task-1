@@ -96,7 +96,7 @@
 	font-family: "PTsans55SF"; 	
 	font-size: 24px;
 	text-align: left;
-	margin-top: 20px; 
+	margin-top: 0px; 
 	margin-left: 14px;
 }
 
@@ -126,14 +126,25 @@
 	letter-spacing: 1.1px;
 }
 
-/* contact -> address, e-mail, phone... */
-.paragraph__chapter {
-	;
+/* education + experience -> titles */
+.paragraph__chapter {	
+	font-family: "PTsans77F"; 	
+	text-transform: uppercase;
+	font-size: 38px;
+	letter-spacing: 4.7px;	
+	color: #056cb4;
+	float: left;
 }
 
 /* //Feb 2011-Jun 2014... */
 .comment__chapter {
-	;
+	width: 400px;	
+	font-family: "PTsans57F"; 
+	font-size: 38px;
+	letter-spacing: 2.9px;
+
+	margin: 0px 0 0 22px;
+	float: left;
 }
 
 
@@ -151,17 +162,32 @@ html {
 
 /**/
 
-/* height header */
+/* borders */
+.border__black {	
+	border: 1px solid black; border-color: transparent;
+}
+
+.border__green {	
+	border: 1px solid green; border-color: transparent;
+}
+
+.border__red {	
+	border: 1px solid red; border-color: transparent;
+}
+
+/* header */
 @HeaderHeight: @ContentHeight / 2 + 47px;
 @HeaderWidth: 40%;
+@HeaderMinWidth: 760px;
 
-/* height content */
+/* content / main */
 @ContentHeight: 2800px;
 @ContentWidth: 59.7%;
 
-/* height footer */
+/* footer */
 @FooterHeight: @ContentHeight / 2 - 47px;
 @FooterWidth: 40%;
+@FooterMinWidth: @HeaderMinWidth;
 
 /* general chapter */
 @chapterLogoHeight: 120px;
@@ -183,10 +209,13 @@ html {
 /* chapter skills */
 @chapterSkillsLineWidth: 304px;
 
+/* chapter education */
+@chapterEducationLineWidth: auto;
+
 /**/
 
 .chapter {
-	border: 1px solid green; border-color: transparent;
+	.border__green;
 
 	height: 120px;		
 	display: -webkit-flex;
@@ -201,7 +230,7 @@ html {
 }
 
 .chapter__logo {
-	border: 1px solid red; border-color: transparent;
+	.border__red;
 
 	height: @chapterLogoHeight;
 	width: @chapterLogoWidth;	
@@ -210,7 +239,7 @@ html {
 }
 
 .chapter__title {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: @chapterTitleHeight;
 	width: @chapterTitleWidth;	
@@ -220,15 +249,16 @@ html {
 /* ___Header___ */
 
 header {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: @HeaderHeight;
 	width: @HeaderWidth;
+	min-width: @HeaderMinWidth;
 	float: left;
 }
 
 .header__logo { 
-	border :1px solid black; border-color: transparent;
+	.border__black;
 
 	height: 357px;
 	width: 360px;
@@ -237,7 +267,7 @@ header {
 }
 
 .header__titles {
-	border :1px solid black; border-color: transparent;
+	.border__black;
 
 	height: 240px;	
 	min-width: 450px;
@@ -247,7 +277,7 @@ header {
 }
 
 .header__titles--text1 {
-	border :1px solid black; border-color: transparent;
+	.border__black;
 
 	height: 85px;
 	width: 500px;
@@ -255,7 +285,7 @@ header {
 }
 
 .header__titles--text2 {
-	border :1px solid black; border-color: transparent;
+	.border__black;
 
 	height: 90px;
 	width: 500px;
@@ -263,7 +293,7 @@ header {
 }
 
 .header__titles--text3 {
-	border :1px solid black; border-color: transparent;
+	.border__black;
 
 	height: 60px;
 	width: 500px;
@@ -271,7 +301,7 @@ header {
 }
 
 .header__profile {
-	border :1px solid black; border-color: transparent;
+	.border__black;
 
 	height: auto;
 	width: auto;
@@ -283,7 +313,7 @@ header {
 /**/
 
 .chapter__profile--line {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: @chapterLineHeight;
 	width: @chapterProfileLineWidth;	
@@ -292,7 +322,7 @@ header {
 }
 
 .chapter__profile--text {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: auto;
 	width: auto;
@@ -310,26 +340,92 @@ header {
 /* ___Main Content___ */
 
 main {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: @ContentHeight;
 	width: @ContentWidth;	
 	float: right;
 }
 
+.chapter__education--text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__education--text ul {
+	.border__black;	
+	
+	padding-left: 18px;
+}
+
+.chapter__education--text ul li {
+	.border__black;
+
+	padding-top: 16px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
+}
+
+.chapter__education--text ul li:before {
+	content: '';
+	display: inline-block;
+	height:32px;
+	width: 32px;
+	vertical-align: middle;
+	border-radius:50%;
+	background-color:#000;
+	margin: 10px 25px 0 0;
+	float: left;
+}
+
+.chapter__education--text b {
+	padding-left: 8px;
+	float: left;
+}
+
+.chapter__education--text p:nth-child(3) {
+	.border__red;
+	
+	float: left;
+	padding-left: 48px;
+	padding-top: 0px;
+	margin-top: 6px;
+}
+
+.chapter__education--text ul li p:nth-child(4) {
+	margin-top: -32px;
+	width: 900px;
+}
+
+.chapter__education--text p:nth-child(4) {
+	.border__green;
+
+	float: left;
+	padding-left: 50px;
+	padding-top: 0px;
+	margin-top: 0px;	
+}
 
 /* ___Footer___ */
 
 footer {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: @FooterHeight;
 	width: @FooterWidth;
+	min-width: @FooterMinWidth;
 	float: left;
 }
 
 .footer__contact {	
-	border :1px solid black; border-color: transparent;
+	.border__black;
 
 	height: auto;
 	width: auto;
@@ -337,7 +433,7 @@ footer {
 }
 
 .chapter__contact--line {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: @chapterLineHeight;
 	width: @chapterContactLineWidth;
@@ -346,7 +442,7 @@ footer {
 }
 
 .chapter__contact--text {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: auto;
 	width: auto;
@@ -370,6 +466,28 @@ footer {
 
 /**/
 
+.main__education {	
+	margin-top: 110px;
+	margin-left: -7px;
+	float: left;
+	width: auto;
+}
+
+.main__education > .chapter > .chapter__title p{
+	margin: 16px 0 0 34px;
+}
+
+.chapter__education--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterEducationLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+/**/
+
 .footer__skills {
 	margin-top: 40px;
 	float: left;
@@ -377,7 +495,7 @@ footer {
 }
 
 .chapter__skills--line {
-	border: 1px solid black; border-color: transparent;
+	.border__black;
 
 	height: @chapterLineHeight;
 	width: @chapterSkillsLineWidth;
@@ -386,9 +504,9 @@ footer {
 }
 
 .chapter__skills--text {
-	border: 2px solid red; border-color: transparent;
+	.border__red;
 
-	widows: auto;
+	width: auto;
 }
 
 .chapter__skills--text li:first-child  {
@@ -396,7 +514,7 @@ footer {
 }
 
 .chapter__skills--text li {
-	border: 1px solid green; border-color: transparent;
+	.border__green;
 
 	list-style-type: none;	
 	height: 115px;
