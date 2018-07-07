@@ -30,9 +30,14 @@
 	src: url(../fonts/PTS75F.ttf); 
 }
 
+@font-face { 
+	font-family: "LatoBold";
+	src: url(../fonts/Lato/Lato-Bold.ttf); 
+}
+
 /**/
 
-/*surname*/
+/* surname */
 .title_h1 {
 	font-family: "PTsans55SF"; 	
 	font-size: 82px; /*82*/
@@ -42,7 +47,7 @@
 	margin-top: -8px;
 }
 
-/*name here*/
+/* name here */
 .title_h2 {
 	font-family: "PTsans75SF"; 	
 	font-size: 92px;
@@ -52,7 +57,7 @@
 	margin-top: -22px;	
 }
 
-/*graphic designer*/
+/* graphic designer */
 .title_h3 { 
 	font-family: "PTsans75SF"; 	
 	font-size: 38px;	
@@ -63,36 +68,83 @@
 	
 }
 
-/*profile, contact...*/
-.title__chapper { 
+/* profile, contact... */
+.title__chapter { 
 	font-family: "PTsans75SF"; 	
-	font-size: 60px; /*33*/
-	letter-spacing: 2.8px;
+	font-size: 60px;
+	letter-spacing: 3.4px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+	color: #056cb4;
+}
+
+/* skills -> creative..., education -> universiti name... */
+.description__chapter {
+	font-family: "PTsans55SF"; 	
+	font-size: 38px;
+	letter-spacing: -0.8x;
 	text-transform: uppercase;
 	text-align: left;
 	margin-top: 20px; 
 	margin-left: 14px;
 }
 
-/*education -> universiti name. skills -> creative...*/
-.description__chapper {
-	;
+/* small text */
+.smallText__chapter {
+	font-family: "PTsans55SF"; 	
+	font-size: 24px;
+	text-align: left;
+	margin-top: 0px; 
+	margin-left: 14px;
 }
 
-/*small text*/
-.text__chapper {
-	;
+.text__chapter b {
+	font-family: "LatoBold";
+	font-size: 22px;
+	text-align: left;	
+	letter-spacing: 0.6px;
 }
 
-
-/*contact -> address, e-mail, phone...*/
-.paragraph__chapper {
-	;
+/* middle text */
+.middleText__chapter {
+	font-family: "PTsans55SF"; 	
+	font-size: 28px;	
+	margin-left: 2px;
+	margin-top: 44px;
 }
 
-/*//Feb 2011-Jun 2014...*/
-.comment__chapper {
-	;
+.middleText__chapter b {
+	font-family: "PTsans77F"; 	
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 3.5px;	
+}
+
+.middleText__chapter span {
+	letter-spacing: 1.1px;
+}
+
+/* education + experience -> titles */
+.paragraph__chapter {	
+	font-family: "PTsans77F"; 	
+	text-transform: uppercase;
+	font-size: 38px;
+	letter-spacing: 4.7px;	
+	color: #056cb4;
+	float: left;
+}
+
+/* //Feb 2011-Jun 2014... */
+.comment__chapter {
+	width: 400px;	
+	font-family: "PTsans57F"; 
+	font-size: 38px;
+	letter-spacing: 2.9px;
+
+	margin: 0px 0 0 22px;
+	float: left;
 }
 
 
@@ -105,38 +157,112 @@ body {
 }
 
 html { 
-	/*hide horizontall scroll*/
   overflow-x: hidden;
 }
 
 /**/
 
-/*height header*/
-@HeaderHeight: @ContentHeight / 2 + 80px;
+/* borders */
+.border__black {	
+	border: 1px solid black;  border-color: transparent; 
+}
+
+.border__green {	
+	border: 1px solid green;  border-color: transparent; 
+}
+
+.border__red {	
+	border: 1px solid red;  border-color: transparent; 
+}
+
+/* header */
+@HeaderHeight: @ContentHeight / 2 + 47px;
 @HeaderWidth: 40%;
+@HeaderMinWidth: 760px;
 
-/*height footer*/
-@FooterHeight: @ContentHeight / 2 - 80px;
-@FooterWidth: 40%;
-
-/*height content*/
+/* content / main */
 @ContentHeight: 2800px;
 @ContentWidth: 59.7%;
 
+/* footer */
+@FooterHeight: @ContentHeight / 2 - 47px;
+@FooterWidth: 40%;
+@FooterMinWidth: @HeaderMinWidth;
 
+/* general chapter */
+@chapterLogoHeight: 120px;
+@chapterLogoWidth: 116px;
 
+@chapterTitleHeight: 120px;
+@chapterTitleWidth: auto;
+
+@chapterHeight: 120px;
+@chapterLineHeight: 120px;
+@chapterLineMinWidth: 150px;
+
+/* chapter profile */
+@chapterProfileLineWidth: 268px;
+
+/* chapter contact */
+@chapterContactLineWidth: 246px;
+
+/* chapter skills */
+@chapterSkillsLineWidth: 304px;
+
+/* chapter education */
+@chapterEducationLineWidth: auto;
+
+/* chapter experience */
+@chapterExperienceLineWidth: auto;
+
+/**/
+
+.chapter {
+	.border__green;
+
+	height: 120px;		
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;
+}
+
+.chapter__logo {
+	.border__red;
+
+	height: @chapterLogoHeight;
+	width: @chapterLogoWidth;	
+	float: left;
+	margin-left: 90px;
+}
+
+.chapter__title {
+	.border__black;
+
+	height: @chapterTitleHeight;
+	width: @chapterTitleWidth;	
+	float: left;
+}
 
 /* ___Header___ */
 
 header {
-	border: 1px solid black;
+	.border__black;
+
 	height: @HeaderHeight;
 	width: @HeaderWidth;
+	min-width: @HeaderMinWidth;
 	float: left;
 }
 
 .header__logo { 
-	border :1px solid black;
+	.border__black;
+
 	height: 357px;
 	width: 360px;
 	margin-top: 135px;
@@ -144,7 +270,8 @@ header {
 }
 
 .header__titles {
-	border :1px solid black;
+	.border__black;
+
 	height: 240px;	
 	min-width: 450px;
 	margin-left: auto;
@@ -153,28 +280,32 @@ header {
 }
 
 .header__titles--text1 {
-	border :1px solid black;
+	.border__black;
+
 	height: 85px;
 	width: 500px;
 	margin-left: 175px;
 }
 
 .header__titles--text2 {
-	border :1px solid black;
+	.border__black;
+
 	height: 90px;
 	width: 500px;
 	margin-left: 175px;
 }
 
 .header__titles--text3 {
-	border :1px solid black;
+	.border__black;
+
 	height: 60px;
 	width: 500px;
 	margin-left: 175px;
 }
 
 .header__profile {
-	border :1px solid black;
+	.border__black;
+
 	height: auto;
 	width: auto;
 	margin-left: auto;
@@ -182,26 +313,339 @@ header {
 	margin-top: 100px;
 }
 
-.header__profile--title {
+/**/
 
+.chapter__profile--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterProfileLineWidth;	
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__profile--text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__profile--text blockquote, .chapter__profile--text p {
+	margin: 12px 13px 12px 1px;
 }
 
 
 /* ___Main Content___ */
 
 main {
-	border: 1px solid black;
+	.border__black;
+
 	height: @ContentHeight;
 	width: @ContentWidth;	
 	float: right;
 }
+/**/
 
+.main__education {	
+	margin-top: 110px;
+	margin-left: -7px;
+	float: left;
+	width: auto;
+}
+
+.main__education > .chapter > .chapter__title p{
+	margin: 16px 0 0 34px;
+}
+
+.chapter__education--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterEducationLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__education--text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__education--text ul {
+	.border__black;	
+	
+	padding-left: 18px;
+}
+
+.chapter__education--text ul li:before {
+	content: '';
+	display: inline-block;
+	height:32px;
+	width: 32px;
+	vertical-align: middle;
+	border-radius:50%;
+	background-color:#000;
+	margin: 10px 25px 0 0;
+	float: left;
+}
+
+.chapter__education--text ul li {
+	.border__black;
+
+	padding-top: 16px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
+}
+
+.chapter__education--text b {
+	padding-left: 8px;
+	float: left;
+}
+
+.chapter__education--text p:nth-child(3) {
+	.border__red;
+	
+	float: left;
+	padding-left: 48px;
+	padding-top: 0px;
+	margin-top: 6px;
+}
+
+.chapter__education--text ul li p:nth-child(4) {
+	margin-top: -32px;
+	width: 900px;
+}
+
+.chapter__education--text p:nth-child(4) {
+	.border__green;
+
+	float: left;
+	padding-left: 50px;
+	padding-top: 0px;
+	margin-top: 0px;	
+}
+
+/**/
+
+.main__experience {
+	margin-top: 65px;
+	margin-left: -7px;
+	float: left;
+	width: auto;
+}
+
+.main__experience > .chapter > .chapter__title p {
+	margin: 22px 0 0 30px;
+	letter-spacing: 2.4px;
+}
+
+.chapter__experience--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterExperienceLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__experience--text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__experience--text ul {
+	.border__black;	
+	
+	padding-left: 18px;
+}
+
+.chapter__experience--text ul li:before {
+	content: '';
+	display: inline-block;
+	height:32px;
+	width: 32px;
+	vertical-align: middle;
+	border-radius:50%;
+	background-color:#000;
+	margin: 10px 25px 0 0;
+	float: left;
+}
+
+.chapter__experience--text ul li:nth-child(1) {
+	.border__black;
+
+	padding-top: 44px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
+}
+
+.chapter__experience--text ul li {
+	.border__black;
+
+	padding-top: 14px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
+}
+
+.chapter__experience--text b {
+	padding-left: 8px;
+	float: left;
+}
+
+.chapter__experience--text p:nth-child(3) {
+	.border__red;
+	
+	float: left;
+	padding-left: 48px;
+	padding-top: 0px;
+	margin-top: 6px;
+}
+
+.chapter__experience--text ul li p:nth-child(4) {
+	margin-top: -32px;
+	width: 900px;
+}
+
+.chapter__experience--text p:nth-child(4) {
+	.border__green;
+
+	float: left;
+	padding-left: 50px;
+	padding-top: 0px;
+	margin-top: 0px;	
+}
+
+.chapter__experience--text > ul > li > .paragraph__chapter {
+	letter-spacing: 5.7px;
+}
+
+.chapter__experience--text > ul > li > .comment__chapter {
+	margin-left: 18px;
+}
+
+.chapter__experience--text > ul > li > .description__chapter {
+	letter-spacing: 0.1px;
+}
 
 /* ___Footer___ */
 
 footer {
-	border: 1px solid black;
+	.border__black;
+
 	height: @FooterHeight;
 	width: @FooterWidth;
+	min-width: @FooterMinWidth;
 	float: left;
+}
+
+.footer__contact {	
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;	
+}
+
+.chapter__contact--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterContactLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__contact--text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__contact--text table {	
+	margin-top: 20px;		
+	border-collapse: collapse;	
+}
+
+.chapter__contact--text table tr, td {
+	margin-top: 30px;	
+	height: 82px;	
+	width: 194px;
+	min-width: 194px;
+}
+
+/**/
+
+.footer__skills {
+	margin-top: 40px;
+	float: left;
+	width: auto;
+}
+
+.chapter__skills--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterSkillsLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__skills--text {
+	.border__red;
+
+	width: auto;
+}
+
+.chapter__skills--text li:first-child  {
+	margin-top: 10px;
+}
+
+.chapter__skills--text li {
+	.border__green;
+
+	list-style-type: none;	
+	height: 115px;
+}
+
+.chapter__skills--text li p {
+	margin: 16px 0 0 64px;
+	text-align: center;
+}
+
+.chapter__skills--text li p:nth-child(2n+1) {
+	margin: 16px 0 0 56px;
+}
+
+.skills__point:first-of-type {
+	margin-left: 118px;
+}
+
+.skills__point--template, .skills__point {
+	float: left;
+	margin: 10px 12px 0 0;
 }
