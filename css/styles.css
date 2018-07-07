@@ -164,15 +164,15 @@ html {
 
 /* borders */
 .border__black {	
-	border: 1px solid black; border-color: transparent;
+	border: 1px solid black;  border-color: transparent; 
 }
 
 .border__green {	
-	border: 1px solid green; border-color: transparent;
+	border: 1px solid green;  border-color: transparent; 
 }
 
 .border__red {	
-	border: 1px solid red; border-color: transparent;
+	border: 1px solid red;  border-color: transparent; 
 }
 
 /* header */
@@ -211,6 +211,9 @@ html {
 
 /* chapter education */
 @chapterEducationLineWidth: auto;
+
+/* chapter experience */
+@chapterExperienceLineWidth: auto;
 
 /**/
 
@@ -346,6 +349,27 @@ main {
 	width: @ContentWidth;	
 	float: right;
 }
+/**/
+
+.main__education {	
+	margin-top: 110px;
+	margin-left: -7px;
+	float: left;
+	width: auto;
+}
+
+.main__education > .chapter > .chapter__title p{
+	margin: 16px 0 0 34px;
+}
+
+.chapter__education--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterEducationLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
 
 .chapter__education--text {
 	.border__black;
@@ -364,15 +388,6 @@ main {
 	padding-left: 18px;
 }
 
-.chapter__education--text ul li {
-	.border__black;
-
-	padding-top: 16px;
-	float: left;
-	list-style-type: none;
-	height: 195px;
-}
-
 .chapter__education--text ul li:before {
 	content: '';
 	display: inline-block;
@@ -383,6 +398,15 @@ main {
 	background-color:#000;
 	margin: 10px 25px 0 0;
 	float: left;
+}
+
+.chapter__education--text ul li {
+	.border__black;
+
+	padding-top: 16px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
 }
 
 .chapter__education--text b {
@@ -411,6 +435,116 @@ main {
 	padding-left: 50px;
 	padding-top: 0px;
 	margin-top: 0px;	
+}
+
+/**/
+
+.main__experience {
+	margin-top: 65px;
+	margin-left: -7px;
+	float: left;
+	width: auto;
+}
+
+.main__experience > .chapter > .chapter__title p {
+	margin: 22px 0 0 30px;
+	letter-spacing: 2.4px;
+}
+
+.chapter__experience--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterExperienceLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__experience--text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__experience--text ul {
+	.border__black;	
+	
+	padding-left: 18px;
+}
+
+.chapter__experience--text ul li:before {
+	content: '';
+	display: inline-block;
+	height:32px;
+	width: 32px;
+	vertical-align: middle;
+	border-radius:50%;
+	background-color:#000;
+	margin: 10px 25px 0 0;
+	float: left;
+}
+
+.chapter__experience--text ul li:nth-child(1) {
+	.border__black;
+
+	padding-top: 44px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
+}
+
+.chapter__experience--text ul li {
+	.border__black;
+
+	padding-top: 14px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
+}
+
+.chapter__experience--text b {
+	padding-left: 8px;
+	float: left;
+}
+
+.chapter__experience--text p:nth-child(3) {
+	.border__red;
+	
+	float: left;
+	padding-left: 48px;
+	padding-top: 0px;
+	margin-top: 6px;
+}
+
+.chapter__experience--text ul li p:nth-child(4) {
+	margin-top: -32px;
+	width: 900px;
+}
+
+.chapter__experience--text p:nth-child(4) {
+	.border__green;
+
+	float: left;
+	padding-left: 50px;
+	padding-top: 0px;
+	margin-top: 0px;	
+}
+
+.chapter__experience--text > ul > li > .paragraph__chapter {
+	letter-spacing: 5.7px;
+}
+
+.chapter__experience--text > ul > li > .comment__chapter {
+	margin-left: 18px;
+}
+
+.chapter__experience--text > ul > li > .description__chapter {
+	letter-spacing: 0.1px;
 }
 
 /* ___Footer___ */
@@ -462,28 +596,6 @@ footer {
 	height: 82px;	
 	width: 194px;
 	min-width: 194px;
-}
-
-/**/
-
-.main__education {	
-	margin-top: 110px;
-	margin-left: -7px;
-	float: left;
-	width: auto;
-}
-
-.main__education > .chapter > .chapter__title p{
-	margin: 16px 0 0 34px;
-}
-
-.chapter__education--line {
-	.border__black;
-
-	height: @chapterLineHeight;
-	width: @chapterEducationLineWidth;
-	min-width: @chapterLineMinWidth;
-	float: left;
 }
 
 /**/
