@@ -26,8 +26,8 @@ function addSkillsBlock($name, $point) {
 	<?php
 }
 
-/* education block */
-function addEducationBlock($organization, $data, $name, $desc) {
+/* education / experience block */
+function addEdExpBlock($organization, $data, $name, $desc) {
 	?>
 		<li>			
 			<b class="paragraph__chapter"> <?= $organization ?> </b> 
