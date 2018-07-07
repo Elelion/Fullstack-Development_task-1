@@ -113,11 +113,12 @@
 					<g transform="translate(20,98) scale(0.100000,-0.100000)"
 						fill="white" stroke="none" x="12" y="-10">
 
-					<path d="M329 573 l-44 -128 -144 -3 -143 -3 108 -75 c60 -42 112 -79 117 -83
-							4 -4 -13 -66 -37 -137 -24 -71 -43 -130 -42 -131 1 -1 52 34 114 77 
-							62 44 116 80 120 80 4 -1 57 -36 117 -79 61 -43 111 -78 112 -77 2 2 
-							-17 61 -41 132 l-43 130 113 80 113 79 -141 5 -141 5 -41 122 c-23 
-							67 -44 124 -47 128 -4 3 -26 -52 -50 -122z"/>
+						<path d="M329 573 l-44 -128 -144 -3 -143 -3 108 -75 c60 -42 112 -79 
+								117 -83 4 -4 -13 -66 -37 -137 -24 -71 -43 -130 -42 -131 1 -1 
+								52 34 114 77 62 44 116 80 120 80 4 -1 57 -36 117 -79 61 -43 
+								111 -78 112 -77 2 2 -17 61 -41 132 l-43 130 113 80 113 79
+								-141 5 -141 5 -41 122 c-23 67 -44 124 -47 128 -4 3 -26 -52 
+								-50 -122z"/>
 					</g>
 				</svg>
 			</div>
@@ -137,42 +138,109 @@
 		<div class="chapter__education--text">
 			<ul>
 				<?php 
-					addEducationBlock('master degree', 
-										'Feb 2011 - Jun 2014', 
-										'university name', 
-										'Lorem ipsum dolors sit amet, consectetuer adipiscing 
-										elit. Aenean commodo ligula eget dolor. Aenean massa. 
-										Cum sociis natoque penatibus et magnis dis parturient 
-										montes, nascetur ridiculus mus. Donec quam felis, 
-										ultricies nec, pellentesque.');
+					addEdExpBlock('master degree', 
+									'Feb 2011 - Jun 2014', 
+									'university name', 
+									'Lorem ipsum dolors sit amet, consectetuer adipiscing 
+									elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									Cum sociis natoque penatibus et magnis dis parturient 
+									montes, nascetur ridiculus mus. Donec quam felis, 
+									ultricies nec, pellentesque.');
 
-					addEducationBlock('master degree', 
-										'Feb 2011 - Jun 2014', 
-										'university name', 
-										'Lorem ipsum dolors sit amet, consectetuer adipiscing 
-										elit. Aenean commodo ligula eget dolor. Aenean massa. 
-										Cum sociis natoque penatibus et magnis dis parturient 
-										montes, nascetur ridiculus mus. Donec quam felis, 
-										ultricies nec, pellentesque.');
+					addEdExpBlock('master degree', 
+									'Feb 2011 - Jun 2014', 
+									'university name', 
+									'Lorem ipsum dolors sit amet, consectetuer adipiscing 
+									elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									Cum sociis natoque penatibus et magnis dis parturient 
+									montes, nascetur ridiculus mus. Donec quam felis, 
+									ultricies nec, pellentesque.');
 
-					addEducationBlock('master degree', 
-										'Feb 2011 - Jun 2014', 
-										'university name', 
-										'Lorem ipsum dolors sit amet, consectetuer adipiscing 
-										elit. Aenean commodo ligula eget dolor. Aenean massa. 
-										Cum sociis natoque penatibus et magnis dis parturient 
-										montes, nascetur ridiculus mus. Donec quam felis, 
-										ultricies nec, pellentesque.');
+					addEdExpBlock('master degree', 
+									'Feb 2011 - Jun 2014', 
+									'university name', 
+									'Lorem ipsum dolors sit amet, consectetuer adipiscing 
+									elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									Cum sociis natoque penatibus et magnis dis parturient 
+									montes, nascetur ridiculus mus. Donec quam felis, 
+									ultricies nec, pellentesque.');
 
-					addEducationBlock('master degree', 
-										'Feb 2011 - Jun 2014', 
-										'university name', 
-										'Lorem ipsum dolors sit amet, consectetuer adipiscing 
-										elit. Aenean commodo ligula eget dolor. Aenean massa. 
-										Cum sociis natoque penatibus et magnis dis parturient 
-										montes, nascetur ridiculus mus. Donec quam felis, 
-										ultricies nec, pellentesque.');
+					addEdExpBlock('master degree', 
+									'Feb 2011 - Jun 2014', 
+									'university name', 
+									'Lorem ipsum dolors sit amet, consectetuer adipiscing 
+									elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									Cum sociis natoque penatibus et magnis dis parturient 
+									montes, nascetur ridiculus mus. Donec quam felis, 
+									ultricies nec, pellentesque.');
 				?>						
+			</ul>
+		</div>
+	</div>
+
+	<div class="main__experience">
+		<div class="chapter">
+			<div class="chapter__logo">
+				<svg width="120px" height="120px">
+					<circle r="56" cx="58" cy="50.7%" 
+							fill="none" stroke="#056cb4" stroke-width="2"></circle>
+
+					<circle r="50" cx="58" cy="50.7%" fill="#056cb4" ></circle>
+					
+					<g transform="translate(28,93) scale(0.100000,-0.100000)"
+						fill="white" stroke="none" x="12" y="-10">
+					
+						<path d="M240 578 c-35 -18 -50 -34 -70 -75 l-25 -51 -65 -4 -65 -3 0
+							-215 0 -215 300 0 300 0 0 215 0 215 -66 3 c-64 3 -67 4 -72 31 -13 
+							62 -90 121 -159 121 -19 0 -54 -10 -78 -22z m130 -43 c25 -13 60 -60 
+							60 -80 0 -3 -52 -5 -115 -5 -63 0 -115 2 -115 5 0 4 7 19 15 35 28 
+							55 98 75 155 45z"/>
+					</g>
+				</svg>
+			</div>
+
+			<div class="chapter__title">
+				<p class="title__chapter">experience</p>
+			</div>
+
+			<div class="chapter__experience--line">
+				<svg width="500px" height="120px">
+					<line x1="3" y1="64" x2="484px" y2="64" 
+						  stroke="#056cb4" stroke-width="8"></line>
+				</svg>
+			</div>			
+		</div>
+
+		<div class="chapter__experience--text">
+			<ul>
+				<?php
+					addEdExpBlock('company name', 
+									'Feb 2011 - Jun 2014', 
+									'your job here', 
+									'Lorem ipsum dolors sit amet, consectetuer adipiscing 
+									elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									Cum sociis natoque penatibus et magnis dis parturient 
+									montes, nascetur ridiculus mus. Donec quam felis, 
+									ultricies nec, pellentesque.');
+
+					addEdExpBlock('company name', 
+									'Feb 2011 - Jun 2014', 
+									'your job here', 
+									'Lorem ipsum dolors sit amet, consectetuer adipiscing 
+									elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									Cum sociis natoque penatibus et magnis dis parturient 
+									montes, nascetur ridiculus mus. Donec quam felis, 
+									ultricies nec, pellentesque.');
+
+					addEdExpBlock('company name', 
+									'Feb 2011 - Jun 2014', 
+									'your job here', 
+									'Lorem ipsum dolors sit amet, consectetuer adipiscing 
+									elit. Aenean commodo ligula eget dolor. Aenean massa. 
+									Cum sociis natoque penatibus et magnis dis parturient 
+									montes, nascetur ridiculus mus. Donec quam felis, 
+									ultricies nec, pellentesque.');
+				?>
 			</ul>
 		</div>
 	</div>
