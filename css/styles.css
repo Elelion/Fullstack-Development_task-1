@@ -164,15 +164,15 @@ html {
 
 /* borders */
 .border__black {	
-	border: 1px solid black;  border-color: transparent; 
+	border: 1px solid black; border-color: transparent;
 }
 
 .border__green {	
-	border: 1px solid green;  border-color: transparent; 
+	border: 1px solid green; border-color: transparent;
 }
 
 .border__red {	
-	border: 1px solid red;  border-color: transparent; 
+	border: 1px solid red; border-color: transparent;
 }
 
 /* header */
@@ -214,6 +214,9 @@ html {
 
 /* chapter experience */
 @chapterExperienceLineWidth: auto;
+
+/* chapter software */
+@chapterSoftwareLineWidth: auto;
 
 /**/
 
@@ -545,6 +548,96 @@ main {
 
 .chapter__experience--text > ul > li > .description__chapter {
 	letter-spacing: 0.1px;
+}
+
+/**/
+
+.main__software {
+	margin-top: 72px;
+	margin-left: -7px;
+	float: left;
+	width: auto;
+}
+
+.main__software > .chapter > .chapter__title p {
+	margin: 22px 0 0 30px;
+	letter-spacing: 3.8px;
+}
+
+.chapter__software--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterSoftwareLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__software--text {
+	.border__black;
+
+	height: 410px;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.software__left--bars {
+	float: left;
+}
+
+.software__right--bars {
+	float: right;
+	margin-left: 94px;
+}
+
+.chapter__software--text p {
+	margin: 35px 0  0 13px;
+	letter-spacing: 0.5px;
+}
+
+.software__left--bars p:nth-child(3) {	
+	letter-spacing: -0.4px;
+}
+
+.software__left--bars p:nth-child(5) {	
+	margin-top: 33px;
+	letter-spacing: 0.2px;
+}
+
+.software__right--bars p:nth-child(1) {	
+	margin-top: 33px;
+	letter-spacing: 0.8px;
+}
+
+.software__right--bars p:nth-child(3) {	
+	margin: 36px 0 0 17px;
+	letter-spacing: -0.6px;
+}
+
+.software__right--bars p:nth-child(5) {	
+	margin: 32px 0 0 16px;
+	letter-spacing: -1.2px;
+}
+
+.software__progress {
+    background-color: #f3f3f3;
+    border: 0;
+    width: 430px;
+    height: 34px;
+    margin: 21px 0 0 13px;
+}
+
+.software__left--bars progress:nth-child(4),
+	.software__right--bars progress:nth-child(4) {
+		margin-top: 20px;
+}
+
+.software__left--bars progress:nth-child(6),
+	.software__right--bars progress:nth-child(6) {
+	margin-top: 16px;
 }
 
 /* ___Footer___ */
