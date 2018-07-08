@@ -40,4 +40,12 @@ function addEdExpBlock($organization, $data, $name, $desc) {
 		</li>
 	<?php
 }
+
+/* software block */
+function addSoftwareBlock($name, $progress) {
+	?>
+		<p class="description__chapter"> <?= $name ?> </p>
+		<progress value="<?= $progress ?>" max="100" class="software__progress"></progress>
+	<?php
+}
 ?>
