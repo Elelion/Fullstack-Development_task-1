@@ -244,6 +244,61 @@
 			</ul>
 		</div>
 	</div>
+
+	<div class="main__software">
+		<div class="chapter">
+			<div class="chapter__logo">
+				<svg width="120px" height="120px">
+					<circle r="56" cx="58" cy="50.7%" 
+							fill="none" stroke="#056cb4" stroke-width="2"></circle>
+
+					<circle r="50" cx="58" cy="50.7%" fill="#056cb4" ></circle>
+					
+					<g transform="translate(22,86) scale(0.100000,-0.100000)"
+						fill="white" stroke="none" x="12" y="-10">
+					
+						<path d="M125 519 c-41 -23 -45 -38 -45 -174 0 -186 -18 -175 277 -175 
+							298 0 278 -12 278 174 0 192 17 180 -268 183 -150 2 -228 -1 -242 
+							-8z m459 -45 c13 -12 16 -39 16 -126 0 -158 16 -148 -245 -148 -151 
+							0 -214 3 -223 12 -17 17 -17 249 0 266 9 9 73 12 224 12 180 0 215 
+							-2 228 -16z"/>
+
+						<path d="M47 65 c-15 -25 -27 -48 -27 -50 0 -3 151 -5 335 -5 184 0 335 
+							3 335 6 0 3 -12 25 -26 50 l-26 44 -282 0 -281 0 -28 -45z"/>
+					</g>
+				</svg>
+			</div>
+
+			<div class="chapter__title">
+				<p class="title__chapter">software</p>
+			</div>
+
+			<div class="chapter__software--line">
+				<svg width="580px" height="120px">
+					<line x1="30" y1="62" x2="512px" y2="62" 
+						  stroke="#056cb4" stroke-width="8"></line>
+				</svg>
+			</div>			
+		</div>
+
+		<div class="chapter__software--text">
+			<div class="software__left--bars">				
+				<?php
+					addSoftwareBlock('photoshop', '91');
+					addSoftwareBlock('illustrator', '70');
+					addSoftwareBlock('indesign', '56');
+				?>
+			</div>
+
+			<div class="software__right--bars">
+				<?php
+					addSoftwareBlock('dreamweaver', '82');
+					addSoftwareBlock('after effects', '61');
+					addSoftwareBlock('html&css3', '91');
+				?>
+			</div>
+		</div>
+	</div>
 </main>		
 
 <!-- .... -->
