@@ -43,7 +43,7 @@
 	</div>
 
 	<div class="header__profile">
-		<div class="chapter">
+		<div class="chapter">	
 			<div class="chapter__logo">
 				<svg width="120px" height="120px">
 					<circle r="56" cx="58" cy="50.7%" 
@@ -68,7 +68,7 @@
 
 			<div class="chapter__profile--line">
 				<svg width="auto" height="120px">
-					<line x1="5" y1="60" x2="267px" y2="60" 
+					<line x1="5" y1="60" x2="800px" y2="60" 
 						  stroke="#056cb4" stroke-width="8"></line>
 				</svg>
 			</div>			
@@ -102,8 +102,8 @@
 
 <main>
 	<div class="main__education">
-		<div class="chapter">
-			<div class="chapter__logo">
+		<div class="chapter">	
+			<div class="chapter__logo">				
 				<svg width="120px" height="120px">
 					<circle r="56" cx="58" cy="50.7%" 
 							fill="none" stroke="#056cb4" stroke-width="2"></circle>
@@ -128,8 +128,8 @@
 			</div>
 
 			<div class="chapter__education--line">
-				<svg width="500px" height="120px">
-					<line x1="12" y1="58" x2="494px" y2="58" 
+				<svg width="auto" height="120px">
+					<line x1="12" y1="58" x2="800px" y2="58" 
 						  stroke="#056cb4" stroke-width="8"></line>
 				</svg>
 			</div>			
@@ -179,7 +179,7 @@
 	</div>
 
 	<div class="main__experience">
-		<div class="chapter">
+		<div class="chapter">		
 			<div class="chapter__logo">
 				<svg width="120px" height="120px">
 					<circle r="56" cx="58" cy="50.7%" 
@@ -204,8 +204,8 @@
 			</div>
 
 			<div class="chapter__experience--line">
-				<svg width="500px" height="120px">
-					<line x1="3" y1="64" x2="484px" y2="64" 
+				<svg width="auto" height="120px">
+					<line x1="3" y1="64" x2="800px" y2="64" 
 						  stroke="#056cb4" stroke-width="8"></line>
 				</svg>
 			</div>			
@@ -274,8 +274,8 @@
 			</div>
 
 			<div class="chapter__software--line">
-				<svg width="580px" height="120px">
-					<line x1="30" y1="62" x2="512px" y2="62" 
+				<svg width="auto" height="120px">
+					<line x1="30" y1="62" x2="800px" y2="62" 
 						  stroke="#056cb4" stroke-width="8"></line>
 				</svg>
 			</div>			
@@ -331,7 +331,7 @@
 
 			<div class="chapter__contact--line">
 				<svg width="auto" height="120px">
-					<line x1="5" y1="60" x2="244px" y2="60" 
+					<line x1="5" y1="60" x2="800px" y2="60" 
 						  stroke="#056cb4" stroke-width="8"></line>
 				</svg>
 			</div>			
@@ -376,7 +376,7 @@
 
 			<div class="chapter__skills--line">
 				<svg width="auto" height="120px">
-					<line x1="5" y1="60" x2="302px" y2="60" 
+					<line x1="16" y1="60" x2="800px" y2="60" 
 						  stroke="#056cb4" stroke-width="8"></line>
 				</svg>
 			</div>			
