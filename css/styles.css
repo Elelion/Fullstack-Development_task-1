@@ -107,6 +107,17 @@
 	letter-spacing: 0.6px;
 }
 
+.smallText__pos {
+	float: left;
+	margin: -30px 0 0 0;
+	padding: 0px;	
+}
+
+.smallText__pos p {
+	pading: 0px;
+	margin: 0px;
+}
+
 /* middle text */
 .middleText__chapter {
 	font-family: "PTsans55SF"; 	
@@ -786,7 +797,7 @@ footer {
 /*all block's*/
 	header, main, footer { float: none; margin: 0 auto 0 auto; }
 	header { height: @HeaderHeight - 50px; }
-	main { height: @ContentHeight + 940px; width: 760px; }
+	main { height: @ContentHeight + 740px; width: 760px; clear: both; }
 
 	.main__education, 
 		.main__experience, 
@@ -889,4 +900,111 @@ footer {
 
 	.points__bar { height: 50px; width: 520px; margin-left: auto; margin-right: auto; }
 	.skills__point:first-of-type { margin-left: 8px; }
+}
+
+@media screen and (max-width: 780px) {
+/*all block's*/
+	header, main, footer { min-width: 580px; width: auto; height: auto; }
+	
+/*profile*/	
+	.chapter__profile--line { width: 100%; position: absolute;  display: inline-block; }
+	.chapter__profile--line svg { width: 46%; }
+
+/*education + experience*/
+	.main__education, 
+		.main__experience { 
+			width: auto;
+	}
+
+	.chapter__education--line, 
+		.chapter__experience--line { 
+			width: 100%; position: absolute;  display: inline-block; 
+	}
+
+	.chapter__education--line svg { width: 32%; }
+	.chapter__experience--line svg { width: 30.5%; }
+
+	.chapter__education--text, 
+		.chapter__experience--text { 
+			width: auto; margin-left: auto; margin-right: auto; 
+	}
+	.chapter__education--text ul,
+		.chapter__experience--text ul { 
+			width: auto; margin-left: auto; margin-right: auto; 
+	}
+	
+	.chapter__education--text ul li,
+		.chapter__experience--text ul li { 
+			width: auto; heigh: auto; margin-left: auto; margin-right: auto; 
+	}
+
+	.chapter__education--text .smallText__pos p,
+		.chapter__experience--text .smallText__pos p { 
+			padding-right: 20px; 
+	}
+
+/*software*/
+	.main__software { width: auto; }
+
+	.chapter__software--line { width: 100%; position: absolute; display: inline-block; }	
+	.chapter__software--line svg { width: 35%; }
+	.chapter__software--text { width: 450px; margin-left: 90px; }
+
+/*contact*/
+	.footer__contact { width: auto; }
+	.chapter__contact--line { width: 100%; position: absolute; display: inline-block; }
+	.chapter__contact--line svg { width: 44%; }
+
+/*skills*/
+	.footer__skills { width: auto; }
+	.chapter__skills--line { width: 100%; position: absolute; display: inline-block; }
+	.chapter__skills--line svg { width: 55%; }	
+	
+	.chapter__skills--text ul { width: 470px; margin-left: auto; margin-right: auto; }
+	.chapter__skills--text ul li { margin-left: -40px; width: 510px;}
+}
+
+@media screen and (max-width: 730px) {
+	.chapter__profile--line svg { width: 43%; }
+	.chapter__education--line svg { width: 29%; }
+	.chapter__experience--line svg { width: 27.5%; }
+	.chapter__software--line svg { width: 32%; }
+	.chapter__contact--line svg { width: 41%; }
+	.chapter__skills--line svg { width: 52%; }	
+}
+
+@media screen and (max-width: 700px) {
+	.chapter__profile--line svg { width: 40%; }
+	.chapter__education--line svg { width: 26%; }
+	.chapter__experience--line svg { width: 24.5%; }
+	.chapter__software--line svg { width: 29%; }
+	.chapter__contact--line svg { width: 38%; }
+	.chapter__skills--line svg { width: 49%; }	
+}
+
+@media screen and (max-width: 675px) {
+	.chapter__profile--line svg { width: 40%; }
+	.chapter__education--line svg { width: 24%; }
+	.chapter__experience--line svg { width: 22.5%; }
+	.chapter__software--line svg { width: 27%; }
+	.chapter__contact--line svg { width: 36%; }
+	.chapter__skills--line svg { width: 47%; }	
+}
+
+@media screen and (max-width: 655px) {
+	.chapter__profile--line svg { width: 36%; }
+	.chapter__education--line svg { width: 19%; }
+	.chapter__experience--line svg { width: 17.5%; }
+	.chapter__software--line svg { width: 22%; }
+	.chapter__contact--line svg { width: 32.5%; }
+	.chapter__skills--line svg { width: 45%; }	
+}
+
+@media screen and (max-width: 650px) {
+	.chapter__profile--line svg { width: 28%; }
+	.chapter__education--line svg { width: 9.5%; }
+	.chapter__experience--line svg { width: 7.5%; }
+	.chapter__software--line svg { width: 13%; }
+	.chapter__contact--line svg { width: 24.5%; }
+	.chapter__skills--line svg { width: 38%; }	
 }
