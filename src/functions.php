@@ -35,10 +35,12 @@ function addEdExpBlock($organization, $data, $name, $desc) {
 			<b class="paragraph__chapter"> <?= $organization ?> </b> 
 			<p class="comment__chapter"> // <?= $data ?> </p>
 			<p class="description__chapter"> <?= $name ?> </p>
-
-			<p class="smallText__chapter">
-				<?= $desc ?>
-			</p>			
+			
+			<div class="smallText__pos">
+				<p class="smallText__chapter">
+					<?= $desc ?>
+				</p>			
+			</div>
 		</li>
 	<?php
 }
