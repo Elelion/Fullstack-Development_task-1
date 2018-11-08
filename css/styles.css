@@ -45,6 +45,8 @@
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: -8px;
+
+	.wrapping;
 }
 
 /* name here */
@@ -55,6 +57,8 @@
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: -22px;	
+
+	.wrapping;
 }
 
 /* graphic designer */
@@ -139,12 +143,16 @@
 
 /* education + experience -> titles */
 .paragraph__chapter {	
+	width: 330px;
+
 	font-family: "PTsans77F"; 	
 	text-transform: uppercase;
 	font-size: 38px;
 	letter-spacing: 4.7px;	
 	color: #056cb4;
 	float: left;
+
+	.wrapping;
 }
 
 /* //Feb 2011-Jun 2014... */
@@ -175,15 +183,15 @@ html {
 
 /* borders */
 .border__black {	
-	border: 1px solid black; border-color: transparent;
+	border: 1px solid black; /* border-color: transparent; */
 }
 
 .border__green {	
-	border: 1px solid green; border-color: transparent;
+	border: 1px solid green; /* border-color: transparent; */
 }
 
 .border__red {	
-	border: 1px solid red; border-color: transparent;
+	border: 1px solid red; /* border-color: transparent; */
 }
 
 /* header */
@@ -263,6 +271,11 @@ html {
 	float: left;
 }
 
+.wrapping {
+	white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */    
+    text-overflow: ellipsis; /* Многоточие */
+}
 
 /* ___Header___ */
 
@@ -295,7 +308,7 @@ header {
 }
 
 .header__titles--text1 {
-	.border__black;
+	.border__red;
 
 	height: 85px;
 	width: 500px;
@@ -703,7 +716,7 @@ footer {
 }
 
 .chapter__contact--line svg { 
-	width: 318px; 
+	width: 244px; 
 }
 
 .chapter__contact--text {
@@ -783,6 +796,11 @@ footer {
 
 .skills__point:first-of-type {
 	margin-left: 118px;
+}
+
+.skills__point svg, .skills__point--template svg {
+	width: 30px;
+	height: 30px;
 }
 
 .skills__point--template, .skills__point {
