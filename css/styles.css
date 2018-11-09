@@ -141,6 +141,21 @@
 	letter-spacing: 1.1px;
 }
 
+.middleText__chapter a {
+	text-decoration: none;
+	color: #056CB4;
+
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.middleText__chapter a:hover {
+	color: #E75735;	
+
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
 /* education + experience -> titles */
 .paragraph__chapter {	
 	width: 330px;
