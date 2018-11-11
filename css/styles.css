@@ -132,25 +132,25 @@
 }
 
 /* middle text */
-.middleText__chapter {
+.chapter__contact--text {
 	font-family: "PTsans55SF"; 	
 	font-size: 28px;	
 	margin-left: 2px;
 	margin-top: 44px;
 }
 
-.middleText__chapter b {
+.chapter__contact--text b {
 	font-family: "PTsans77F"; 	
 	text-transform: uppercase;
 	font-size: 30px;
 	letter-spacing: 3.5px;	
 }
 
-.middleText__chapter span {
+.chapter__contact--text span {
 	letter-spacing: 1.1px;
 }
 
-.middleText__chapter a {
+.chapter__contact--text a {
 	text-decoration: none;
 	color: #056CB4;
 
@@ -158,7 +158,7 @@
     transition: 0.7s;
 }
 
-.middleText__chapter a:hover {
+.chapter__contact--text a:hover {
 	color: #E75735;	
 
 	-webkit-transition: 0.7s;
@@ -190,6 +190,12 @@
 	float: left;
 }
 
+.chapter__bar--points {
+	.border__red;
+	width: 550px;	
+	height: 50px;
+	margin: 0 auto 0 auto;
+}
 
 /* ___General___ */
 
@@ -634,10 +640,11 @@ main {
 /**/
 
 .main-software {
+	.border__red;
 	margin-top: 72px;
-	margin-left: -7px;
-	float: left;
-	width: auto;
+	margin-left: -7px;		
+	width: 100%;
+	height: auto;
 }
 
 .main-software > .chapter > .chapter__title p {
@@ -659,14 +666,14 @@ main {
 }
 
 .main-software__text {
-	.border__black;
+	.border__green;
 
-	height: 410px;
-	width: auto;
+	height: auto;
+	width: 100%;
 	float: left;
 	margin: 0 0 0 90px;
 	letter-spacing: -0.5px;
-	line-height: 1.2;
+	line-height: 1.2;	
 }
 
 .main-software__text_left-bars {
@@ -675,7 +682,7 @@ main {
 
 .main-software__text_right-bars {
 	float: right;
-	margin-left: 94px;
+	margin-right: 156px;
 }
 
 .main-software__text p {
@@ -737,7 +744,7 @@ footer {
 	float: left;
 }
 
-.footer__contact {	
+.footer-contact {	
 	.border__black;
 
 	height: auto;
@@ -761,7 +768,7 @@ footer {
 	width: 244px; 
 }
 
-.chapter__contact--text {
+.footer-contact__text {
 	.border__black;
 
 	height: auto;
@@ -772,12 +779,12 @@ footer {
 	line-height: 1.2;
 }
 
-.chapter__contact--text table {	
+.footer-contact__text table {	
 	margin-top: 20px;		
 	border-collapse: collapse;	
 }
 
-.chapter__contact--text table tr, td {
+.footer-contact__text table tr, td {
 	margin-top: 30px;	
 	height: 82px;	
 	width: 194px;
@@ -786,7 +793,7 @@ footer {
 
 /**/
 
-.footer__skills {	
+.footer-skills {	
 
 	margin-top: 400px;
 	margin-left: auto;
@@ -796,7 +803,7 @@ footer {
 	clear: both;	
 }
 
-.footer__skills .chapter__title p {
+.footer-skills .chapter__title p {
 	letter-spacing: 1.1px;
 }
 
@@ -813,41 +820,46 @@ footer {
 	width: 318px; 
 }
 
-.chapter__skills--text {
+.footer-skills__text {
 	.border__red;
 
 	width: auto;
 }
 
-.chapter__skills--text li:first-child  {
+.footer-skills__text li:first-child  {
 	margin-top: 10px;
 }
 
-.chapter__skills--text li {
+.footer-skills__text li {
 	.border__green;
 
 	list-style-type: none;	
 	height: 115px;
 }
 
-.chapter__skills--text li p {		
+.footer-skills__text li p {		
 	text-align: center;
 	margin: 15px 0 0 30px;
 	letter-spacing: 1.1px;
 }
 
-.skills__point:first-of-type {
-	margin-left: 118px;
+.bar__point:first-of-type {
+	margin-left: 36px;
 }
 
-.skills__point svg, .skills__point--template svg {
+.bar__point svg, .bar__point--empty svg {
 	width: 30px;
 	height: 30px;
 }
 
-.skills__point--template, .skills__point {
+.bar__point--empty, .bar__point {
 	float: left;
-	margin: 10px 12px 0 0;
+	margin: 10px 13px 0 0;
+}
+
+.bar__point:last-child,
+.bar__point--empty:last-child {
+	margin-right: 0px;
 }
 
 
@@ -857,7 +869,7 @@ footer {
 /*all block's*/
 	header, main, footer { float: none; margin: 0 auto 0 auto; }
 	/*header { height: @HeaderHeight - 50px; }*/
-	main { height: @ContentHeight + 740px; width: 760px; clear: both; }
+	main { height: @ContentHeight + 786px; width: 760px; clear: both; }
 
 	.main-education, 
 		.main-experience, 
@@ -866,15 +878,14 @@ footer {
 	}
 
 	footer { height: @FooterHeight + 70px; clear: both; }
-	.footer__contact { margin-top: 100px; }
-	.footer__skills { margin-top: 458px; }
+	.footer-contact { margin-top: 100px; }
+	.footer-skills { margin-top: 458px; }
 
 /*general*/	
 	.chapter__logo { margin-left: auto; margin-right: auto; }
 	.smallText__chapter { text-align: justify; }	
-	.chapter { display: block; }
-	.chapter__logo { margin-left: 0px; }
-	
+	/*.chapter { display: ; }*/
+	.chapter__logo { margin-left: 0px; }	
 
 /*header*/
 	.header-logo, 
@@ -927,7 +938,7 @@ footer {
 	.main-software { width: 760px; margin-left: 0px; }
 	.chapter__software--line { width: auto; }
 	.chapter__software--line svg { width: 280px; }
-	.main-software__text { height: auto; }
+	.main-software__text { width: auto; }
 
 	.main-software__text_left-bars, 
 		.main-software__text_right-bars { 
@@ -935,16 +946,16 @@ footer {
 	}
 
 /*contact*/	
-	.footer__contact { width: 760px; margin-left: 0px; }
+	.footer-contact { width: 760px; margin-left: 0px; }
 	.chapter__contact--line { width: auto; }
 	.chapter__contact--line svg { width: 350px; }
-	.chapter__contact--text table { float: none; margin-left: auto; margin-right: auto; }
+	.footer-contact__text table { float: none; margin-left: auto; margin-right: auto; }
 
 /*skills*/
 	.chapter__skills--line { width: auto; }
 	.chapter__skills--line svg { width: 428px; }
 
-	.chapter__skills--text ul li { 
+	.footer-skills__text ul li { 
 		margin: 0px; 
 		float: none; 
 		width: 614px; 
@@ -953,13 +964,13 @@ footer {
 		margin-right: auto; 
 	}
 
-	.chapter__skills--text 
+	.footer-skills__text 
 		.chapter__description { 
 			width: 300px; margin-left: auto; margin-right: auto; 
 	}
 
-	.points__bar { height: 50px; width: 520px; margin-left: auto; margin-right: auto; }
-	.skills__point:first-of-type { margin-left: 8px; }
+	.chapter__bar--points { height: 50px; width: 520px; margin-left: auto; margin-right: auto; }
+	.bar__point:first-of-type { margin-left: 8px; }
 }
 
 @media screen and (max-width: 780px) {
@@ -1011,17 +1022,17 @@ footer {
 	.main-software__text { width: 450px; margin-left: 90px; }
 
 /*contact*/
-	.footer__contact { width: auto; }
+	.footer-contact { width: auto; }
 	.chapter__contact--line { width: 100%; position: absolute; display: inline-block; }
 	.chapter__contact--line svg { width: 44%; }
 
 /*skills*/
-	.footer__skills { width: auto; }
+	.footer-skills { width: auto; }
 	.chapter__skills--line { width: 100%; position: absolute; display: inline-block; }
 	.chapter__skills--line svg { width: 55%; }	
 	
-	.chapter__skills--text ul { width: 470px; margin-left: auto; margin-right: auto; }
-	.chapter__skills--text ul li { margin-left: -40px; width: 510px;}
+	.footer-skills__text ul { width: 470px; margin-left: auto; margin-right: auto; }
+	.footer-skills__text ul li { margin-left: -40px; width: 510px;}
 }
 
 @media screen and (max-width: 730px) {
