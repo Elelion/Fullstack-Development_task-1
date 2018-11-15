@@ -39,7 +39,7 @@
 /**/
 
 /* surname */
-.title__h1 {
+.header-title__h1 h1 {
 	font-family: "PTsans55SF"; 	
 	font-size: 82px; /*82*/
 	letter-spacing: 1px;	
@@ -55,7 +55,7 @@
 }
 
 /* name here */
-.title__h2 {
+.header-title__h2 h2 {
 	font-family: "PTsans75SF"; 	
 	font-size: 92px;
 	letter-spacing: 5.8px;
@@ -70,7 +70,7 @@
 }
 
 /* graphic designer */
-.title__h3 { 
+.header-title__h3 h3 { 
 	font-family: "PTsans75SF"; 	
 	font-size: 38px;	
 	letter-spacing: 0.3px;
@@ -93,46 +93,42 @@
 	color: #056cb4;
 }
 
-/* skills -> creative..., education -> universiti name... */
-.chapter__description {
-	font-family: "PTsans55SF"; 	
-	font-size: 38px;
-	letter-spacing: -0.8x;
-	text-transform: uppercase;
-	text-align: left;
-	margin-top: 20px; 
-	margin-left: 14px;
-}
-
 /* small text */
-.chapter__text {
+.text { /* .chapter__text */
 	font-family: "PTsans55SF"; 	
 	font-size: 24px;
-	text-align: left;
-	margin-top: 0px; 
+	text-align: left;	
 	margin-left: 14px;
 }
 
-.text__chapter b {
+/* .text__chapter b {
 	font-family: "LatoBold";
 	font-size: 22px;
 	text-align: left;	
 	letter-spacing: 0.6px;
+} */
+
+.chapter__text {
+	width: auto;
+	height: auto;
 }
 
 .chapter__text--pos {
+	.border__green;
 	float: left;
-	margin: -30px 0 0 0;
-	padding: 0px;	
+	margin: -32px 0 0 66px;
+	padding: 0px;
+	width: auto;
 }
 
 .chapter__text--pos p {
 	pading: 0px;
-	margin: 0px;
+	margin: 0px 54px 0 0;
 }
 
 /* middle text */
-.chapter__contact--text {
+.chapter__contact--text,
+.footer-contact__text table {
 	font-family: "PTsans55SF"; 	
 	font-size: 28px;	
 	margin-left: 2px;
@@ -166,8 +162,8 @@
 }
 
 /* education + experience -> titles */
-.chapter__paragraph {	
-	width: 330px;
+.chapter__text-paragraph {	
+	width: 320px;
 
 	font-family: "PTsans77F"; 	
 	text-transform: uppercase;
@@ -175,19 +171,32 @@
 	letter-spacing: 4.7px;	
 	color: #056cb4;
 	float: left;
+	padding-right: -10px;
 
 	.wrapping;
 }
 
 /* //Feb 2011-Jun 2014... */
-.chapter__comment {
+.chapter__text-comment {
 	width: 400px;	
 	font-family: "PTsans57F"; 
 	font-size: 38px;
-	letter-spacing: 2.9px;
+	letter-spacing: 3.0px;
 
-	margin: 0px 0 0 22px;
+	margin: 0px 0 0 0px;
 	float: left;
+}
+
+/* skills -> creative..., education -> universiti name... */
+.chapter__text-description,
+.footer-skills__text p {
+	font-family: "PTsans55SF"; 	
+	font-size: 38px;
+	letter-spacing: -0.1px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
 }
 
 .chapter__bar--points {
@@ -464,16 +473,15 @@ main {
 	width: auto;
 	float: left;
 	margin: 0 0 0 90px;
-	letter-spacing: -0.5px;
+	letter-spacing: -0.4px;
 	line-height: 1.2;
 }
 
-.main-education--text ul {
-	.border__black;	
-	
+.main-education--text ul {	
 	padding-left: 18px;
 }
 
+/* pointer */
 .main-education--text ul li:before {
 	content: '';
 	display: inline-block;
@@ -482,17 +490,26 @@ main {
 	vertical-align: middle;
 	border-radius:50%;
 	background-color:#000;
-	margin: 10px 25px 0 0;
+	margin: 9px 25px 0 0;
 	float: left;
 }
 
 .main-education--text ul li {
 	.border__black;
 
-	padding-top: 16px;
+	padding-top: 10px;
+	margin-bottom: 6px;
 	float: left;
 	list-style-type: none;
 	height: 195px;
+}
+
+.main-education--text ul li:nth-child(2) {
+	margin-bottom: 2px;
+}
+
+.main-education--text ul li:nth-child(3) {
+	margin-bottom: 5px;
 }
 
 .main-education--text b {	
@@ -510,8 +527,8 @@ main {
 }
 
 .main-education--text ul li p:nth-child(4) {
-	margin-top: -32px;
-	width: 900px;
+	/* margin-top: -32px;
+	width: 900px; */
 }
 
 .main-education--text p:nth-child(4) {
@@ -520,7 +537,7 @@ main {
 	float: left;
 	padding-left: 50px;
 	padding-top: 0px;
-	margin-top: 0px;	
+	margin-top: 0px;
 }
 
 /**/
@@ -530,6 +547,7 @@ main {
 	margin-left: -7px;
 	float: left;
 	width: auto;
+	margin-bottom: 70px;
 }
 
 .main-experience > .chapter > .chapter__title p {
@@ -557,14 +575,13 @@ main {
 	width: auto;
 	float: left;
 	margin: 0 0 0 90px;
-	letter-spacing: -0.5px;
+	letter-spacing: -0.4px;
 	line-height: 1.2;
 }
 
 .main-experience__text ul {
-	.border__black;	
-	
 	padding-left: 18px;
+	margin-top: 49px;
 }
 
 .main-experience__text ul li:before {
@@ -575,30 +592,32 @@ main {
 	vertical-align: middle;
 	border-radius:50%;
 	background-color:#000;
-	margin: 10px 25px 0 0;
+	margin: 9px 25px 0 0;
 	float: left;
 }
 
-.main-experience__text ul li:nth-child(1) {
+.main-experience ul li {
 	.border__black;
 
-	padding-top: 44px;
+	padding-top: 10px;	
+	margin-bottom: 4px;
 	float: left;
 	list-style-type: none;
-	height: 195px;
+	height: auto;
 }
 
-.main-experience__text ul li {
-	.border__black;
 
-	padding-top: 14px;
-	float: left;
-	list-style-type: none;
-	height: 195px;
+.main-experience ul li:nth-child(1) {
+	margin-bottom: 3px;
+}
+
+.main-experience ul li:nth-child(2) {
+	margin-bottom: 8px;
 }
 
 .main-experience__text b {
 	padding-left: 8px;
+	letter-spacing: 5.8px;
 	float: left;
 }
 
@@ -612,8 +631,8 @@ main {
 }
 
 .main-experience__text ul li p:nth-child(4) {
-	margin-top: -32px;
-	width: 900px;
+	/* margin-top: -32px;
+	width: 900px; */
 }
 
 .main-experience__text p:nth-child(4) {
@@ -627,14 +646,6 @@ main {
 
 .main-experience__text > ul > li > .chapter__paragraph {
 	letter-spacing: 5.7px;
-}
-
-.main-experience__text > ul > li > .chapter__comment {
-	margin-left: 18px;
-}
-
-.main-experience__text > ul > li > .chapter__description {
-	letter-spacing: 0.1px;	
 }
 
 /**/
@@ -686,6 +697,14 @@ main {
 }
 
 .main-software__text p {
+	font-family: "PTsans55SF"; 	
+	font-size: 38px;
+	/* letter-spacing: -0.1px; */
+	text-transform: uppercase;
+	text-align: left;
+	/* margin-top: 20px;  */
+	/* margin-left: 14px; */
+
 	margin: 35px 0  0 13px;
 	letter-spacing: 0.5px;
 }
