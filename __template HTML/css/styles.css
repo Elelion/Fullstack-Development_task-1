@@ -1,0 +1,1133 @@
+/* ___Fonts___ */
+
+@font-face { 
+	font-family: "PTsans55F"; 
+	src: url(../fonts/PTC55F.ttf); 
+}
+
+@font-face { 
+	font-family: "PTsans75F";
+	src: url(../fonts/PTC75F.ttf); 
+}
+
+@font-face { 
+	font-family: "PTsans57F";
+	src: url(../fonts/PTN57F.ttf); 
+}
+
+@font-face { 
+	font-family: "PTsans77F";
+	src: url(../fonts/PTN77F.ttf); 
+}
+
+@font-face { 
+	font-family: "PTsans55SF";
+	src: url(../fonts/PTS55F.ttf); 
+}
+
+@font-face { 
+	font-family: "PTsans75SF";
+	src: url(../fonts/PTS75F.ttf); 
+}
+
+@font-face { 
+	font-family: "LatoBold";
+	src: url(../fonts/Lato/Lato-Bold.ttf); 
+}
+
+
+/**/
+
+/* profile, contact... */
+/* .chapter__title--text { 
+	font-family: "PTsans75SF"; 	
+	font-size: 60px;
+	letter-spacing: 3.4px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+	color: #056cb4;
+} */
+
+/* small text */
+.text { /* .chapter__text */
+	font-family: "PTsans55SF"; 	
+	font-size: 24px;
+	text-align: left;	
+	margin-left: 14px;
+}
+
+/* .text__chapter b {
+	font-family: "LatoBold";
+	font-size: 22px;
+	text-align: left;	
+	letter-spacing: 0.6px;
+} */
+
+.chapter__text {
+	width: auto;
+	height: auto;
+}
+
+.chapter__text--pos {
+	.border__green;
+	float: left;
+	margin: -32px 0 0 66px;
+	padding: 0px;
+	width: auto;
+}
+
+.chapter__text--pos p {
+	pading: 0px;
+	margin: 0px 54px 0 0;
+}
+
+/* middle text */
+/* .chapter__contact--text, */
+.footer-contact__text span {
+	font-family: "PTsans55SF"; 	
+	font-size: 28px;	
+	margin-left: 2px;
+	margin-top: 44px;
+}
+
+/* .chapter__contact--text b {
+	font-family: "PTsans77F"; 	
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 3.5px;	
+}
+
+.chapter__contact--text span {
+	letter-spacing: 1.1px;
+} */
+
+.footer-contact__text a:nth-child(1) {
+	text-decoration: none;
+	color: #056CB4;
+
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.footer-contact__text a:hover {
+	color: #E75735;	
+
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+/* education + experience -> titles */
+.chapter__text-paragraph,
+.footer-contact__text b {	
+	width: 320px;
+
+	font-family: "PTsans77F"; 	
+	text-transform: uppercase;
+	font-size: 38px;
+	letter-spacing: 4.7px;	
+	color: #056cb4;
+	float: left;
+	padding-right: -10px;
+
+	.wrapping;
+}
+
+/* //Feb 2011-Jun 2014... */
+.chapter__text-comment {
+	width: 400px;	
+	font-family: "PTsans57F"; 
+	font-size: 38px;
+	letter-spacing: 3.0px;
+
+	margin: 0px 0 0 0px;
+	float: left;
+}
+
+/* skills -> creative..., education -> universiti name... */
+.chapter__text-description,
+.footer-skills__text p {
+	font-family: "PTsans55SF"; 	
+	font-size: 38px;
+	letter-spacing: -0.1px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+}
+
+/* .chapter__bar--points { */
+.skills-bar {
+	.border__red;
+	width: 550px;	
+	height: 50px;
+	margin: 0 auto 0 auto;
+}
+
+/* ___General___ */
+
+body {	
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+html { 
+  overflow-x: hidden;
+}
+
+/**/
+
+/* borders */
+.border__black {	
+	border: 1px solid black; /* border-color: transparent; */
+}
+
+.border__green {	
+	border: 1px solid green; /* border-color: transparent; */
+}
+
+.border__red {	
+	border: 1px solid red; /* border-color: transparent; */
+}
+
+/* header */
+@HeaderHeight: auto; /*@ContentHeight / 2 + 47px*/
+@HeaderWidth: 40%;
+@HeaderMinWidth: 760px;
+
+/* content / main */
+@ContentHeight: 2800px;
+@ContentWidth: 59.7%;
+
+/* footer */
+@FooterHeight: @ContentHeight / 2 - 47px;
+@FooterWidth: 40%;
+@FooterMinWidth: @HeaderMinWidth;
+
+/* general chapter */
+@chapterLogoHeight: 120px;
+@chapterLogoWidth: 116px;
+
+@chapterTitleHeight: 120px;
+@chapterTitleWidth: auto;
+
+@chapterHeight: 120px;
+@chapterLineHeight: 120px;
+@chapterLineMinWidth: 50px;
+
+/* chapter profile */
+@chapterProfileLineWidth: 268px;
+
+/* chapter contact */
+@chapterContactLineWidth: 246px;
+
+/* chapter skills */
+@chapterSkillsLineWidth: 324px;
+
+/* chapter education */
+@chapterEducationLineWidth: auto;
+
+/* chapter experience */
+@chapterExperienceLineWidth: auto;
+
+/* chapter software */
+@chapterSoftwareLineWidth: auto;
+
+/**/
+
+.chapter {
+	.border__green;
+
+	height: 120px;		
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;	
+}
+
+.chapter__logo {
+	.border__red;
+
+	height: @chapterLogoHeight;
+	width: @chapterLogoWidth;	
+	float: left;
+	margin-left: 90px;
+}
+
+.chapter__title {
+	.border__black;
+
+	height: @chapterTitleHeight;
+	width: @chapterTitleWidth;	
+	float: left;
+}
+
+.chapter__title p {
+	font-family: "PTsans75SF"; 	
+	font-size: 60px;
+	letter-spacing: 3.4px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+	color: #056cb4;
+}
+
+.chapter__side {
+	.border__black;
+
+	height: auto;
+	width: 100%;	
+	min-width: @chapterLineMinWidth;
+	float: left;
+	margin-right: 20px;
+}
+
+.chapter__side--line {
+	background: #056CB4;
+	width: auto;
+	height: 8px;
+	margin: 56px 4px 0 4px;
+}
+
+.wrapping {
+	white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */    
+    text-overflow: ellipsis; /* Многоточие */
+}
+
+/* ___Header___ */
+
+header {
+	.border__black;
+
+	height: @HeaderHeight;
+	width: @HeaderWidth;
+	min-width: @HeaderMinWidth;
+	float: left;
+	margin-bottom: 60px;
+}
+
+.header-logo { 
+	.border__black;
+
+	height: 357px;
+	width: 360px;
+	margin-top: 135px;
+	margin-left: 245px;	
+}
+
+.header-title {
+	.border__red;
+
+	height: auto;	
+	min-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+/* surname */
+.header-title__name {
+	.border__red;
+
+	height: auto;
+	width: 500px;
+	margin-left: 175px;
+}
+
+.header-title__name h1 {
+	font-family: "PTsans55SF"; 	
+	font-size: 82px; /*82*/
+	letter-spacing: 1px;	
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -8px;
+	padding: 0;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	
+	/*word-wrap: break-word;*/
+	.wrapping;
+}
+
+/* name here */
+.header-title__surname {
+	.border__black;
+
+	height: auto;
+	width: 500px;
+	margin-left: 175px;
+}
+
+.header-title__surname h2 {
+	font-family: "PTsans75SF"; 	
+	font-size: 92px;
+	letter-spacing: 5.8px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -22px;	
+	padding: 0;
+	margin-top: -24px;
+	margin-bottom: 0px;
+
+	.wrapping;
+}
+
+/* graphic designer */
+.header-title__profession {
+	.border__black;
+
+	height: auto;
+	width: 500px;
+	margin-left: 175px;
+}
+
+.header-title__profession h3 { 
+	font-family: "PTsans75SF"; 	
+	font-size: 38px;	
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	text-align: center;
+	
+	margin: -4px auto 0 auto;
+	padding: 0;	
+}
+
+/**/
+
+.header-profile {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 108px;
+}
+
+/**/
+
+/*.chapter__profile--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterProfileLineWidth;	
+	min-width: @chapterLineMinWidth;
+	float: left;
+}*/
+
+/*.chapter__profile--line svg { 
+	width: 265px; 
+}*/
+
+.header-profile__text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;	;
+}
+
+.header-profile__text blockquote, .header-profile__text p {
+	margin: 12px 13px 0px 1px;
+	padding: 0px;
+}
+
+
+/* ___Main Content___ */
+
+main {
+	.border__black;
+
+	height: @ContentHeight;
+	width: @ContentWidth;	
+	float: right;
+}
+/**/
+
+.main-education {
+	margin-top: 110px;
+	margin-left: -7px;
+	float: left;
+	height: auto;
+	width: auto;
+}
+
+.main-education > .chapter > .chapter__title p {
+	margin: 16px 0 0 34px;
+}
+
+.chapter__education--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterEducationLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__education--line svg { 
+	width: 494px; 
+}
+
+.main-education--text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.4px;
+	line-height: 1.2;
+}
+
+.main-education--text ul {	
+	padding-left: 18px;
+}
+
+/* pointer */
+.main-education--text ul li:before {
+	content: '';
+	display: inline-block;
+	height:32px;
+	width: 32px;
+	vertical-align: middle;
+	border-radius:50%;
+	background-color:#000;
+	margin: 9px 25px 0 0;
+	float: left;
+}
+
+.main-education--text ul li {
+	.border__black;
+
+	padding-top: 10px;
+	margin-bottom: 6px;
+	float: left;
+	list-style-type: none;
+	height: 195px;
+}
+
+.main-education--text ul li:nth-child(2) {
+	margin-bottom: 2px;
+}
+
+.main-education--text ul li:nth-child(3) {
+	margin-bottom: 5px;
+}
+
+.main-education--text b {	
+	padding-left: 8px;
+	float: left;
+}
+
+.main-education--text p:nth-child(3) {
+	.border__red;
+	
+	float: left;
+	padding-left: 48px;
+	padding-top: 0px;
+	margin-top: 6px;
+}
+
+.main-education--text ul li p:nth-child(4) {
+	/* margin-top: -32px;
+	width: 900px; */
+}
+
+.main-education--text p:nth-child(4) {
+	.border__green;
+
+	float: left;
+	padding-left: 50px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+/**/
+
+.main-experience {
+	margin-top: 65px;
+	margin-left: -7px;
+	float: left;
+	width: auto;
+	margin-bottom: 70px;
+}
+
+.main-experience > .chapter > .chapter__title p {
+	margin: 22px 0 0 30px;
+	letter-spacing: 2.4px;
+}
+
+.chapter__experience--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterExperienceLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__experience--line svg { 
+	width: 484px; 
+}
+
+.main-experience__text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.4px;
+	line-height: 1.2;
+}
+
+.main-experience__text ul {
+	padding-left: 18px;
+	margin-top: 49px;
+}
+
+.main-experience__text ul li:before {
+	content: '';
+	display: inline-block;
+	height:32px;
+	width: 32px;
+	vertical-align: middle;
+	border-radius:50%;
+	background-color:#000;
+	margin: 9px 25px 0 0;
+	float: left;
+}
+
+.main-experience ul li {
+	.border__black;
+
+	padding-top: 10px;	
+	margin-bottom: 4px;
+	float: left;
+	list-style-type: none;
+	height: auto;
+}
+
+
+.main-experience ul li:nth-child(1) {
+	margin-bottom: 3px;
+}
+
+.main-experience ul li:nth-child(2) {
+	margin-bottom: 8px;
+}
+
+.main-experience__text b {
+	padding-left: 8px;
+	letter-spacing: 5.8px;
+	float: left;
+}
+
+.main-experience__text p:nth-child(3) {
+	.border__red;
+	
+	float: left;
+	padding-left: 48px;
+	padding-top: 0px;
+	margin-top: 6px;
+}
+
+.main-experience__text ul li p:nth-child(4) {
+	/* margin-top: -32px;
+	width: 900px; */
+}
+
+.main-experience__text p:nth-child(4) {
+	.border__green;
+
+	float: left;
+	padding-left: 50px;
+	padding-top: 0px;
+	margin-top: 0px;	
+}
+
+.main-experience__text > ul > li > .chapter__paragraph {
+	letter-spacing: 5.7px;
+}
+
+/**/
+
+.main-software {
+	.border__red;
+	margin-top: 72px;
+	margin-left: -7px;		
+	width: 100%;
+	height: auto;
+}
+
+.main-software > .chapter > .chapter__title p {
+	margin: 22px 0 0 30px;
+	letter-spacing: 3.8px;
+}
+
+.chapter__software--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterSoftwareLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__software--line svg { 
+	width: 510px; 
+}
+
+.main-software__text {
+	.border__green;
+
+	height: auto;
+	width: 100%;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;	
+}
+
+.main-software__text_left-bars {
+	float: left;
+}
+
+.main-software__text_right-bars {
+	float: right;
+	margin-right: 156px;
+}
+
+.main-software__text p {
+	font-family: "PTsans55SF"; 	
+	font-size: 38px;
+	/* letter-spacing: -0.1px; */
+	text-transform: uppercase;
+	text-align: left;
+	/* margin-top: 20px;  */
+	/* margin-left: 14px; */
+
+	margin: 35px 0  0 13px;
+	letter-spacing: 0.5px;
+}
+
+.main-software__text_left-bars p:nth-child(3) {	
+	letter-spacing: -0.4px;
+}
+
+.main-software__text_left-bars p:nth-child(5) {	
+	margin-top: 33px;
+	letter-spacing: 0.2px;
+}
+
+.main-software__text_right-bars p:nth-child(1) {	
+	margin-top: 33px;
+	letter-spacing: 0.8px;
+}
+
+.main-software__text_right-bars p:nth-child(3) {	
+	margin: 36px 0 0 17px;
+	letter-spacing: -0.6px;
+}
+
+.main-software__text_right-bars p:nth-child(5) {	
+	margin: 32px 0 0 16px;
+	letter-spacing: -1.2px;
+}
+
+.software__progress {
+    background-color: #f3f3f3;
+    border: 0;
+    width: 430px;
+    height: 34px;
+    margin: 21px 0 0 13px;
+}
+
+.main-software__text_left-bars progress:nth-child(4),
+	.main-software__text_right-bars progress:nth-child(4) {
+		margin-top: 20px;
+}
+
+.main-software__text_left-bars progress:nth-child(6),
+	.main-software__text_right-bars progress:nth-child(6) {
+	margin-top: 16px;
+}
+
+
+/* ___Footer___ */
+
+footer {
+	.border__black;
+
+	height: @FooterHeight;
+	width: @FooterWidth;
+	min-width: @FooterMinWidth;
+	float: left;
+}
+
+.footer-contact {	
+	.border__black;
+
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	clear: both;
+}
+
+.chapter__contact--line {
+	.border__black;
+
+	height: @chapterLineHeight;
+	width: @chapterContactLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__contact--line svg { 
+	width: 244px; 
+}
+
+.footer-contact__text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.footer-contact__text table {	
+	margin-top: 20px;		
+	border-collapse: collapse;	
+}
+
+.footer-contact__text table tr, td {
+	margin-top: 30px;	
+	height: 82px;	
+	width: 194px;
+	min-width: 194px;
+}
+
+.footer-contact__text b {
+	font-size: 29px;
+	margin-left: 2px;
+	margin-top: 2px;
+	width: auto;
+}
+
+.footer-contact__text span {
+	margin-left: 4px;
+	letter-spacing: 1.1px;
+}
+
+.footer-contact__text span a {	
+	color: blue;
+	text-decoration: none;
+	letter-spacing: 1.4px;
+}
+
+/**/
+
+.footer-skills {	
+
+	margin-top: 400px;
+	margin-left: auto;
+	margin-right: auto;	
+	width: auto;
+	height: auto;
+	clear: both;	
+}
+
+.footer-skills .chapter__title p {
+	letter-spacing: 1.1px;
+}
+
+.chapter__skills--line {
+	.border__black;	
+
+	height: @chapterLineHeight;
+	width: @chapterSkillsLineWidth;
+	min-width: @chapterLineMinWidth;	
+	float: left;
+}
+
+.chapter__skills--line svg { 
+	width: 318px; 
+}
+
+.footer-skills__text {
+	.border__red;
+
+	width: auto;
+}
+
+.footer-skills__text li:first-child  {
+	margin-top: 10px;
+}
+
+.footer-skills__text li {
+	.border__green;
+
+	list-style-type: none;	
+	height: 115px;
+}
+
+.footer-skills__text li p {		
+	text-align: center;
+	margin: 15px 0 0 30px;
+	letter-spacing: 1.1px;
+}
+
+.bar__point:first-of-type {
+	margin-left: 36px;
+}
+
+.bar__point svg, .bar__point-empty svg {
+	width: 30px;
+	height: 30px;
+}
+
+.bar__point-empty, .bar__point {
+	float: left;
+	margin: 10px 13px 0 0;
+}
+
+.bar__point:last-child,
+.bar__point-empty:last-child {
+	margin-right: 0px;
+}
+
+
+/* ___Responsive design___ */
+
+@media screen and (max-width: 1895px) {	
+/*all block's*/
+	header, main, footer { float: none; margin: 0 auto 0 auto; }
+	/*header { height: @HeaderHeight - 50px; }*/
+	main { height: @ContentHeight + 786px; width: 760px; clear: both; }
+
+	.main-education, 
+		.main-experience, 
+			.main-software { 
+				margin-top: 100px; 
+	}
+
+	footer { height: @FooterHeight + 70px; clear: both; }
+	.footer-contact { margin-top: 100px; }
+	.footer-skills { margin-top: 458px; }
+
+/*general*/	
+	.chapter__logo { margin-left: auto; margin-right: auto; }
+	.smallText__chapter { text-align: justify; }	
+	/*.chapter { display: ; }*/
+	.chapter__logo { margin-left: 0px; }	
+
+/*header*/
+	.header-logo, 
+		.header__titles--text1, 
+			.header__titles--text2, 
+				.header__titles--text3 { 
+					margin-left:auto; margin-right: auto; 
+	}
+
+/*profile*/
+	/*.chapter__profile--line { width: auto; }*/
+	/*.chapter__profile--line svg { width: 370px; }*/
+
+/*education*/
+	.main-education { width: 760px; margin-left: 0px;}		
+	.chapter__education--line { width: auto; }
+	.chapter__education--line svg { width: 262px; }
+	.main-education--text { width: 670px; }
+	.main-education--text ul li { height: auto; }
+
+	.chapter__comment, 
+		.chapter__description { 
+		clear: both; 
+	}
+
+	.main-education--text ul > li { width: 650px; }
+	
+	.main-education--text ul > li > p:nth-child(4) { 
+		width: 570px; clear: both; margin-bottom: 0px; 
+	}
+
+/*experience*/					
+	.main-experience { width: 760px; margin-left: 0px; }
+	.chapter__experience--line { width: auto; }
+	.chapter__experience--line svg { width: 250px; }
+	.main-experience__text { width: 670px; }
+	.main-experience__text ul li:first-child { height: auto; }	
+	.main-experience__text ul li { height: auto; }
+
+	.chapter__comment, 
+		.chapter__description { 
+			clear: both; 
+	}
+
+	.main-experience__text ul > li { width: 650px; }
+	.main-experience__text ul > li > p:nth-child(4) { 
+		width: 570px; clear: both; margin-bottom: 0px; }
+
+/*software*/
+	.main-software { width: 760px; margin-left: 0px; }
+	.chapter__software--line { width: auto; }
+	.chapter__software--line svg { width: 280px; }
+	.main-software__text { width: auto; }
+
+	.main-software__text_left-bars, 
+		.main-software__text_right-bars { 
+			float: none; margin-left: auto; margin-right: auto;
+	}
+
+/*contact*/	
+	.footer-contact { width: 760px; margin-left: 0px; }
+	.chapter__contact--line { width: auto; }
+	.chapter__contact--line svg { width: 350px; }
+	.footer-contact__text table { float: none; margin-left: auto; margin-right: auto; }
+
+/*skills*/
+	.chapter__skills--line { width: auto; }
+	.chapter__skills--line svg { width: 428px; }
+
+	.footer-skills__text ul li { 
+		margin: 0px; 
+		float: none; 
+		width: 614px; 
+		padding: 0px; 
+		margin-left: auto; 
+		margin-right: auto; 
+	}
+
+	.footer-skills__text 
+		.chapter__description { 
+			width: 300px; margin-left: auto; margin-right: auto; 
+	}
+
+	.skills-bar { height: 50px; width: 520px; margin-left: auto; margin-right: auto; }
+	.bar__point:first-of-type { margin-left: 8px; }
+}
+
+@media screen and (max-width: 780px) {
+/*all block's*/
+	header, main, footer { min-width: 580px; width: auto; height: auto; }
+	
+/*profile*/	
+	/*.chapter__profile--line { width: 100%; position: absolute;  display: inline-block; }*/
+	/*.chapter__profile--line svg { width: 46%; }*/
+
+/*education + experience*/
+	.main-education, 
+		.main-experience { 
+			width: auto;
+	}
+
+	.chapter__education--line, 
+		.chapter__experience--line { 
+			width: 100%; position: absolute;  display: inline-block; 
+	}
+
+	.chapter__education--line svg { width: 32%; }
+	.chapter__experience--line svg { width: 30.5%; }
+
+	.main-education--text, 
+		.main-experience__text { 
+			width: auto; margin-left: auto; margin-right: auto; 
+	}
+	.main-education--text ul,
+		.main-experience__text ul { 
+			width: auto; margin-left: auto; margin-right: auto; 
+	}
+	
+	.main-education--text ul li,
+		.main-experience__text ul li { 
+			width: auto; heigh: auto; margin-left: auto; margin-right: auto; 
+	}
+
+	.main-education--text .chapter__text--pos p,
+		.main-experience__text .chapter__text--pos p { 
+			padding-right: 20px; 
+	}
+
+/*software*/
+	.main-software { width: auto; }
+
+	.chapter__software--line { width: 100%; position: absolute; display: inline-block; }	
+	.chapter__software--line svg { width: 35%; }
+	.main-software__text { width: 450px; margin-left: 90px; }
+
+/*contact*/
+	.footer-contact { width: auto; }
+	.chapter__contact--line { width: 100%; position: absolute; display: inline-block; }
+	.chapter__contact--line svg { width: 44%; }
+
+/*skills*/
+	.footer-skills { width: auto; }
+	.chapter__skills--line { width: 100%; position: absolute; display: inline-block; }
+	.chapter__skills--line svg { width: 55%; }	
+	
+	.footer-skills__text ul { width: 470px; margin-left: auto; margin-right: auto; }
+	.footer-skills__text ul li { margin-left: -40px; width: 510px;}
+}
+
+@media screen and (max-width: 730px) {
+	.chapter__profile--line svg { width: 43%; }
+	.chapter__education--line svg { width: 29%; }
+	.chapter__experience--line svg { width: 27.5%; }
+	.chapter__software--line svg { width: 32%; }
+	.chapter__contact--line svg { width: 41%; }
+	.chapter__skills--line svg { width: 52%; }	
+}
+
+@media screen and (max-width: 700px) {
+	.chapter__profile--line svg { width: 40%; }
+	.chapter__education--line svg { width: 26%; }
+	.chapter__experience--line svg { width: 24.5%; }
+	.chapter__software--line svg { width: 29%; }
+	.chapter__contact--line svg { width: 38%; }
+	.chapter__skills--line svg { width: 49%; }	
+}
+
+@media screen and (max-width: 675px) {
+	.chapter__profile--line svg { width: 40%; }
+	.chapter__education--line svg { width: 24%; }
+	.chapter__experience--line svg { width: 22.5%; }
+	.chapter__software--line svg { width: 27%; }
+	.chapter__contact--line svg { width: 36%; }
+	.chapter__skills--line svg { width: 47%; }	
+}
+
+@media screen and (max-width: 655px) {
+	.chapter__profile--line svg { width: 36%; }
+	.chapter__education--line svg { width: 19%; }
+	.chapter__experience--line svg { width: 17.5%; }
+	.chapter__software--line svg { width: 22%; }
+	.chapter__contact--line svg { width: 32.5%; }
+	.chapter__skills--line svg { width: 45%; }	
+}
+
+@media screen and (max-width: 650px) {
+	.chapter__profile--line svg { width: 28%; }
+	.chapter__education--line svg { width: 9.5%; }
+	.chapter__experience--line svg { width: 7.5%; }
+	.chapter__software--line svg { width: 13%; }
+	.chapter__contact--line svg { width: 24.5%; }
+	.chapter__skills--line svg { width: 38%; }	
+}

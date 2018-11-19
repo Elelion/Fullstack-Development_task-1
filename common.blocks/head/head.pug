@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru-RU")
+	head
+		//- include ../../modules/seo-words
+		include ../seo/seo-words
+		
+		//- SEO: keywords, description, title
+		+seo-words__header('Full Stack Development, FSD, quest-1',
+							'Best of the Best company on the world for Web dev!',
+							'maket - 1')
+		
+		
+		//- CSS's General
+		link(rel='stylesheet/less', href='__css/styles.css')
+		script(src='__lib/less.min.js')
+		
+	body
+		//- header include
+		include ../../header.blocks/logo/logo
+
+		//- main include
+		include ../../main.blocks/education/education
+
+		//- footer include
+		include ../../footer.blocks/contact/contact

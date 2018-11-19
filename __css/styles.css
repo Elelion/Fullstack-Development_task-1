@@ -2,87 +2,44 @@
 
 @font-face { 
 	font-family: "PTsans55F"; 
-	src: url(../fonts/PTC55F.ttf); 
+	src: url(../__fonts/PTC55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75F";
-	src: url(../fonts/PTC75F.ttf); 
+	src: url(../__fonts/PTC75F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans57F";
-	src: url(../fonts/PTN57F.ttf); 
+	src: url(../__fonts/PTN57F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans77F";
-	src: url(../fonts/PTN77F.ttf); 
+	src: url(../__fonts/PTN77F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans55SF";
-	src: url(../fonts/PTS55F.ttf); 
+	src: url(../__fonts/PTS55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75SF";
-	src: url(../fonts/PTS75F.ttf); 
+	src: url(../__fonts/PTS75F.ttf); 
 }
 
 @font-face { 
 	font-family: "LatoBold";
-	src: url(../fonts/Lato/Lato-Bold.ttf); 
+	src: url(../__fonts/Lato/Lato-Bold.ttf); 
 }
 
 
 /**/
 
-/* surname */
-.header-title__h1 h1 {
-	font-family: "PTsans55SF"; 	
-	font-size: 82px; /*82*/
-	letter-spacing: 1px;	
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: -8px;
-	padding: 0;
-	margin-top: -10px;
-	margin-bottom: -10px;
-	
-	/*word-wrap: break-word;*/
-	.wrapping;
-}
-
-/* name here */
-.header-title__h2 h2 {
-	font-family: "PTsans75SF"; 	
-	font-size: 92px;
-	letter-spacing: 5.8px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: -22px;	
-	padding: 0;
-	margin-top: -24px;
-	margin-bottom: 0px;
-
-	.wrapping;
-}
-
-/* graphic designer */
-.header-title__h3 h3 { 
-	font-family: "PTsans75SF"; 	
-	font-size: 38px;	
-	letter-spacing: 0.3px;
-	text-transform: uppercase;
-	text-align: center;
-	
-	margin: -4px auto 0 auto;
-	padding: 0;	
-}
-
 /* profile, contact... */
-.chapter__title--text { 
+/* .chapter__title--text { 
 	font-family: "PTsans75SF"; 	
 	font-size: 60px;
 	letter-spacing: 3.4px;
@@ -91,7 +48,7 @@
 	margin-top: 20px; 
 	margin-left: 14px;
 	color: #056cb4;
-}
+} */
 
 /* small text */
 .text { /* .chapter__text */
@@ -135,7 +92,7 @@
 	margin-top: 44px;
 }
 
-.chapter__contact--text b {
+/* .chapter__contact--text b {
 	font-family: "PTsans77F"; 	
 	text-transform: uppercase;
 	font-size: 30px;
@@ -144,9 +101,9 @@
 
 .chapter__contact--text span {
 	letter-spacing: 1.1px;
-}
+} */
 
-.chapter__contact--text a {
+.footer-contact__text a:nth-child(1) {
 	text-decoration: none;
 	color: #056CB4;
 
@@ -154,7 +111,7 @@
     transition: 0.7s;
 }
 
-.chapter__contact--text a:hover {
+.footer-contact__text a:hover {
 	color: #E75735;	
 
 	-webkit-transition: 0.7s;
@@ -312,6 +269,17 @@ html {
 	float: left;
 }
 
+.chapter__title p {
+	font-family: "PTsans75SF"; 	
+	font-size: 60px;
+	letter-spacing: 3.4px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+	color: #056cb4;
+}
+
 .chapter__side {
 	.border__black;
 
@@ -366,7 +334,8 @@ header {
 	margin-top: 40px;
 }
 
-.header-title__desc:nth-child(1) {
+/* surname */
+.header-title__name {
 	.border__red;
 
 	height: auto;
@@ -374,7 +343,23 @@ header {
 	margin-left: 175px;
 }
 
-.header-title__desc:nth-child(2) {
+.header-title__name h1 {
+	font-family: "PTsans55SF"; 	
+	font-size: 82px; /*82*/
+	letter-spacing: 1px;	
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -8px;
+	padding: 0;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	
+	/*word-wrap: break-word;*/
+	.wrapping;
+}
+
+/* name here */
+.header-title__surname {
 	.border__black;
 
 	height: auto;
@@ -382,13 +367,41 @@ header {
 	margin-left: 175px;
 }
 
-.header-title__desc:nth-child(3) {
+.header-title__surname h2 {
+	font-family: "PTsans75SF"; 	
+	font-size: 92px;
+	letter-spacing: 5.8px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -22px;	
+	padding: 0;
+	margin-top: -24px;
+	margin-bottom: 0px;
+
+	.wrapping;
+}
+
+/* graphic designer */
+.header-title__profession {
 	.border__black;
 
 	height: auto;
 	width: 500px;
 	margin-left: 175px;
 }
+
+.header-title__profession h3 { 
+	font-family: "PTsans75SF"; 	
+	font-size: 38px;	
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	text-align: center;
+	
+	margin: -4px auto 0 auto;
+	padding: 0;	
+}
+
+/**/
 
 .header-profile {
 	.border__black;
