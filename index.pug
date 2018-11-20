@@ -4,30 +4,9 @@ extends common.blocks/head/head
 //- chapter including
 include common.blocks/chapter/chapter
 
+//- points for footer -> skills block
+include common.blocks/points/points
 
-//- ---
-
-block footerSkills
-    mixin skillsPoint(skillsTitle, skillsPoints)
-        p= skillsTitle        
-        
-        .footer-skills__bar.skills-bar
-            if (skillsPoints > 12)
-                - skillsPoints= 12
-
-            - var empty = 12 - skillsPoints            
-
-            //- active skills points
-            - for (var x = 0; x < skillsPoints; x++)
-                .bar__point
-                    svg
-                        circle(r='13.5', cx='15', cy='15', fill='#056cb4')                
-
-            //- empty skills points
-            - for (var x = 0; x < empty; x++)
-                .bar__point-empty
-                    svg
-                        circle(r='13.5', cx='15', cy='15', fill='#E8E8E8')
 
 
 //- include layout/header/header-logo/header-logo
