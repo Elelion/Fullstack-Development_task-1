@@ -1,22 +1,19 @@
 block skills
-    mixin points(skillsTitle, skillsPoints)
-        p= skillsTitle        
-        
-        .footer-skills__bar.skills-bar
-            //- protection against the fool
-            if (skillsPoints > 12)
-                - skillsPoints= 12
+    mixin points(fillPoints)
+        //- protection against the fool
+        if (fillPoints > 12)
+            - fillPoints= 12
 
-            - var empty = 12 - skillsPoints            
+        - var empty = 12 - fillPoints            
 
-            //- active skills points
-            - for (var x = 0; x < skillsPoints; x++)
-                .bar__point
-                    svg
-                        circle(r='13.5', cx='15', cy='15', fill='#056cb4')                
+        //- active skills points
+        - for (var x = 0; x < fillPoints; x++)
+            .bar__point
+                svg
+                    circle(r='13.5', cx='15', cy='15', fill='#056cb4')                
 
-            //- empty skills points
-            - for (var x = 0; x < empty; x++)
-                .bar__point-empty
-                    svg
-                        circle(r='13.5', cx='15', cy='15', fill='#E8E8E8')
+        //- empty skills points
+        - for (var x = 0; x < empty; x++)
+            .bar__point-empty
+                svg
+                    circle(r='13.5', cx='15', cy='15', fill='#E8E8E8')

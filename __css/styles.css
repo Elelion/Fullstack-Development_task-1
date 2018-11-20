@@ -237,7 +237,7 @@ html {
 
 /**/
 
-.chapter {
+/* .chapter {
 	.border__green;
 
 	height: 120px;		
@@ -295,7 +295,7 @@ html {
 	width: auto;
 	height: 8px;
 	margin: 56px 4px 0 4px;
-}
+} */
 
 .wrapping {
 	white-space: nowrap; /* Отменяем перенос текста */
@@ -895,7 +895,7 @@ footer {
 	letter-spacing: 1.1px;
 }
 
-.bar__point:first-of-type {
+/* .bar__point:first-of-type {
 	margin-left: 36px;
 }
 
@@ -912,7 +912,7 @@ footer {
 .bar__point:last-child,
 .bar__point-empty:last-child {
 	margin-right: 0px;
-}
+} */
 
 
 /* ___Responsive design___ */
