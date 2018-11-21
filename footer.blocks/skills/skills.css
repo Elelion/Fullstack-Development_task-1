@@ -15,91 +15,50 @@
 
 /**/
 
-.software {
-	.border__red;
-	margin-top: 72px;
-	margin-left: -7px;		
-	width: 100%;
+.skills {	
+
+	margin-top: 400px;
+	margin-left: auto;
+	margin-right: auto;	
+	width: auto;
 	height: auto;
+	clear: both;	
 }
 
 /* !!! */
-.software > .chapter > .chapter__title p {
-	margin: 22px 0 0 30px;
-	letter-spacing: 3.8px;
+.skills .chapter__title p {
+	letter-spacing: 1.1px;
 }
 
-.software-text {
-	.border__green;
+.skills-text {
+	.border__red;
 
-	height: auto;
-	width: 100%;
-	float: left;
-	margin: 0 0 0 90px;
-	letter-spacing: -0.5px;
-	line-height: 1.2;	
+	width: auto;
 }
 
-.software-text__left-bars {
-	float: left;
-}
-
-.software-text__right-bars {
-	float: right;
-	margin-right: 156px;
-}
-
-.software-text p {
+.skills-text p {
 	font-family: "PTsans55SF"; 	
 	font-size: 38px;
-	/* letter-spacing: -0.1px; */
+	letter-spacing: -0.1px;
 	text-transform: uppercase;
 	text-align: left;
-	/* margin-top: 20px;  */
-	/* margin-left: 14px; */
-
-	margin: 35px 0  0 13px;
-	letter-spacing: 0.5px;
+	margin-top: 20px; 
+	margin-left: 14px;
 }
 
-.software-text__left-bars p:nth-child(3) {	
-	letter-spacing: -0.4px;
+.skills-text li:first-child  {
+	margin-top: 10px;
 }
 
-.software-text__left-bars p:nth-child(5) {	
-	margin-top: 33px;
-	letter-spacing: 0.2px;
+.skills-text li {
+	.border__green;
+
+	list-style-type: none;	
+	height: 115px;
 }
 
-.software-text__right-bars p:nth-child(1) {	
-	margin-top: 33px;
-	letter-spacing: 0.8px;
-}
-
-.software-text__right-bars p:nth-child(3) {	
-	margin: 36px 0 0 17px;
-	letter-spacing: -0.6px;
-}
-
-.software-text__right-bars p:nth-child(5) {	
-	margin: 32px 0 0 16px;
-	letter-spacing: -1.2px;
-}
-
-.software__progress {
-    background-color: #f3f3f3;
-    border: 0;
-    width: 430px;
-    height: 34px;
-    margin: 21px 0 0 13px;
-}
-
-.software-text__left-bars progress:nth-child(4),
-	.software-text__right-bars progress:nth-child(4) {
-		margin-top: 20px;
-}
-
-.software-text__left-bars progress:nth-child(6),
-	.software-text__right-bars progress:nth-child(6) {
-	margin-top: 16px;
+.skills-text li p {		
+	text-align: center;
+	margin: 15px 0 0 30px;
+	letter-spacing: 1.1px;
 }

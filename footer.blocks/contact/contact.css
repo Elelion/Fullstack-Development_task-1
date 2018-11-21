@@ -1,0 +1,113 @@
+/* ___borders___ */
+
+.border__black {	
+	border: 1px solid black; /* border-color: transparent; */
+}
+
+.border__green {	
+	border: 1px solid green; /* border-color: transparent; */
+}
+
+.border__red {	
+	border: 1px solid red; /* border-color: transparent; */
+}
+
+
+/* ___less___ */
+
+/* header */
+@HeaderMinWidth: 760px;
+
+/* content / main */
+@ContentHeight: 2800px;
+
+/* footer */
+@FooterHeight: @ContentHeight / 2 - 47px;
+@FooterWidth: 40%;
+@FooterMinWidth: @HeaderMinWidth;
+
+
+/**/
+
+footer {
+	.border__black;
+
+	height: @FooterHeight;
+	width: @FooterWidth;
+	min-width: @FooterMinWidth;
+	float: left;
+}
+
+.footer-contact {	
+	.border__black;
+
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	clear: both;
+}
+
+.contact-text {
+	.border__black;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.contact-text span {
+	font-family: "PTsans55SF"; 	
+	font-size: 28px;	
+	margin-left: 2px;
+	margin-top: 44px;
+}
+
+.contact-text a:nth-child(1) {
+	text-decoration: none;
+	color: #056CB4;
+
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.contact-text a:hover {
+	color: #E75735;	
+
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.contact-text table {	
+	margin-top: 20px;		
+	border-collapse: collapse;	
+}
+
+.contact-text table tr, td {
+	margin-top: 30px;	
+	height: 82px;	
+	width: 194px;
+	min-width: 194px;
+}
+
+.contact-text b {
+	font-size: 29px;
+	margin-left: 2px;
+	margin-top: 2px;
+	width: auto;
+}
+
+.contact-text span {
+	margin-left: 4px;
+	letter-spacing: 1.1px;
+}
+
+.contact-text span a {	
+	color: blue;
+	text-decoration: none;
+	letter-spacing: 1.4px;
+}
