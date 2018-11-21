@@ -315,16 +315,16 @@ header {
 	margin-bottom: 60px;
 }
 
-.header-logo { 
+/* .header-logo { 
 	.border__black;
 
 	height: 357px;
 	width: 360px;
 	margin-top: 135px;
 	margin-left: 245px;	
-}
+} */
 
-.header-title {
+/* .header-title {
 	.border__red;
 
 	height: auto;	
@@ -332,20 +332,20 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
-}
+} */
 
 /* surname */
-.header-title__name {
+/* .header-title__name {
 	.border__red;
 
 	height: auto;
 	width: 500px;
 	margin-left: 175px;
-}
+} */
 
-.header-title__name h1 {
+/* .header-title__name h1 {
 	font-family: "PTsans55SF"; 	
-	font-size: 82px; /*82*/
+	font-size: 82px;
 	letter-spacing: 1px;	
 	text-transform: uppercase;
 	text-align: center;
@@ -353,21 +353,20 @@ header {
 	padding: 0;
 	margin-top: -10px;
 	margin-bottom: -10px;
-	
-	/*word-wrap: break-word;*/
+		
 	.wrapping;
-}
+} */
 
 /* name here */
-.header-title__surname {
+/* .header-title__surname {
 	.border__black;
 
 	height: auto;
 	width: 500px;
 	margin-left: 175px;
-}
+} */
 
-.header-title__surname h2 {
+/* .header-title__surname h2 {
 	font-family: "PTsans75SF"; 	
 	font-size: 92px;
 	letter-spacing: 5.8px;
@@ -379,17 +378,17 @@ header {
 	margin-bottom: 0px;
 
 	.wrapping;
-}
+} */
 
 /* graphic designer */
-.header-title__profession {
+/* .header-title__profession {
 	.border__black;
 
 	height: auto;
 	width: 500px;
 	margin-left: 175px;
-}
-
+} */
+/* 
 .header-title__profession h3 { 
 	font-family: "PTsans75SF"; 	
 	font-size: 38px;	
@@ -399,11 +398,11 @@ header {
 	
 	margin: -4px auto 0 auto;
 	padding: 0;	
-}
+} */
 
 /**/
 
-.header-profile {
+/* .profile {
 	.border__black;
 
 	height: auto;
@@ -411,7 +410,7 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 108px;
-}
+} */
 
 /**/
 
@@ -428,7 +427,7 @@ header {
 	width: 265px; 
 }*/
 
-.header-profile__text {
+/* .profile__text {
 	.border__black;
 
 	height: auto;
@@ -439,10 +438,10 @@ header {
 	line-height: 1.2;	;
 }
 
-.header-profile__text blockquote, .header-profile__text p {
+.profile__text blockquote, .profile__text p {
 	margin: 12px 13px 0px 1px;
 	padding: 0px;
-}
+} */
 
 
 /* ___Main Content___ */

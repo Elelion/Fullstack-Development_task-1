@@ -1,0 +1,102 @@
+/* ___borders___ */
+
+.border__black {	
+	border: 1px solid black; /* border-color: transparent; */
+}
+
+.border__green {	
+	border: 1px solid green; /* border-color: transparent; */
+}
+
+.border__red {	
+	border: 1px solid red; /* border-color: transparent; */
+}
+
+
+/**/
+
+.wrapping {
+	white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */    
+    text-overflow: ellipsis; /* Многоточие */
+}
+
+
+/**/
+
+.header-title {
+	.border__red;
+
+	height: auto;	
+	min-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+/* surname */
+.header-title__name {
+	.border__red;
+
+	height: auto;
+	width: 500px;
+	margin-left: 175px;
+}
+
+.header-title__name h1 {
+	font-family: "PTsans55SF"; 	
+	font-size: 82px; /*82*/
+	letter-spacing: 1px;	
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -8px;
+	padding: 0;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	
+	/*word-wrap: break-word;*/
+	.wrapping;
+}
+
+/* name here */
+.header-title__surname {
+	.border__black;
+
+	height: auto;
+	width: 500px;
+	margin-left: 175px;
+}
+
+.header-title__surname h2 {
+	font-family: "PTsans75SF"; 	
+	font-size: 92px;
+	letter-spacing: 5.8px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -22px;	
+	padding: 0;
+	margin-top: -24px;
+	margin-bottom: 0px;
+
+	.wrapping;
+}
+
+/* graphic designer */
+.header-title__profession {
+	.border__black;
+
+	height: auto;
+	width: 500px;
+	margin-left: 175px;
+}
+
+.header-title__profession h3 { 
+	font-family: "PTsans75SF"; 	
+	font-size: 38px;	
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	text-align: center;
+	
+	margin: -4px auto 0 auto;
+	padding: 0;	
+}
