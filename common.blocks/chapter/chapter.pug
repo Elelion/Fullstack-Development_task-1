@@ -76,7 +76,7 @@ block chapter
 
     mixin chapter(indexChapter)
         .chapter
-            .chapter__logo
+            .chapter-logo
                 case indexChapter
                     when 1: +svgProfile -break
                     when 2: +svgEducation -break
@@ -85,13 +85,13 @@ block chapter
                     when 5: +svgContact -break
                     when 6: +svgSkills -break
 
-            .chapter__title
+            .chapter-title
                 case indexChapter
-                    when 1: p= 'profile'
+                    when 1: p.test= 'profile'
                     when 2: p= 'education'
                     when 3: p= 'experience'
                     when 4: p= 'software'
                     when 5: p= 'contact'
                     when 6: p= 'skills'
-            .chapter__side
-                .chapter__side-line
+            .chapter-side
+                .chapter-side__line

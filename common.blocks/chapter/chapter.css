@@ -41,7 +41,7 @@
 	display: flex;	
 }
 
-.chapter__logo {
+.chapter-logo {
 	.border__red;
 
 	height: @chapterLogoHeight;
@@ -50,7 +50,7 @@
 	margin-left: 90px;
 }
 
-.chapter__title {
+.chapter-title {
 	.border__black;
 
 	height: @chapterTitleHeight;
@@ -58,7 +58,7 @@
 	float: left;
 }
 
-.chapter__title p {
+.chapter-title p {
 	font-family: "PTsans75SF"; 	
 	font-size: 60px;
 	letter-spacing: 3.4px;
@@ -69,7 +69,7 @@
 	color: #056cb4;
 }
 
-.chapter__side {
+.chapter-side {
 	.border__black;
 
 	height: auto;
@@ -79,9 +79,16 @@
 	margin-right: 20px;
 }
 
-.chapter__side-line {
+.chapter-side__line {
 	background: #056CB4;
 	width: auto;
 	height: 8px;
 	margin: 56px 4px 0 4px;
+}
+
+
+/**/
+
+.test p {
+	/* margin: -11px 0 0 28px; */
 }

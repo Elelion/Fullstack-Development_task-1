@@ -24,7 +24,7 @@
 
 /**/
 
-.header-title {
+.title {
 	.border__red;
 
 	height: auto;	
@@ -35,7 +35,7 @@
 }
 
 /* surname */
-.header-title__name {
+.title-name {
 	.border__red;
 
 	height: auto;
@@ -43,7 +43,7 @@
 	margin-left: 175px;
 }
 
-.header-title__name h1 {
+.title-name h1 {
 	font-family: "PTsans55SF"; 	
 	font-size: 82px; /*82*/
 	letter-spacing: 1px;	
@@ -59,7 +59,7 @@
 }
 
 /* name here */
-.header-title__surname {
+.title-surname {
 	.border__black;
 
 	height: auto;
@@ -67,7 +67,7 @@
 	margin-left: 175px;
 }
 
-.header-title__surname h2 {
+.title-surname h2 {
 	font-family: "PTsans75SF"; 	
 	font-size: 92px;
 	letter-spacing: 5.8px;
@@ -82,7 +82,7 @@
 }
 
 /* graphic designer */
-.header-title__profession {
+.title-profession {
 	.border__black;
 
 	height: auto;
@@ -90,7 +90,7 @@
 	margin-left: 175px;
 }
 
-.header-title__profession h3 { 
+.title-profession h3 { 
 	font-family: "PTsans75SF"; 	
 	font-size: 38px;	
 	letter-spacing: 0.3px;
