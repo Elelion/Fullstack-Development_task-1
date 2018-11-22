@@ -7,13 +7,13 @@ block skills
         - var empty = 12 - fillPoints            
 
         //- active skills points
-        - for (var x = 0; x < fillPoints; x++)
+        - for (var i = 0; i < fillPoints; i++)
             .bar-point
                 svg
                     circle(r='13.5', cx='15', cy='15', fill='#056cb4')                
 
         //- empty skills points
-        - for (var x = 0; x < empty; x++)
+        - for (var i = 0; i < empty; i++)
             .bar-point__empty
                 svg
                     circle(r='13.5', cx='15', cy='15', fill='#E8E8E8')

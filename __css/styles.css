@@ -51,12 +51,12 @@
 } */
 
 /* small text */
-.text { /* .chapter__text */
-	/* font-family: "PTsans55SF"; 	
+/* .text {
+	font-family: "PTsans55SF"; 	
 	font-size: 24px;
 	text-align: left;	
-	margin-left: 14px; */
-}
+	margin-left: 14px;
+} */
 
 /* .text__chapter b {
 	font-family: "LatoBold";
@@ -158,12 +158,12 @@
 } */
 
 /* .chapter__bar--points { */
-.skills-bar {
+/* .skills-bar {
 	.border__red;
 	width: 550px;	
 	height: 50px;
 	margin: 0 auto 0 auto;
-}
+} */
 
 /* ___General___ */
 

@@ -49,7 +49,8 @@
 }
 
 .education-text ul {	
-	padding-left: 18px;
+	padding-left: 20px;
+	padding-top: 9px;
 }
 
 /* pointer */
@@ -106,59 +107,15 @@
 	margin-top: 0px;
 }
 
-.text__paragraph {	
-	width: 320px;
 
-	font-family: "PTsans77F"; 	
-	text-transform: uppercase;
-	font-size: 38px;
-	letter-spacing: 4.7px;	
-	color: #056cb4;
-	float: left;
-	padding-right: -10px;
-
-	.wrapping;
-}
-
-.text__comment {
-	width: 400px;	
-	font-family: "PTsans57F"; 
-	font-size: 38px;
-	letter-spacing: 3.0px;
-
-	margin: 0px 0 0 0px;
-	float: left;
-}
-
-.text__description {
-	font-family: "PTsans55SF"; 	
-	font-size: 38px;
-	letter-spacing: -0.1px;
-	text-transform: uppercase;
-	text-align: left;
-	margin-top: 20px; 
-	margin-left: 14px;
-}
-
-.text__position {
-	.border__green;
-	float: left;
-	margin: -32px 0 0 66px;
-	padding: 0px;
-	width: auto;
-}
-
-.text__position p {
-	pading: 0px;
-	margin: 0px 54px 0 0;
-}
 
 
 /**/
 
-.text { /* .chapter__text */
-	font-family: "PTsans55SF"; 	
+.text {
+	/* font-family: "PTsans55SF"; 	
 	font-size: 24px;
-	text-align: left;	
+	text-align: left;	 */
+
 	/* margin-left: 14px; */
 }

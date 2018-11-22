@@ -74,24 +74,38 @@ block chapter
 
     //- title with svg:
 
-    mixin chapter(indexChapter)
+    mixin chapter(title, index)
         .chapter
             .chapter-logo
-                case indexChapter
-                    when 1: +svgProfile -break
-                    when 2: +svgEducation -break
-                    when 3: +svgExperience -break
-                    when 4: +svgSoftware -break
-                    when 5: +svgContact -break
-                    when 6: +svgSkills -break
+                case index
+                    when 1: +svgProfile
+                    when 2: +svgEducation
+                    when 3: +svgExperience
+                    when 4: +svgSoftware
+                    when 5: +svgContact
+                    when 6: +svgSkills
 
             .chapter-title
-                case indexChapter
-                    when 1: p.test= 'profile'
-                    when 2: p= 'education'
-                    when 3: p= 'experience'
-                    when 4: p= 'software'
-                    when 5: p= 'contact'
-                    when 6: p= 'skills'
+                //- basic template:
+                //- p= title
+
+                if (title === 'profile')
+                    p.chapter-title__profile= title
+
+                if (title === 'education')
+                    p.chapter-title__education= title
+
+                if (title === 'experience')
+                    p.chapter-title__experience= title
+
+                if (title === 'software')
+                    p.chapter-title__software= title
+
+                if (title === 'contact')
+                    p.chapter-title__contact= title
+
+                if (title === 'skills')
+                    p.chapter-title__skills= title
+
             .chapter-side
                 .chapter-side__line

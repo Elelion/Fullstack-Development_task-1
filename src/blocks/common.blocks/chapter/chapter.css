@@ -60,13 +60,15 @@
 
 .chapter-title p {
 	font-family: "PTsans75SF"; 	
-	font-size: 60px;
-	letter-spacing: 3.4px;
+	font-size: 60px;	
 	text-transform: uppercase;
-	text-align: left;
-	margin-top: 20px; 
-	margin-left: 14px;
+	text-align: left;		
 	color: #056cb4;
+
+	/* for general setting's: */
+	/* letter-spacing: 3.4px; */
+	/* margin-top: 20px;  */
+	/* margin-left: 14px; */
 }
 
 .chapter-side {
@@ -84,11 +86,4 @@
 	width: auto;
 	height: 8px;
 	margin: 56px 4px 0 4px;
-}
-
-
-/**/
-
-.test p {
-	/* margin: -11px 0 0 28px; */
 }
