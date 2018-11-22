@@ -2,37 +2,37 @@
 
 @font-face { 
 	font-family: "PTsans55F"; 
-	src: url(../__fonts/PTC55F.ttf); 
+	src: url(../src/fonts/PTC55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75F";
-	src: url(../__fonts/PTC75F.ttf); 
+	src: url(../src/fonts/PTC75F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans57F";
-	src: url(../__fonts/PTN57F.ttf); 
+	src: url(../src/fonts/PTN57F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans77F";
-	src: url(../__fonts/PTN77F.ttf); 
+	src: url(../src/fonts/PTN77F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans55SF";
-	src: url(../__fonts/PTS55F.ttf); 
+	src: url(../src/fonts/PTS55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75SF";
-	src: url(../__fonts/PTS75F.ttf); 
+	src: url(../src/fonts/PTS75F.ttf); 
 }
 
 @font-face { 
 	font-family: "LatoBold";
-	src: url(../__fonts/Lato/Lato-Bold.ttf); 
+	src: url(../src/fonts/Lato/Lato-Bold.ttf); 
 }
 
 
@@ -297,11 +297,11 @@ html {
 	margin: 56px 4px 0 4px;
 } */
 
-.wrapping {
-	white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */    
-    text-overflow: ellipsis; /* Многоточие */
-}
+/* .wrapping {
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+} */
 
 /* ___Header___ */
 

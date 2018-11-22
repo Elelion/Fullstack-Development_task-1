@@ -63,8 +63,21 @@ footer {
 .contact-text span {
 	font-family: "PTsans55SF"; 	
 	font-size: 28px;	
+	margin-left: 2px;		
+
+	margin-left: 4px;
+	letter-spacing: 1.1px;
+}
+
+.contact-text b {
+	font-family: "PTsans77F"; 	
+	text-transform: uppercase;	
+	letter-spacing: 4.5px;	
+	
+	font-size: 29px;
 	margin-left: 2px;
-	margin-top: 44px;
+	margin-top: 8px;
+	width: auto;	
 }
 
 .contact-text a:nth-child(1) {
@@ -92,18 +105,6 @@ footer {
 	height: 82px;	
 	width: 194px;
 	min-width: 194px;
-}
-
-.contact-text b {
-	font-size: 29px;
-	margin-left: 2px;
-	margin-top: 2px;
-	width: auto;
-}
-
-.contact-text span {
-	margin-left: 4px;
-	letter-spacing: 1.1px;
 }
 
 .contact-text span a {	
