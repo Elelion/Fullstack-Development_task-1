@@ -2,37 +2,37 @@
 
 @font-face { 
 	font-family: "PTsans55F"; 
-	src: url(../src/fonts/PTC55F.ttf); 
+	src: url(src/fonts/PTC55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75F";
-	src: url(../src/fonts/PTC75F.ttf); 
+	src: url(src/fonts/PTC75F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans57F";
-	src: url(../src/fonts/PTN57F.ttf); 
+	src: url(src/fonts/PTN57F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans77F";
-	src: url(../src/fonts/PTN77F.ttf); 
+	src: url(src/fonts/PTN77F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans55SF";
-	src: url(../src/fonts/PTS55F.ttf); 
+	src: url(src/fonts/PTS55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75SF";
-	src: url(../src/fonts/PTS75F.ttf); 
+	src: url(src/fonts/PTS75F.ttf); 
 }
 
 @font-face { 
 	font-family: "LatoBold";
-	src: url(../src/fonts/Lato/Lato-Bold.ttf); 
+	src: url(src/fonts/Lato/Lato-Bold.ttf); 
 }
 
 
