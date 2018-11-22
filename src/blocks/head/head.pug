@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru-RU")
+	head
+		//- include ../../modules/seo-words
+		include ../seo/seo-words
+		
+		//- SEO: keywords, description, title
+		+seo-words__header('Full Stack Development, FSD, quest-1',
+							'Best of the Best company on the world for Web dev!',
+							'maket - 1')
+		
+		
+		//- CSS's		
+
+		//- general		
+		link(rel='stylesheet/less', href='__css/styles.css')
+
+		link(rel='stylesheet/less', href='src/blocks/chapter/chapter.css')
+		link(rel='stylesheet/less', href='src/blocks/chapter/chapter-additional.css')
+		link(rel='stylesheet/less', href='src/blocks/points/points.css')
+		link(rel='stylesheet/less', href='src/blocks/section/section.css')
+		
+		link(rel='stylesheet/less', href='src/blocks/logo/logo.css')
+		link(rel='stylesheet/less', href='src/blocks/title/title.css')
+		link(rel='stylesheet/less', href='src/blocks/profile/profile.css')
+
+		link(rel='stylesheet/less', href='src/blocks/education/education.css')
+		link(rel='stylesheet/less', href='src/blocks/experience/experience.css')
+		link(rel='stylesheet/less', href='src/blocks/software/software.css')
+
+		link(rel='stylesheet/less', href='src/blocks/contact/contact.css')
+		link(rel='stylesheet/less', href='src/blocks/skills/skills.css')
+
+		script(src='__lib/less.min.js')
+
+	body
+		//- header include
+		include ../logo/logo
+
+		//- main include
+		include ../education/education
+
+		//- footer include
+		include ../contact/contact
