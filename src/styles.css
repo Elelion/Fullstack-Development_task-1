@@ -2,37 +2,37 @@
 
 @font-face { 
 	font-family: "PTsans55F"; 
-	src: url(src/fonts/PTC55F.ttf); 
+	src: url(fonts/PTC55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75F";
-	src: url(src/fonts/PTC75F.ttf); 
+	src: url(fonts/PTC75F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans57F";
-	src: url(src/fonts/PTN57F.ttf); 
+	src: url(fonts/PTN57F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans77F";
-	src: url(src/fonts/PTN77F.ttf); 
+	src: url(fonts/PTN77F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans55SF";
-	src: url(src/fonts/PTS55F.ttf); 
+	src: url(fonts/PTS55F.ttf); 
 }
 
 @font-face { 
 	font-family: "PTsans75SF";
-	src: url(src/fonts/PTS75F.ttf); 
+	src: url(fonts/PTS75F.ttf); 
 }
 
 @font-face { 
 	font-family: "LatoBold";
-	src: url(src/fonts/Lato/Lato-Bold.ttf); 
+	src: url(fonts/Lato/Lato-Bold.ttf); 
 }
 
 
@@ -194,17 +194,17 @@ html {
 
 /* header */
 @HeaderHeight: auto; /*@ContentHeight / 2 + 47px*/
-@HeaderWidth: 40%;
+@HeaderWidth: auto; 
 @HeaderMinWidth: 760px;
 
 /* content / main */
-@ContentHeight: 2800px;
-@ContentWidth: 59.7%;
+@ContentHeight: auto; /*2800px*/
+@ContentWidth: auto; /*59.7%;*/
 
 /* footer */
-@FooterHeight: @ContentHeight / 2 - 47px;
+/* @FooterHeight: 2800px / 2 - 47px;
 @FooterWidth: 40%;
-@FooterMinWidth: @HeaderMinWidth;
+@FooterMinWidth: @HeaderMinWidth; */
 
 /* general chapter */
 @chapterLogoHeight: 120px;
@@ -305,7 +305,7 @@ html {
 
 /* ___Header___ */
 
-header {
+/* .about {
 	.border__black;
 
 	height: @HeaderHeight;
@@ -313,7 +313,7 @@ header {
 	min-width: @HeaderMinWidth;
 	float: left;
 	margin-bottom: 60px;
-}
+} */
 
 /* .header-logo { 
 	.border__black;
@@ -446,13 +446,37 @@ header {
 
 /* ___Main Content___ */
 
-main {
+.summary {
 	.border__black;
 
 	height: @ContentHeight;
-	width: @ContentWidth;	
+	width: 100%;	
+	margin: 0 auto;
+}
+
+.summary__column:nth-child(1),
+.summary__column:nth-child(3) {
+	.border__red;	
+	width: 40%;
+	height: auto;
+}
+
+.summary__column:nth-child(2) {
+	.border__red;	
+	width: 59.7%;
+	height: auto;
+}
+
+.summary__column_position_left {
+	.border__green;	
+	float: left;	
+}
+
+.summary__column_position_right {
+	.border__green;	
 	float: right;
 }
+
 /**/
 
 /* .main-education {
@@ -915,9 +939,9 @@ main {
 
 @media screen and (max-width: 1895px) {	
 /*all block's*/
-	header, main, footer { float: none; margin: 0 auto 0 auto; }
+	/* header, main, footer { float: none; margin: 0 auto 0 auto; } */
 	/*header { height: @HeaderHeight - 50px; }*/
-	main { height: @ContentHeight + 786px; width: 760px; clear: both; }
+	/* main { height: @ContentHeight + 786px; width: 760px; clear: both; } */
 
 	.education, 
 		.experience, 
@@ -925,7 +949,7 @@ main {
 				margin-top: 100px; 
 	}
 
-	footer { height: @FooterHeight + 70px; clear: both; }
+	/* footer { height: @FooterHeight + 70px; clear: both; } */
 	.footer-contact { margin-top: 100px; }
 	.footer-skills { margin-top: 458px; }
 

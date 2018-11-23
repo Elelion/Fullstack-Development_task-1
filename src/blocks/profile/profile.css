@@ -4,6 +4,9 @@
 	border: 1px solid black; /* border-color: transparent; */
 }
 
+.border__red {	
+	border: 1px solid red; /* border-color: transparent; */
+}
 
 /**/
 
@@ -14,11 +17,12 @@
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 108px;
+	/* margin-top: 108px; */
+	float: left;
 }
 
 .profile-text {
-	.border__black;
+	.border__black;	
 
 	height: auto;
 	width: auto;
@@ -31,4 +35,10 @@
 .profile-text blockquote, .profile-text p {
 	margin: 12px 13px 0px 1px;
 	padding: 0px;
+}
+
+.profile-text blockquote {
+	font-family: "PTsans55SF"; 	
+	font-size: 24px;
+	text-align: left;	
 }

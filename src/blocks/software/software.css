@@ -18,7 +18,7 @@
 .software {
 	.border__red;
 	margin-top: 72px;
-	margin-left: -7px;		
+	/* margin-left: -7px;		 */
 	width: 100%;
 	height: auto;
 }
@@ -46,7 +46,7 @@
 
 .software-text__right-bars {
 	float: right;
-	margin-right: 156px;
+	margin-right: 162px;
 }
 
 .software-text p {

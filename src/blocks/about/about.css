@@ -21,10 +21,33 @@
     text-overflow: ellipsis; /* Многоточие */
 }
 
+/* header */
+@HeaderMinWidth: 760px;
 
 /**/
 
-.title {
+.about {
+	.border__black;	
+
+	height: auto;
+	width: 40%;
+	min-width: @HeaderMinWidth;
+	float: left;
+	/* margin-bottom: 60px; */
+}
+
+.about-logo { 
+	.border__black;
+
+	height: 355px;
+	width: 360px;
+	margin-top: 135px;
+	margin-left: 245px;	
+}
+
+/**/
+
+.about-title {
 	.border__red;
 
 	height: auto;	
@@ -32,10 +55,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
+	margin-bottom: 108px;
 }
 
 /* surname */
-.title-name {
+.about-title__name {
 	.border__red;
 
 	height: auto;
@@ -43,7 +67,7 @@
 	margin-left: 175px;
 }
 
-.title-name h1 {
+.about-title__name h1 {
 	font-family: "PTsans55SF"; 	
 	font-size: 82px; /*82*/
 	letter-spacing: 1px;	
@@ -59,7 +83,7 @@
 }
 
 /* name here */
-.title-surname {
+.about-title__surname {
 	.border__black;
 
 	height: auto;
@@ -67,10 +91,10 @@
 	margin-left: 175px;
 }
 
-.title-surname h2 {
+.about-title__surname h2 {
 	font-family: "PTsans75SF"; 	
 	font-size: 92px;
-	letter-spacing: 5.8px;
+	letter-spacing: 4.2px; /* 5.8 */
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: -22px;	
@@ -82,7 +106,7 @@
 }
 
 /* graphic designer */
-.title-profession {
+.about-title__profession {
 	.border__black;
 
 	height: auto;
@@ -90,10 +114,10 @@
 	margin-left: 175px;
 }
 
-.title-profession h3 { 
+.about-title__profession h3 { 
 	font-family: "PTsans75SF"; 	
 	font-size: 38px;	
-	letter-spacing: 0.3px;
+	letter-spacing: 0.1px; /* 0.3 */
 	text-transform: uppercase;
 	text-align: center;
 	

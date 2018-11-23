@@ -19,7 +19,6 @@
 @chapterLogoWidth: 116px;
 
 @chapterTitleHeight: 120px;
-@chapterTitleWidth: auto;
 
 @chapterLineMinWidth: 50px;
 
@@ -29,7 +28,8 @@
 .chapter {
 	.border__green;
 
-	height: 120px;		
+	height: 120px;
+	width: auto; 		
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -39,6 +39,8 @@
 	-ms-display: flex;
 	-o-display: flex;
 	display: flex;	
+
+	margin-left: 7px;	
 }
 
 .chapter-logo {
@@ -47,14 +49,14 @@
 	height: @chapterLogoHeight;
 	width: @chapterLogoWidth;	
 	float: left;
-	margin-left: 90px;
+	margin-left: 83px;
 }
 
 .chapter-title {
 	.border__black;
 
 	height: @chapterTitleHeight;
-	width: @chapterTitleWidth;	
+	width: auto;	
 	float: left;
 }
 

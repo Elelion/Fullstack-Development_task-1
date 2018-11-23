@@ -16,37 +16,38 @@
 /* ___less___ */
 
 /* header */
-@HeaderMinWidth: 760px;
+/* @HeaderMinWidth: 760px; */
 
 /* content / main */
-@ContentHeight: 2800px;
+/* @ContentHeight: 2800px; */
 
 /* footer */
-@FooterHeight: @ContentHeight / 2 - 47px;
+/* @FooterHeight: @ContentHeight / 2 - 47px;
 @FooterWidth: 40%;
-@FooterMinWidth: @HeaderMinWidth;
+@FooterMinWidth: @HeaderMinWidth; */
 
 
 /**/
 
-footer {
+/* footer {
 	.border__black;
 
 	height: @FooterHeight;
 	width: @FooterWidth;
 	min-width: @FooterMinWidth;
 	float: left;
-}
+} */
 
-.footer-contact {	
+.contact {	
 	.border__black;
 
 	height: auto;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
-	clear: both;
+	width: 100%;
+	margin-top: 59px;	
+	float: left;
+	/* margin-left: auto; */
+	/* margin-right: auto; */	
+	/* clear: both; */
 }
 
 .contact-text {
