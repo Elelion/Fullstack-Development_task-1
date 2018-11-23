@@ -93,11 +93,6 @@
 	margin-bottom: 5px;
 }
 
-.education-text b {	
-	padding-left: 8px;
-	float: left;
-}
-
 .education-text p:nth-child(3) {
 	.border__red;
 	

@@ -1,9 +1,14 @@
 block section
-    mixin section(paragraph, comment, description, text)                
-        .section            
-            b.section-paragraph= paragraph
-            p.section-comment= comment
-            p.section-description= description
+    mixin section(title, paragraph, comment, description, text)
+        .section
+            if (title === 'experience')
+                b.section__paragraph.section__paragraph_experience= paragraph
+            
+            if (title === 'education')
+                b.section__paragraph.section__paragraph_education= paragraph
+            
+            p.section__comment= comment
+            p.section__description= description
             
             .section-position
-                p= text
+                p.section__text= text

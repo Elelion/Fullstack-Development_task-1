@@ -70,7 +70,7 @@
 	letter-spacing: 1.1px;
 }
 
-.contact-text b {
+.contact__text_title {
 	font-family: "PTsans77F"; 	
 	text-transform: uppercase;	
 	letter-spacing: 4.5px;	

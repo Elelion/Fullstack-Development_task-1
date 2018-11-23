@@ -31,7 +31,7 @@
 	/* margin-left: 14px; */
 }
 
-.section-paragraph {
+.section__paragraph {
 	width: 320px;
 
 	font-family: "PTsans77F"; 	
@@ -45,7 +45,7 @@
 	.wrapping;
 }
 
-.section-comment {
+.section__comment {
 	width: 400px;	
 	font-family: "PTsans57F"; 
 	font-size: 38px;
@@ -55,7 +55,7 @@
 	float: left;
 }
 
-.section-description {
+.section__description {
 	font-family: "PTsans55SF"; 	
 	font-size: 38px;
 	letter-spacing: -0.1px;
@@ -74,7 +74,7 @@
 	width: auto;
 }
 
-.section-position p {
+.section__text {
 	pading: 0px;
 	margin: 0px 54px 0 0;
 }

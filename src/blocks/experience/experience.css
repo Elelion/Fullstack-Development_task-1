@@ -85,12 +85,6 @@
 	margin-bottom: 8px;
 }
 
-.experience-text b {
-	padding-left: 8px;
-	letter-spacing: 5.8px;
-	float: left;
-}
-
 .experience-text p:nth-child(3) {
 	.border__red;
 	
