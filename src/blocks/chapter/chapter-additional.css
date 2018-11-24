@@ -1,31 +1,31 @@
 /* ___additional styles___ */
 
-.chapter-title__profile {
+.chapter__title_profile {
 	letter-spacing: 2.8px;
 	margin: 20px 0 0 14px;	
 }
 
-.chapter-title__education {
+.chapter-chapter__title_education {
 	margin: 18px 0 0 28px;
 	letter-spacing: 4.6px;
 }
 
-.chapter-title__experience {
+.chapter__title_experience {
 	margin: 20px 0 0 28px;
 	letter-spacing: 2.8px;
 }
 
-.chapter-title__software {
+.chapter__title_software {
 	margin: 20px 0 0 28px;
 	letter-spacing: 3.8px;
 }
 
-.chapter-title__contact {
+.chapter__title_contact {
 	margin: 20px 0 0 14px;
 	letter-spacing: 4.6px;
 }
 
-.chapter-title__skills {
+.chapter__title_skills {
 	margin: 22px 0 0 10px;
 	letter-spacing: 2px;
 }
