@@ -1,18 +1,18 @@
-.bar-point:first-of-type {
+.bar__point:first-of-type {
 	margin-left: 36px;
 }
 
-.bar-point svg, .bar-point__empty svg {
+.bar__point svg, .bar__point_empty svg {
 	width: 30px;
 	height: 30px;
 }
 
-.bar-point__empty, .bar-point {
+.bar__point_empty, .bar__point {
 	float: left;
 	margin: 10px 13px 0 0;
 }
 
-.bar-point:last-child,
-.bar-point__empty:last-child {
+.bar__point:last-child,
+.bar__point_empty:last-child {
 	margin-right: 0px;
 }
