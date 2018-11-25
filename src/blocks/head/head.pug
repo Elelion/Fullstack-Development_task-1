@@ -17,6 +17,7 @@ html(lang="ru-RU")
 		link(rel='stylesheet/less', href='src/styles.css')
 
 		//- general block's / mixin's
+		link(rel='stylesheet/less', href='src/blocks/content/content.css')
 		link(rel='stylesheet/less', href='src/blocks/chapter/chapter.css')
 		link(rel='stylesheet/less', href='src/blocks/chapter/chapter-additional.css')
 		link(rel='stylesheet/less', href='src/blocks/points/points.css')
@@ -39,19 +40,4 @@ html(lang="ru-RU")
 		//- including the LESS lib
 		script(src='lib/less.min.js')
 
-	body
-		main.summary
-				section.summary__column.summary__column_position_left
-					//- header include
-					include ../about/about
-					include ../profile/profile
-				section.summary__column.summary__column_position_right
-					//- main include
-					include ../education/education
-					include ../experience/experience
-					include ../software/software
-
-				section.summary__column.summary__column_position_left
-					//- footer include
-					include ../contact/contact
-					include ../skills/skills
+	include ../content/content
