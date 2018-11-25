@@ -1,7 +1,6 @@
 block chapter
 
     //- svg:
-
     mixin svgProfile
         svg(width='120px', height='120px')
             circle(r='56', cx='58', cy='50.7%', fill='none', stroke='#056cb4', stroke-width='2')
@@ -73,17 +72,35 @@ block chapter
 
 
     //- title with svg:
-
     mixin chapter(title, index)
         .chapter
-            .chapter__logo
+            .chapter__logo                
                 case index
-                    when 1: +svgProfile
-                    when 2: +svgEducation
-                    when 3: +svgExperience
-                    when 4: +svgSoftware
-                    when 5: +svgContact
-                    when 6: +svgSkills
+                    //- basic template:
+                    //- when 1: +svgProfile
+                    //- when 2: +svgEducation
+                    //- when 3: +svgExperience
+                    //- when 4: +svgSoftware
+                    //- when 5: +svgContact
+                    //- when 6: +svgSkills
+
+                    when 1: .chapter__logo_profile
+                        +svgProfile
+
+                    when 2: .chapter__logo_education
+                        +svgEducation
+
+                    when 3: .chapter__logo_experience
+                        +svgExperience
+
+                    when 4: .chapter__logo_software
+                        +svgSoftware
+
+                    when 5: .chapter__logo_contact
+                        +svgContact
+
+                    when 6: .chapter__logo_skills
+                        +svgSkills
 
             .chapter__title
                 //- basic template:

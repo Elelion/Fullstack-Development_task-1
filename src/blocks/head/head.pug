@@ -1,44 +1,57 @@
 doctype html
 html(lang="ru-RU")
 	head
-		//- include ../../modules/seo-words
-		include ../seo/seo-words
-		
-		//- SEO: keywords, description, title
-		+seo-words__header('Full Stack Development, FSD, quest-1',
-							'Best of the Best company on the world for Web dev!',
-							'maket - 1')
+		//- SEO
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(name='Keywords', content='Full Stack Development, FSD, quest-1')
+		meta(name='description', content='Best of the Best company on the world for Web dev!')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, \
+		maximum-scale=1.0, user-scalable=no')
+		link(rel='shortcut icon', type='image/x-icon', href='src/images/favicon.png')
+		title  maket-1 
 		
 		
 		//- CSS's		
 
-		//- general		
+		//- general
 		link(rel='stylesheet/less', href='src/styles.css')
 
+		//- general block's / mixin's
 		link(rel='stylesheet/less', href='src/blocks/chapter/chapter.css')
 		link(rel='stylesheet/less', href='src/blocks/chapter/chapter-additional.css')
 		link(rel='stylesheet/less', href='src/blocks/points/points.css')
 		link(rel='stylesheet/less', href='src/blocks/section/section.css')
 		link(rel='stylesheet/less', href='src/blocks/section/section-additional.css')
 		
+		//- header
 		link(rel='stylesheet/less', href='src/blocks/about/about.css')
 		link(rel='stylesheet/less', href='src/blocks/profile/profile.css')
 
+		//- main
 		link(rel='stylesheet/less', href='src/blocks/education/education.css')
 		link(rel='stylesheet/less', href='src/blocks/experience/experience.css')
 		link(rel='stylesheet/less', href='src/blocks/software/software.css')
 
+		//- footer
 		link(rel='stylesheet/less', href='src/blocks/contact/contact.css')
 		link(rel='stylesheet/less', href='src/blocks/skills/skills.css')
 
+		//- including the LESS lib
 		script(src='lib/less.min.js')
 
 	body
-		//- header include
-		include ../about/about
+		main.summary
+				section.summary__column.summary__column_position_left
+					//- header include
+					include ../about/about
+					include ../profile/profile
+				section.summary__column.summary__column_position_right
+					//- main include
+					include ../education/education
+					include ../experience/experience
+					include ../software/software
 
-		//- main include
-		include ../education/education
-
-		//- footer include
-		include ../contact/contact
+				section.summary__column.summary__column_position_left
+					//- footer include
+					include ../contact/contact
+					include ../skills/skills

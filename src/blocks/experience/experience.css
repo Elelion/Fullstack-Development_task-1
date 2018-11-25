@@ -34,8 +34,8 @@
 
 /* !!! */
 .experience > .chapter > .chapter__title p {
-	margin: 22px 0 0 30px;
-	letter-spacing: 2.4px;
+	/* margin: 22px 0 0 30px; */
+	/* letter-spacing: 2.4px; */
 }
 
 .experience-text {
@@ -44,7 +44,7 @@
 	height: auto;
 	width: auto;
 	float: left;
-	margin: 0 0 0 90px;
+	margin: 2px 0 0 83px;
 	letter-spacing: -0.4px;
 	line-height: 1.2;
 }
