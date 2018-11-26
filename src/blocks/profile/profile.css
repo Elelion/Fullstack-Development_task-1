@@ -21,7 +21,7 @@
 	float: left;
 }
 
-.profile-text {
+.profile__text {
 	.border__black;	
 
 	height: auto;
@@ -32,12 +32,12 @@
 	line-height: 1.2;	;
 }
 
-.profile-text blockquote, .profile-text p {
+.profile__text blockquote, .profile__text p {
 	margin: 12px 13px 0px 1px;
 	padding: 0px;
 }
 
-.profile-text blockquote {
+.profile__text blockquote {
 	font-family: "PTsans55SF"; 	
 	font-size: 24px;
 	text-align: left;	

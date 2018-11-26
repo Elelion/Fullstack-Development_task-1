@@ -38,7 +38,7 @@
 	/* letter-spacing: 2.4px; */
 }
 
-.experience-text {
+.experience__text {
 	.border__red;
 
 	height: auto;
@@ -49,12 +49,12 @@
 	line-height: 1.2;
 }
 
-.experience-text ul {
+.experience__text ul {
 	padding-left: 18px;
 	margin-top: 49px;
 }
 
-.experience-text ul li:before {
+.experience__text ul li:before {
 	content: '';
 	display: inline-block;
 	height:32px;
@@ -85,7 +85,7 @@
 	margin-bottom: 8px;
 }
 
-.experience-text p:nth-child(3) {
+.experience__text p:nth-child(3) {
 	.border__red;
 	
 	float: left;
@@ -94,7 +94,7 @@
 	margin-top: 6px;
 }
 
-.experience-text p:nth-child(4) {
+.experience__text p:nth-child(4) {
 	.border__green;
 
 	float: left;
@@ -103,7 +103,7 @@
 	margin-top: 0px;	
 }
 
-.experience-text > ul > li > .text__paragraph {
+.experience__text > ul > li > .text__paragraph {
 	letter-spacing: 5.7px;
 }
 
