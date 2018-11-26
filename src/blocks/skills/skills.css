@@ -27,7 +27,7 @@
 	/* clear: both;	 */
 }
 
-.skills-bar {
+.skills__bar {
 	.border__red;
 	width: 550px;	
 	height: 50px;
@@ -36,16 +36,16 @@
 
 /* !!! */
 .skills .chapter__title p {
-	letter-spacing: 1.1px;
+	/* letter-spacing: 1.1px; */
 }
 
-.skills-text {
+.skills__text {
 	.border__red;
 
 	width: auto;
 }
 
-.skills-text p {
+.skills__text p {
 	font-family: "PTsans55SF"; 	
 	font-size: 38px;
 	letter-spacing: -0.1px;
@@ -55,18 +55,18 @@
 	margin-left: 14px;
 }
 
-.skills-text li:first-child  {
+.skills__text li:first-child  {
 	margin-top: 10px;
 }
 
-.skills-text li {
+.skills__text li {
 	.border__green;
 
 	list-style-type: none;	
 	height: 115px;
 }
 
-.skills-text li p {		
+.skills__text li p {		
 	text-align: center;
 	margin: 15px 0 0 30px;
 	letter-spacing: 1.1px;

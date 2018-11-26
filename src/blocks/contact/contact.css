@@ -50,7 +50,7 @@
 	/* clear: both; */
 }
 
-.contact-text {
+.contact__text {
 	.border__black;
 
 	height: auto;
@@ -61,7 +61,7 @@
 	line-height: 1.2;
 }
 
-.contact-text span {
+.contact__text span {
 	font-family: "PTsans55SF"; 	
 	font-size: 28px;	
 	margin-left: 2px;		
@@ -81,7 +81,7 @@
 	width: auto;	
 }
 
-.contact-text a:nth-child(1) {
+.contact__text a:nth-child(1) {
 	text-decoration: none;
 	color: #056CB4;
 
@@ -89,26 +89,26 @@
     transition: 0.7s;
 }
 
-.contact-text a:hover {
+.contact__text a:hover {
 	color: #E75735;	
 
 	-webkit-transition: 0.7s;
     transition: 0.7s;
 }
 
-.contact-text table {	
+.contact__text table {	
 	margin-top: 20px;		
 	border-collapse: collapse;	
 }
 
-.contact-text table tr, td {
+.contact__text table tr, td {
 	margin-top: 30px;	
 	height: 82px;	
 	width: 194px;
 	min-width: 194px;
 }
 
-.contact-text span a {	
+.contact__text span a {	
 	color: blue;
 	text-decoration: none;
 	letter-spacing: 1.4px;

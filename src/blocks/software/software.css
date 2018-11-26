@@ -29,7 +29,7 @@
 	letter-spacing: 3.8px; */
 }
 
-.software-text {
+.software__text {
 	.border__green;
 
 	height: auto;
@@ -40,16 +40,16 @@
 	line-height: 1.2;	
 }
 
-.software-text__left-bars {
+.software__text_left-bars {
 	float: left;
 }
 
-.software-text__right-bars {
+.software__text_right-bars {
 	float: right;
 	margin-right: 158px;
 }
 
-.software-text p {
+.software__text p {
 	font-family: "PTsans55SF"; 	
 	font-size: 38px;
 	/* letter-spacing: -0.1px; */
@@ -62,32 +62,32 @@
 	letter-spacing: 0.5px;
 }
 
-.software-text__left-bars p:nth-child(2) {	
+.software__text_left-bars p:nth-child(2) {	
 	margin-top: 30px;	
 	letter-spacing: -0.4px;
 }
 
-.software-text__left-bars p:nth-child(3) {	
+.software__text_left-bars p:nth-child(3) {	
 	letter-spacing: -0.4px;
 }
 
-.software-text__left-bars p:nth-child(5) {	
+.software__text_left-bars p:nth-child(5) {	
 	margin-top: 33px;
 	letter-spacing: 0.2px;
 }
 
-.software-text__right-bars p:nth-child(1) {	
+.software__text_right-bars p:nth-child(1) {	
 	margin-top: 33px;
 	margin-left: 15px;
 	letter-spacing: 0.8px;
 }
 
-.software-text__right-bars p:nth-child(3) {	
+.software__text_right-bars p:nth-child(3) {	
 	margin: 36px 0 0 17px;
 	letter-spacing: -0.6px;
 }
 
-.software-text__right-bars p:nth-child(5) {	
+.software__text_right-bars p:nth-child(5) {	
 	margin: 32px 0 0 16px;
 	letter-spacing: -1.2px;
 }
@@ -100,12 +100,12 @@
     margin: 21px 0 0 13px;
 }
 
-.software-text__left-bars progress:nth-child(4),
-	.software-text__right-bars progress:nth-child(4) {
+.software__text_left-bars progress:nth-child(4),
+	.software__text_right-bars progress:nth-child(4) {
 		margin-top: 20px;
 }
 
-.software-text__left-bars progress:nth-child(6),
-	.software-text__right-bars progress:nth-child(6) {
+.software__text_left-bars progress:nth-child(6),
+	.software__text_right-bars progress:nth-child(6) {
 	margin-top: 16px;
 }
