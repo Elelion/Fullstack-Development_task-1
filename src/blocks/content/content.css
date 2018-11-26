@@ -1,47 +1,22 @@
 /* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__green {	
-	border: 1px solid green; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-
-/**/
-
 .content {
-	.border__black;
-
-	height: auto;
-	width: 100%;	
-	margin: 0 auto;
-}
-
-.content__block:nth-child(1),
-.content__block:nth-child(3) {
-	.border__red;	
-	width: 40%;
-	height: auto;
-}
-
-.content__block:nth-child(2) {
-	.border__red;	
-	width: 59.7%;
-	height: auto;
-}
+  border: 1px solid black;
+  height: auto;
+  width: 100%;
+  margin: 0 auto; }
+  .content__block:nth-child(1), .content__block:nth-child(3) {
+    width: 40%;
+    height: auto; }
+  .content__block:nth-child(2) {
+    width: 59.7%;
+    height: auto; }
 
 .content__block_position-left {
-	.border__green;	
-	float: left;	
-}
+  border: 1px solid green;
+  float: left; }
 
 .content__block_position-right {
-	.border__green;	
-	float: right;
-}
+  border: 1px solid green;
+  float: right; }
+
+/*# sourceMappingURL=content.css.map */

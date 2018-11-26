@@ -1,0 +1,33 @@
+/* ___borders___ */
+
+@mixin border-black
+	border: 1px solid black
+
+@mixin border-green
+	border: 1px solid green
+
+@mixin border-red
+	border: 1px solid red
+
+// ---
+
+.content
+	@include border-black
+	height: auto
+	width: 100%	
+	margin: 0 auto
+	&__block:nth-child(1),
+	&__block:nth-child(3)
+		width: 40%
+		height: auto
+	&__block:nth-child(2)
+		width: 59.7%
+		height: auto
+
+.content__block_position-left
+	@include border-green
+	float: left
+
+.content__block_position-right
+	@include border-green
+	float: right

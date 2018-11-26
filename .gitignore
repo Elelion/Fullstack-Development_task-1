@@ -1,5 +1,12 @@
+# ___general___
+
 .vscode
 refactoring-events
 template HTML
 src/images/templates
 src/maket
+
+
+# ___content___
+
+# src/blocks/content/.sass-cache
