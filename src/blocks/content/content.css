@@ -11,11 +11,11 @@
     width: 59.7%;
     height: auto; }
 
-.content__block_position-left {
+.content__block_left {
   border: 1px solid green;
   float: left; }
 
-.content__block_position-right {
+.content__block_right {
   border: 1px solid green;
   float: right; }
 

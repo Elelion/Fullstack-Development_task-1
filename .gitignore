@@ -7,6 +7,27 @@ src/images/templates
 src/maket
 
 
+# ___about___
+
+src/blocks/about/.sass-cache
+src/blocks/about/about.css.map
+
+
+# ___chapter___
+
+src/blocks/chapter/.sass-cache
+src/blocks/chapter/chapter.css.map
+
+
+
+# ___contact___
+
+src/blocks/contact/.sass-cache
+src/blocks/contact/contact.css.map
+
+
 # ___content___
 
-# src/blocks/content/.sass-cache
+src/blocks/content/.sass-cache
+src/blocks/content/content.css.map
+

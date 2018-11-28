@@ -1,45 +1,45 @@
 /* ___additional styles___ */
 
-.chapter__logo_education {
+.chapter__logo_target-block_education {
 	margin-left: -7px;
 }
 
-.chapter__logo_experience {
+.chapter__logo_target-block_experience {
 	margin-left: -7px;
 }
 
-.chapter__logo_software {
+.chapter__logo_target-block_software {
 	margin-left: -7px;
 }
 
 /**/
 
-.chapter__title_profile {
+.chapter__title_target-block_profile {
 	letter-spacing: 2.8px;
 	margin: 20px 0 0 14px;	
 }
 
-.chapter__title_education {
+.chapter__title_target-block_education {
 	margin: 18px 0 0 24px;
 	letter-spacing: 4.6px;
 }
 
-.chapter__title_experience {
+.chapter__title_target-block_experience {
 	margin: 21px 0 0 24px;
 	letter-spacing: 2.6px;
 }
 
-.chapter__title_software {
+.chapter__title_target-block_software {
 	margin: 20px 0 0 24px;
 	letter-spacing: 3.8px;
 }
 
-.chapter__title_contact {
+.chapter__title_target-block_contact {
 	margin: 20px 0 0 14px;
 	letter-spacing: 4.6px;
 }
 
-.chapter__title_skills {
+.chapter__title_target-block_skills {
 	margin: 22px 0 0 10px;
 	letter-spacing: 2px;
 }

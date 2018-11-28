@@ -3,10 +3,12 @@
 .section__paragraph_education {	
 	padding-left: 8px;	
 	float: left;
+	font-weight: 700;
 }
 
 .section__paragraph_experience {	
 	padding-left: 10px;
 	letter-spacing: 5.6px;
 	float: left;
+	font-weight: 700;
 }
