@@ -67,7 +67,7 @@
 	margin-left: 175px;
 }
 
-.about__title_name h1 {
+.about__title_target-font_name {
 	font-family: "PTsans55SF"; 	
 	font-size: 82px; /*82*/
 	letter-spacing: 1px;	
@@ -91,7 +91,7 @@
 	margin-left: 175px;
 }
 
-.about__title_surname h2 {
+.about__title_target-font_surname {
 	font-family: "PTsans75SF"; 	
 	font-size: 92px;
 	letter-spacing: 4.2px; /* 5.8 */
@@ -114,7 +114,7 @@
 	margin-left: 175px;
 }
 
-.about__title_profession h3 { 
+.about__title_target-font_proffesion { 
 	font-family: "PTsans75SF"; 	
 	font-size: 38px;	
 	letter-spacing: 0.1px; /* 0.3 */

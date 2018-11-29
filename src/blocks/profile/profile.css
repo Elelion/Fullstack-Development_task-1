@@ -32,17 +32,20 @@
 	line-height: 1.2;	;
 }
 
-.profile__text blockquote, .profile__text p {
+.profile__text_target-font {	
+	font-family: "PTsans55SF";
+	font-size: 24px;
+	text-align: left;	
+
 	margin: 12px 13px 0px 1px;
 	padding: 0px;
 }
 
-.profile__text blockquote {
-	font-family: "PTsans55SF"; 	
-	font-size: 24px;
-	text-align: left;	
+.profile__text_target-font_normal {
+	margin: 12px 13px 0px 1px;
+	font-weight: 100;
 }
 
-.profile__text span {
+.profile__text_target-font_bold {
 	font-weight: 700;
 }

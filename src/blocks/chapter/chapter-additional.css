@@ -14,32 +14,32 @@
 
 /**/
 
-.chapter__title_target-block_profile {
+.chapter__title_target-font_profile {
 	letter-spacing: 2.8px;
 	margin: 20px 0 0 14px;	
 }
 
-.chapter__title_target-block_education {
+.chapter__title_target-font_education {
 	margin: 18px 0 0 24px;
 	letter-spacing: 4.6px;
 }
 
-.chapter__title_target-block_experience {
+.chapter__title_target-font_experience {
 	margin: 21px 0 0 24px;
 	letter-spacing: 2.6px;
 }
 
-.chapter__title_target-block_software {
+.chapter__title_target-font_software {
 	margin: 20px 0 0 24px;
 	letter-spacing: 3.8px;
 }
 
-.chapter__title_target-block_contact {
+.chapter__title_target-font_contact {
 	margin: 20px 0 0 14px;
 	letter-spacing: 4.6px;
 }
 
-.chapter__title_target-block_skills {
+.chapter__title_target-font_skills {
 	margin: 22px 0 0 10px;
 	letter-spacing: 2px;
 }

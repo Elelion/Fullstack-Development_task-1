@@ -2,7 +2,7 @@
 	margin-left: 36px;
 }
 
-.bar__point svg, .bar__point_empty svg {
+.bar__point_target-size {
 	width: 30px;
 	height: 30px;
 }
