@@ -1,126 +1,71 @@
 /* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__green {	
-	border: 1px solid green; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-
-/**/
-
-.wrapping {
-	white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */    
-    text-overflow: ellipsis; /* Многоточие */
-}
-
-/* header */
-@HeaderMinWidth: 760px;
-
-/**/
-
 .about {
-	.border__black;	
+  border: 1px solid black;
+  height: auto;
+  width: 40%;
+  min-width: 760px;
+  float: left; }
+  .about__logo {
+    border: 1px solid black;
+    height: 360px;
+    width: 360px;
+    margin-top: 132px;
+    margin-left: 245px; }
+  .about__title {
+    border: 1px solid red;
+    height: auto;
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 108px; }
+    .about__title_name {
+      border: 1px solid black;
+      height: auto;
+      width: 500px;
+      margin-left: 175px; }
+    .about__title_target-font_name {
+      font-family: "PTsans55SF";
+      font-size: 82px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0;
+      margin-top: -10px;
+      margin-bottom: -10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .about__title_surname {
+      border: 1px solid black;
+      height: auto;
+      width: 500px;
+      margin-left: 175px; }
+    .about__title_target-font_surname {
+      font-family: "PTsans75SF";
+      font-size: 92px;
+      letter-spacing: 4.2px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: -22px;
+      padding: 0;
+      margin-top: -24px;
+      margin-bottom: 0px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .about__title_profession {
+      border: 1px solid black;
+      height: auto;
+      width: 500px;
+      margin-left: 175px; }
+    .about__title_target-font_proffesion {
+      font-family: "PTsans75SF";
+      font-size: 38px;
+      letter-spacing: 0.1px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: -4px auto 0 auto;
+      padding: 0; }
 
-	height: auto;
-	width: 40%;
-	min-width: @HeaderMinWidth;
-	float: left;
-	/* margin-bottom: 60px; */
-}
-
-.about__logo { 
-	.border__black;
-
-	height: 355px;
-	width: 360px;
-	margin-top: 135px;
-	margin-left: 245px;	
-}
-
-/**/
-
-.about__title {
-	.border__red;
-
-	height: auto;	
-	min-width: 450px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	margin-bottom: 108px;
-}
-
-/* surname */
-.about__title_name {
-	.border__red;
-
-	height: auto;
-	width: 500px;
-	margin-left: 175px;
-}
-
-.about__title_target-font_name {
-	font-family: "PTsans55SF"; 	
-	font-size: 82px; /*82*/
-	letter-spacing: 1px;	
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: -8px;
-	padding: 0;
-	margin-top: -10px;
-	margin-bottom: -10px;
-	
-	/*word-wrap: break-word;*/
-	.wrapping;
-}
-
-/* name here */
-.about__title_surname {
-	.border__black;
-
-	height: auto;
-	width: 500px;
-	margin-left: 175px;
-}
-
-.about__title_target-font_surname {
-	font-family: "PTsans75SF"; 	
-	font-size: 92px;
-	letter-spacing: 4.2px; /* 5.8 */
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: -22px;	
-	padding: 0;
-	margin-top: -24px;
-	margin-bottom: 0px;
-
-	.wrapping;
-}
-
-/* graphic designer */
-.about__title_profession {
-	.border__black;
-
-	height: auto;
-	width: 500px;
-	margin-left: 175px;
-}
-
-.about__title_target-font_proffesion { 
-	font-family: "PTsans75SF"; 	
-	font-size: 38px;	
-	letter-spacing: 0.1px; /* 0.3 */
-	text-transform: uppercase;
-	text-align: center;
-	
-	margin: -4px auto 0 auto;
-	padding: 0;	
-}
+/*# sourceMappingURL=about.css.map */

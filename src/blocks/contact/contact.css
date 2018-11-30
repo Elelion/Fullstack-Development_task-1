@@ -13,30 +13,7 @@
 }
 
 
-/* ___less___ */
-
-/* header */
-/* @HeaderMinWidth: 760px; */
-
-/* content / main */
-/* @ContentHeight: 2800px; */
-
-/* footer */
-/* @FooterHeight: @ContentHeight / 2 - 47px;
-@FooterWidth: 40%;
-@FooterMinWidth: @HeaderMinWidth; */
-
-
 /**/
-
-/* footer {
-	.border__black;
-
-	height: @FooterHeight;
-	width: @FooterWidth;
-	min-width: @FooterMinWidth;
-	float: left;
-} */
 
 .contact {	
 	.border__black;
@@ -45,71 +22,84 @@
 	width: 100%;
 	margin-top: 60px;	
 	float: left;
-	/* margin-left: auto; */
-	/* margin-right: auto; */	
-	/* clear: both; */
 }
 
-.contact__text {
+.contact__block {
 	.border__black;
 
 	height: auto;
 	width: auto;
 	float: left;
 	margin: 0 0 0 90px;
-	letter-spacing: -0.5px;
 	line-height: 1.2;
 }
 
-.contact__text_title {
+.contact__block_target-text_title {
 	font-family: "PTsans77F"; 	
 	text-transform: uppercase;	
 	letter-spacing: 4.6px;
 	
 	font-size: 29px;
-	margin-left: 2px;
+	margin-left: 1px;
 	margin-top: 8px;
 	width: auto;
 
 	font-weight: 900;
 }
 
-.contact__text_content {
+.contact__block_target-text_content {
 	font-family: "PTsans55SF"; 	
 	font-size: 28px;	
 	margin-left: 0px;
 	letter-spacing: 1.1px;
 }
 
-.contact__text a:nth-child(1) {
-	text-decoration: none;
-	color: #056CB4;
-
-	-webkit-transition: 0.7s;
-    transition: 0.7s;
-}
-
-.contact__text a:hover {
-	color: #E75735;	
-
-	-webkit-transition: 0.7s;
-    transition: 0.7s;
-}
-
-.contact__text table {	
+.contact__block_target-table {	
 	margin-top: 20px;		
 	border-collapse: collapse;	
 }
 
-.contact__text table tr, td {
+.contact__block_target-table_tr {
+	width: auto;
+}
+
+.contact__block_target-table_td {
 	margin-top: 30px;	
 	height: 82px;	
 	width: 194px;
 	min-width: 194px;
 }
 
-.contact__text span a {	
-	color: blue;
+.contact__block_target-text_link {	
+	color:#056DB6;
 	text-decoration: none;
-	letter-spacing: 1.4px;
+	
+	text-transform: lowercase;	
+
+	font-family: "PTsans55SF";
+	font-size: 28px;	
+	margin-left: 0px;
+
+	text-decoration: none;
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.contact__block_target-text_link:hover {
+	color: #E75735;
+
+	-webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.contact__block_target-text_link-mail {
+	letter-spacing: 1.7px;
+}
+
+.contact__block_target-text_link-phone {
+	letter-spacing: 1.2px;
+}
+
+.contact__block_target-text_link-site {
+	letter-spacing: 2.5px;
 }
