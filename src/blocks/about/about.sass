@@ -1,4 +1,4 @@
-/* ___borders___ */
+// ___borders___
 
 @mixin border-black
 	border: 1px solid black
@@ -9,7 +9,6 @@
 @mixin border-red
 	border: 1px solid red
 
-
 // ---
 
 @mixin wrapping
@@ -17,14 +16,12 @@
 	overflow: hidden // Обрезаем содержимое
 	text-overflow: ellipsis // Многоточие
 
-
 // ---
 
 $aboutMinWidth: 760px
 $nameWidth: 500px
 $surnameWidth: 500px
 $professionWidth: 500px
-
 
 // ---
 
@@ -36,10 +33,10 @@ $professionWidth: 500px
 	float: left
 	&__logo
 		@include border-black
-		height: 360px
+		height: auto
 		width: 360px
-		margin-top: 132px
-		margin-left: 245px
+		margin-top: 129px
+		margin-left: 245px		
 	&__title
 		@include border-red
 		height: auto
@@ -54,16 +51,17 @@ $professionWidth: 500px
 			@include border-black
 			height: auto
 			width: $nameWidth
-			margin-left: 175px
+			margin-left: 175px			
 		&_target-font_name
 			font-family: "PTsans55SF"
 			font-size: 82px
 			letter-spacing: 1px
+			line-height: 1em
 			text-transform: uppercase
-			text-align: center
-			padding: 0
-			margin-top: -10px
-			margin-bottom: -10px
+			text-align: center			
+			margin-top: 0px //-10
+			margin-bottom: 0px //-10
+			height: auto
 			@include wrapping
 
 		// surname	
@@ -72,17 +70,15 @@ $professionWidth: 500px
 			height: auto
 			width: $surnameWidth
 			margin-left: 175px
-		
 		&_target-font_surname
 			font-family: "PTsans75SF"
 			font-size: 92px
 			letter-spacing: 4.2px
+			line-height: 0.8em
 			text-transform: uppercase
-			text-align: center
-			margin-top: -22px
+			text-align: center			
 			padding: 0
-			margin-top: -24px
-			margin-bottom: 0px
+			margin: 0
 			@include wrapping
 
 		// profession / graphic designer
@@ -91,12 +87,11 @@ $professionWidth: 500px
 			height: auto
 			width: $professionWidth
 			margin-left: 175px
-
 		&_target-font_proffesion
 			font-family: "PTsans75SF"
 			font-size: 38px
-			letter-spacing: 0.1px
+			letter-spacing: 0.1px			
 			text-transform: uppercase
 			text-align: center
-			margin: -4px auto 0 auto
+			margin: 20px auto 0 auto
 			padding: 0

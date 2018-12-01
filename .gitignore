@@ -31,3 +31,44 @@ src/blocks/contact/contact.css.map
 src/blocks/content/.sass-cache
 src/blocks/content/content.css.map
 
+
+# ___education___
+
+src/blocks/education/.sass-cache
+src/blocks/education/education.css.map
+
+
+# ___experience___
+
+src/blocks/experience/.sass-cache
+src/blocks/experience/experience.css.map
+
+
+# ___points___
+
+src/blocks/points/.sass-cache
+src/blocks/points/points.css.map
+
+
+# ___profile___
+
+src/blocks/profile/.sass-cache
+src/blocks/profile/profile.css.map
+
+
+# ___section___
+
+src/blocks/section/.sass-cache
+src/blocks/section/section.css.map
+
+
+# ___skills___
+
+src/blocks/skills/.sass-cache
+src/blocks/skills/skills.css.map
+
+
+# ___software___
+
+src/blocks/software/.sass-cache
+src/blocks/software/software.css.map

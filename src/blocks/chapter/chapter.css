@@ -1,91 +1,48 @@
-/* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__green {	
-	border: 1px solid green; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-
-/* ___less___ */
-
-@chapterLogoHeight: 120px;
-@chapterLogoWidth: 116px;
-
-@chapterTitleHeight: 120px;
-
-@chapterLineMinWidth: 50px;
-
-
-/**/
-
 .chapter {
-	.border__green;
+  border: 1px solid green;
+  height: 120px;
+  width: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  margin-left: 0px; }
+  .chapter__logo {
+    border: 1px solid red;
+    height: auto;
+    width: 116px;
+    float: left;
+    margin-left: 90px; }
+  .chapter__title {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    float: left;
+    font-family: "PTsans75SF";
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #056cb4;
+    /* for general setting's: */
+    /* letter-spacing: 3.4px; */
+    /* margin-top: 20px;  */
+    /* margin-left: 14px; */ }
+  .chapter__side {
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    min-width: 50px;
+    float: left;
+    margin-right: 20px; }
+  .chapter__side_line {
+    background: #056CB4;
+    width: auto;
+    height: 8px;
+    margin: 56px 4px 0 4px; }
 
-	height: 120px;
-	width: auto; 		
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	-webkit-display: flex;
-	-moz-display: flex;
-	-ms-display: flex;
-	-o-display: flex;
-	display: flex;	
-
-	margin-left: 0px; /*7*/
-}
-
-.chapter__logo {
-	.border__red;
-
-	height: @chapterLogoHeight;
-	width: @chapterLogoWidth;	
-	float: left;
-	margin-left: 90px; /*83*/
-}
-
-.chapter__title {
-	.border__black;
-
-	height: @chapterTitleHeight;
-	width: auto;	
-	float: left;
-}
-
-.chapter__title p {
-	font-family: "PTsans75SF"; 	
-	font-size: 60px;	
-	text-transform: uppercase;
-	text-align: left;		
-	color: #056cb4;
-
-	/* for general setting's: */
-	/* letter-spacing: 3.4px; */
-	/* margin-top: 20px;  */
-	/* margin-left: 14px; */
-}
-
-.chapter__side {
-	.border__black;
-
-	height: auto;
-	width: 100%;	
-	min-width: @chapterLineMinWidth;
-	float: left;
-	margin-right: 20px;
-}
-
-.chapter__side_line {
-	background: #056CB4;
-	width: auto;
-	height: 8px;
-	margin: 56px 4px 0 4px;
-}
+/*# sourceMappingURL=chapter.css.map */

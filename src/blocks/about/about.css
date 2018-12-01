@@ -1,4 +1,3 @@
-/* ___borders___ */
 .about {
   border: 1px solid black;
   height: auto;
@@ -7,9 +6,9 @@
   float: left; }
   .about__logo {
     border: 1px solid black;
-    height: 360px;
+    height: auto;
     width: 360px;
-    margin-top: 132px;
+    margin-top: 129px;
     margin-left: 245px; }
   .about__title {
     border: 1px solid red;
@@ -28,11 +27,12 @@
       font-family: "PTsans55SF";
       font-size: 82px;
       letter-spacing: 1px;
+      line-height: 1em;
       text-transform: uppercase;
       text-align: center;
-      padding: 0;
-      margin-top: -10px;
-      margin-bottom: -10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: auto;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
@@ -45,12 +45,11 @@
       font-family: "PTsans75SF";
       font-size: 92px;
       letter-spacing: 4.2px;
+      line-height: 0.8em;
       text-transform: uppercase;
       text-align: center;
-      margin-top: -22px;
       padding: 0;
-      margin-top: -24px;
-      margin-bottom: 0px;
+      margin: 0;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
@@ -65,7 +64,7 @@
       letter-spacing: 0.1px;
       text-transform: uppercase;
       text-align: center;
-      margin: -4px auto 0 auto;
+      margin: 20px auto 0 auto;
       padding: 0; }
 
 /*# sourceMappingURL=about.css.map */
