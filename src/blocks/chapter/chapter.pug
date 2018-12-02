@@ -74,33 +74,38 @@ block chapter
     //- title with svg:
     mixin chapter(title, index)
         .chapter
-            .chapter__logo
-                case index
-                    //- basic template:
-                    //- when 1: +svgProfile
-                    //- when 2: +svgEducation
-                    //- when 3: +svgExperience
-                    //- when 4: +svgSoftware
-                    //- when 5: +svgContact
-                    //- when 6: +svgSkills
+            case index
+                //- basic template:
+                //- when 1: +svgProfile
+                //- when 2: +svgEducation
+                //- when 3: +svgExperience
+                //- when 4: +svgSoftware
+                //- when 5: +svgContact
+                //- when 6: +svgSkills
 
-                    when 1: .chapter__logo_target-block_profile                    
+                when 1: .chapter__logo.chapter__logo_profile
+                    .chapter__logo_target-block_profile
                         +svgProfile
 
-                    when 2: .chapter__logo_target-block_education
+                when 2: .chapter__logo.chapter__logo_education
+                    .chapter__logo_target-block_education
                         +svgEducation
 
-                    when 3: .chapter__logo_target-block_experience
+                when 3: .chapter__logo.chapter__logo_experience
+                    .chapter__logo_target-block_experience
                         +svgExperience
 
-                    when 4: .chapter__logo_target-block_software
+                when 4: .chapter__logo.chapter__logo_software
+                    .chapter__logo_target-block_software
                         +svgSoftware
-
-                    when 5: .chapter__logo_target-block_contact
+                
+                when 5: .chapter__logo.chapter__logo_contact
+                    .chapter__logo_target-block_contact
                         +svgContact
-
-                    when 6: .chapter__logo_target-block_skills
-                        +svgSkills
+                
+                when 6: .chapter__logo.chapter__logo_skills
+                    .chapter__logo_target-block_skills
+                        +svgSkills            
 
             .chapter__title
                 //- basic template:
