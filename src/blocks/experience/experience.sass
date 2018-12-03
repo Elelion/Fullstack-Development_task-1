@@ -1,0 +1,57 @@
+// ___borders___
+
+@mixin border-black
+	border: 1px solid black
+
+@mixin border-green
+	border: 1px solid green
+
+@mixin border-red
+	border: 1px solid red
+	
+// ---
+
+.experience
+	margin-top: 64px
+	float: left
+	width: auto
+	margin-bottom: 68px
+
+	&__text
+		@include border-red
+		height: auto
+		width: auto
+		float: left
+		margin: 2px 0 0 83px
+		letter-spacing: -0.4px
+		line-height: 1.2
+
+		&_target-block
+			padding-left: 18px
+			margin-top: 49px
+
+			&_list:before
+				content: ''
+				display: inline-block
+				height: 32px
+				width: 32px
+				vertical-align: middle
+				border-radius: 50%
+				background-color: #000
+				margin: 9px 25px 0 0
+				float: left
+
+			&_list
+				@include border-black
+				padding-top: 10px	
+				margin-bottom: 5px
+				margin-left: 2px
+				float: left
+				list-style-type: none
+				height: auto
+
+				&:nth-child(1)
+					margin-bottom: 4px
+
+				&:nth-child(2)
+					margin-bottom: 10px

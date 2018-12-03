@@ -1,51 +1,28 @@
-/* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-/**/
-
 .profile {
-	.border__black;
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  float: left; }
+  .profile__text {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    float: left;
+    margin: 0 0 0 90px;
+    letter-spacing: -0.5px;
+    line-height: 1.2; }
+    .profile__text_target-font {
+      font-family: "PTsans55SF";
+      font-size: 24px;
+      text-align: left;
+      margin: 12px 13px 0px 1px;
+      padding: 0px; }
+      .profile__text_target-font_normal {
+        margin: 12px 13px 0px 1px;
+        font-weight: 100; }
+      .profile__text_target-font_bold {
+        font-weight: 700; }
 
-	height: auto;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-	/* margin-top: 108px; */
-	float: left;
-}
-
-.profile__text {
-	.border__black;	
-
-	height: auto;
-	width: auto;
-	float: left;
-	margin: 0 0 0 90px;
-	letter-spacing: -0.5px;
-	line-height: 1.2;	;
-}
-
-.profile__text_target-font {	
-	font-family: "PTsans55SF";
-	font-size: 24px;
-	text-align: left;	
-
-	margin: 12px 13px 0px 1px;
-	padding: 0px;
-}
-
-.profile__text_target-font_normal {
-	margin: 12px 13px 0px 1px;
-	font-weight: 100;
-}
-
-.profile__text_target-font_bold {
-	font-weight: 700;
-}
+/*# sourceMappingURL=profile.css.map */

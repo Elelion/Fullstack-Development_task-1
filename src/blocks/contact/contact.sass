@@ -1,0 +1,94 @@
+// ___borders___
+
+@mixin border-black
+	border: 1px solid black
+
+@mixin border-green
+	border: 1px solid green
+
+@mixin border-red
+	border: 1px solid red
+	
+// ---
+
+.contact
+	@include border-black
+	height: auto
+	width: 100%
+	margin-top: 60px
+	float: left
+
+	&__block
+		@include border-black
+		height: auto
+		width: auto
+		float: left
+		margin: 0 0 0 90px
+		line-height: 1.2
+
+		&_target-text_title
+			font-family: "PTsans77F"
+			text-transform: uppercase
+			letter-spacing: 4.6px
+			font-size: 29px
+			margin-left: 1px
+			margin-top: 8px
+			width: auto
+			font-weight: 900
+
+// .contact__block_target-text_content {
+// 	font-family: "PTsans55SF"; 	
+// 	font-size: 28px;	
+// 	margin-left: 0px;
+// 	letter-spacing: 1.1px;
+// }
+
+// .contact__block_target-table {	
+// 	margin-top: 20px;		
+// 	border-collapse: collapse;	
+// }
+
+// .contact__block_target-table_tr {
+// 	width: auto;
+// }
+
+// .contact__block_target-table_td {
+// 	margin-top: 30px;	
+// 	height: 82px;	
+// 	width: 194px;
+// 	min-width: 194px;
+// }
+
+// .contact__block_target-text_link {	
+// 	color:#056DB6;
+// 	text-decoration: none;
+	
+// 	text-transform: lowercase;	
+
+// 	font-family: "PTsans55SF";
+// 	font-size: 28px;	
+// 	margin-left: 0px;
+
+// 	text-decoration: none;
+// 	-webkit-transition: 0.7s;
+//     transition: 0.7s;
+// }
+
+// .contact__block_target-text_link:hover {
+// 	color: #E75735;
+
+// 	-webkit-transition: 0.7s;
+//     transition: 0.7s;
+// }
+
+// .contact__block_target-text_link-mail {
+// 	letter-spacing: 1.7px;
+// }
+
+// .contact__block_target-text_link-phone {
+// 	letter-spacing: 1.2px;
+// }
+
+// .contact__block_target-text_link-site {
+// 	letter-spacing: 2.5px;
+// }

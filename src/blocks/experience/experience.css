@@ -1,81 +1,40 @@
-/* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__green {	
-	border: 1px solid green; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-
-/**/
-
-.wrapping {
-	white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */    
-    text-overflow: ellipsis; /* Многоточие */
-}
-
-
-/**/
-
 .experience {
-	margin-top: 64px;
-	/* margin-left: -7px; */
-	float: left;
-	width: auto;
-	margin-bottom: 68px;
-}
+  margin-top: 64px;
+  float: left;
+  width: auto;
+  margin-bottom: 68px; }
+  .experience__text {
+    border: 1px solid red;
+    height: auto;
+    width: auto;
+    float: left;
+    margin: 2px 0 0 83px;
+    letter-spacing: -0.4px;
+    line-height: 1.2; }
+    .experience__text_target-block {
+      padding-left: 18px;
+      margin-top: 49px; }
+      .experience__text_target-block_list:before {
+        content: "";
+        display: inline-block;
+        height: 32px;
+        width: 32px;
+        vertical-align: middle;
+        border-radius: 50%;
+        background-color: #000;
+        margin: 9px 25px 0 0;
+        float: left; }
+      .experience__text_target-block_list {
+        border: 1px solid black;
+        padding-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 2px;
+        float: left;
+        list-style-type: none;
+        height: auto; }
+        .experience__text_target-block_list:nth-child(1) {
+          margin-bottom: 4px; }
+        .experience__text_target-block_list:nth-child(2) {
+          margin-bottom: 10px; }
 
-.experience__text {
-	.border__red;
-
-	height: auto;
-	width: auto;
-	float: left;
-	margin: 2px 0 0 83px;
-	letter-spacing: -0.4px;
-	line-height: 1.2;
-}
-
-.experience__text_target-block {
-	padding-left: 18px;
-	margin-top: 49px;
-}
-
-.experience__text_target-block_list:before {
-	content: '';
-	display: inline-block;
-	height:32px;
-	width: 32px;
-	vertical-align: middle;
-	border-radius:50%;
-	background-color:#000;
-	margin: 9px 25px 0 0;
-	float: left;
-}
-
-.experience__text_target-block_list {
-	.border__black;
-
-	padding-top: 10px;	
-	margin-bottom: 5px;
-	margin-left: 2px;
-	float: left;
-	list-style-type: none;
-	height: auto;
-}
-
-
-.experience__text_target-block_list:nth-child(1) {
-	margin-bottom: 4px;
-}
-
-.experience__text_target-block_list:nth-child(2) {
-	margin-bottom: 10px;
-}
+/*# sourceMappingURL=experience.css.map */

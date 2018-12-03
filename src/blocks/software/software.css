@@ -1,131 +1,63 @@
-/* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__green {	
-	border: 1px solid green; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-
-/**/
-
 .software {
-	.border__red;
-	margin-top: 72px;
-	margin-left: 0px;
-	width: 100%;
-	height: auto;
-}
+  border: 1px solid red;
+  margin-top: 72px;
+  margin-left: 0px;
+  width: 100%;
+  height: auto; }
+  .software__block {
+    border: 1px solid green;
+    height: auto;
+    width: 100%;
+    float: left;
+    margin: 0 0 0 82px;
+    letter-spacing: -0.5px;
+    line-height: 1.2; }
+    .software__block_target-position_left {
+      float: left; }
+    .software__block_target-position_right {
+      float: right;
+      margin-right: 157px; }
+    .software__block_target-font_left, .software__block_target-font_right {
+      font-family: "PTsans55SF";
+      font-size: 38px;
+      text-transform: uppercase;
+      text-align: left;
+      margin: 33px 0 0 13px;
+      letter-spacing: 0.5px; }
+    .software__block_target-font_left:nth-child(1) {
+      margin: 33px 0 0 12px;
+      letter-spacing: 0.8px; }
+    .software__block_target-font_left:nth-child(3) {
+      margin: 34px 0 0 12px;
+      letter-spacing: -0.2px; }
+    .software__block_target-font_left:nth-child(5) {
+      margin: 34px 0 0 12px;
+      letter-spacing: 0.3px; }
+    .software__block_target-font_right:nth-child(1) {
+      margin: 32px 0 0 2px;
+      letter-spacing: 0.8px; }
+    .software__block_target-font_right:nth-child(3) {
+      margin: 34px 0 0 2px;
+      letter-spacing: -0.2px; }
+    .software__block_target-font_right:nth-child(5) {
+      margin: 34px 0 0 2px;
+      letter-spacing: -0.8px; }
+    .software__block_target-progress_left, .software__block_target-progress_right {
+      background-color: #f3f3f3;
+      border: 0;
+      width: 430px;
+      height: 34px;
+      margin: 21px 0 0 13px;
+      margin-top: 20px; }
+    .software__block_target-progress_left:nth-child(6) {
+      margin-top: 16px; }
+    .software__block_target-progress_right:nth-child(2) {
+      margin-left: 0px; }
+    .software__block_target-progress_right:nth-child(4) {
+      margin-left: 0px;
+      margin-top: 20px; }
+    .software__block_target-progress_right:nth-child(6) {
+      margin-left: 0px;
+      margin-top: 15px; }
 
-.software__block {
-	.border__green;
-
-	height: auto;
-	width: 100%;
-	float: left;
-	margin: 0 0 0 82px;
-	letter-spacing: -0.5px;
-	line-height: 1.2;	
-}
-
-
-/**/
-
-.software__block_target-position_left {
-	float: left;
-}
-
-.software__block_target-position_right {
-	float: right;
-	margin-right: 157px;	
-}
-
-
-/**/
-
-.software__block_target-font_left,
-.software__block_target-font_right {
-	font-family: "PTsans55SF"; 	
-	font-size: 38px;
-	/* letter-spacing: -0.1px; */
-	text-transform: uppercase;
-	text-align: left;
-	/* margin-top: 20px;  */
-	/* margin-left: 14px; */
-
-	margin: 33px 0  0 13px;
-	letter-spacing: 0.5px;
-}
-
-.software__block_target-font_left:nth-child(1) {	
-	margin: 33px 0 0 12px;
-	letter-spacing: 0.8px;	
-}
-
-.software__block_target-font_left:nth-child(3) {
-	margin: 34px 0 0 12px;
-	letter-spacing: -0.2px;	
-}
-
-.software__block_target-font_left:nth-child(5) {	
-	margin: 34px 0 0 12px;
-	letter-spacing: 0.3px;	
-}
-
-.software__block_target-font_right:nth-child(1) {	
-	margin: 32px 0 0 2px;
-	letter-spacing: 0.8px;	
-}
-
-.software__block_target-font_right:nth-child(3) {
-	margin: 34px 0 0 2px;
-	letter-spacing: -0.2px;	
-}
-
-.software__block_target-font_right:nth-child(5) {	
-	margin: 34px 0 0 2px;
-	letter-spacing: -0.8px;	
-}
-
-/**/
-
-.software__block_target-progress_left,
-.software__block_target-progress_right {
-    background-color: #f3f3f3;
-    border: 0;
-    width: 430px;
-    height: 34px;
-	margin: 21px 0 0 13px;
-}
-
-.software__block_target-progress_right:nth-child(2) {
-	margin-left: 11px;
-}
-
-.software__block_target-progress_left:nth-child(4) {
-	margin-top: 20px;
-}
-
-.software__block_target-progress_left:nth-child(6) {
-	margin-top: 16px;
-}
-
-.software__block_target-progress_right:nth-child(2) {
-	margin-left: 0px;
-}
-
-.software__block_target-progress_right:nth-child(4) {
-	margin-left: 0px;
-	margin-top: 20px;
-}
-
-.software__block_target-progress_right:nth-child(6) {
-	margin-left: 0px;
-	margin-top: 15px;
-}
+/*# sourceMappingURL=software.css.map */

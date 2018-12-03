@@ -1,0 +1,104 @@
+// ___borders___
+
+@mixin border-black
+	border: 1px solid black
+
+@mixin border-green
+	border: 1px solid green
+
+@mixin border-red
+	border: 1px solid red
+	
+// ---
+
+.software
+	@include border-red
+	margin-top: 72px
+	margin-left: 0px
+	width: 100%
+	height: auto
+
+	&__block
+		@include border-green
+		height: auto
+		width: 100%
+		float: left
+		margin: 0 0 0 82px
+		letter-spacing: -0.5px
+		line-height: 1.2
+
+		// ---
+
+		&_target-position
+			&_left
+				float: left
+
+			&_right
+				float: right
+				margin-right: 157px
+
+			// ---
+			
+		&_target-font
+			&_left,		
+			&_right
+				font-family: "PTsans55SF"
+				font-size: 38px
+				text-transform: uppercase
+				text-align: left
+				margin: 33px 0  0 13px
+				letter-spacing: 0.5px
+
+			// ---
+
+			&_left:nth-child(1)
+				margin: 33px 0 0 12px
+				letter-spacing: 0.8px
+
+			&_left:nth-child(3)
+				margin: 34px 0 0 12px
+				letter-spacing: -0.2px
+
+			&_left:nth-child(5)
+				margin: 34px 0 0 12px
+				letter-spacing: 0.3px
+
+			&_right:nth-child(1)
+				margin: 32px 0 0 2px
+				letter-spacing: 0.8px
+
+			&_right:nth-child(3)
+				margin: 34px 0 0 2px
+				letter-spacing: -0.2px
+
+			&_right:nth-child(5)
+				margin: 34px 0 0 2px
+				letter-spacing: -0.8px
+
+		// ---
+		
+		&_target-progress
+			&_left,
+			&_right
+				background-color: #f3f3f3
+				border: 0
+				width: 430px
+				height: 34px
+				margin: 21px 0 0 13px
+
+				&_left:nth-child(4)
+				margin-top: 20px
+
+			&_left:nth-child(6)
+				margin-top: 16px
+
+			&_right:nth-child(2)
+				margin-left: 0px
+
+			&_right:nth-child(4)
+				margin-left: 0px
+				margin-top: 20px
+
+			&_right:nth-child(6)
+				margin-left: 0px
+				margin-top: 15px

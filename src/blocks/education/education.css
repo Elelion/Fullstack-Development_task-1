@@ -1,84 +1,40 @@
-/* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__green {	
-	border: 1px solid green; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-
-/**/
-
-.wrapping {
-	white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */    
-    text-overflow: ellipsis; /* Многоточие */
-}
-
-/**/
-
 .education {
-	margin-top: 108px;
-	/* margin-left: -7px; */
-	float: right;
-	height: auto;
-	width: auto;
-}
+  margin-top: 108px;
+  float: right;
+  height: auto;
+  width: auto; }
+  .education__text {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    float: left;
+    margin: 0 0 0 83px;
+    letter-spacing: -0.4px;
+    line-height: 1.2; }
+    .education__text_target-block {
+      padding-left: 20px;
+      padding-top: 9px;
+      /* pointer */ }
+      .education__text_target-block_list:before {
+        content: "";
+        display: inline-block;
+        height: 32px;
+        width: 32px;
+        vertical-align: middle;
+        border-radius: 50%;
+        background-color: #000;
+        margin: 9px 25px 0 0;
+        float: left; }
+      .education__text_target-block_list {
+        border: 1px solid black;
+        padding-top: 10px;
+        margin-bottom: 6px;
+        float: left;
+        list-style-type: none;
+        height: 195px; }
+        .education__text_target-block_list:nth-child(2) {
+          margin-bottom: 2px; }
+        .education__text_target-block_list:nth-child(3) {
+          margin-bottom: 5px; }
 
-/* !!! */
-.education > .chapter > .chapter__title p  {
-	/* margin: 16px 0 0 34px; */
-}
-
-.education__text {
-	.border__black;
-
-	height: auto;
-	width: auto;
-	float: left;
-	margin: 0 0 0 83px; /*90*/
-	letter-spacing: -0.4px;
-	line-height: 1.2;
-}
-
-.education__text_target-block {	
-	padding-left: 20px;
-	padding-top: 9px;
-}
-
-/* pointer */
-.education__text_target-block_list:before {
-	content: '';
-	display: inline-block;
-	height:32px;
-	width: 32px;
-	vertical-align: middle;
-	border-radius:50%;
-	background-color:#000;
-	margin: 9px 25px 0 0;
-	float: left;
-}
-
-.education__text_target-block_list {
-	.border__black;
-
-	padding-top: 10px;
-	margin-bottom: 6px;
-	float: left;
-	list-style-type: none;
-	height: 195px;
-}
-
-.education__text_target-block_list:nth-child(2) {
-	margin-bottom: 2px;
-}
-
-.education__text_target-block_list:nth-child(3) {
-	margin-bottom: 5px;
-}
+/*# sourceMappingURL=education.css.map */

@@ -1,29 +1,29 @@
 block section
-    mixin section(title, paragraph, comment, description, text)
-        .section
-            //- Master Degree / Company name
-            if (title === 'experience')
-                span.section__paragraph.section__paragraph_experience= paragraph
-            
-            if (title === 'education')
-                span.section__paragraph.section__paragraph_education= paragraph
+  mixin section(title, paragraph, comment, description, text)
+    .section
+      //- Master Degree / Company name
+      if (title === 'experience')
+        span.section__paragraph.section__paragraph_experience= paragraph
+      
+      if (title === 'education')
+        span.section__paragraph.section__paragraph_education= paragraph
 
-            //- // Feb 2011 - Jun 2014
-            .section__comment
-                if (title === 'experience')
-                    p.section__comment_experience= comment
-                
-                if (title === 'education')
-                    p.section__comment_education= comment
+      //- // Feb 2011 - Jun 2014
+      .section__comment
+        if (title === 'experience')
+          p.section__comment_experience= comment
+        
+        if (title === 'education')
+          p.section__comment_education= comment
 
-            //- University name / Your job here
-            .section__description
-                if (title === 'experience')
-                    p.section__description_experience= description
-                
-                if (title === 'education')
-                    p.section__description_education= description
-            
-            //- Lorem ipsum...
-            .section__position
-                p.section__text= text
+      //- University name / Your job here
+      .section__description
+        if (title === 'experience')
+          p.section__description_experience= description
+          
+        if (title === 'education')
+          p.section__description_education= description
+      
+      //- Lorem ipsum...
+      .section__position
+        p.section__text= text

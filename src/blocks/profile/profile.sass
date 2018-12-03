@@ -1,0 +1,43 @@
+// ___borders___
+
+@mixin border-black
+	border: 1px solid black
+
+@mixin border-green
+	border: 1px solid green
+
+@mixin border-red
+	border: 1px solid red
+	
+// ---
+
+.profile
+	@include border-black
+	height: auto
+	width: auto
+	margin-left: auto
+	margin-right: auto
+	float: left
+
+	&__text
+		@include border-black
+		height: auto
+		width: auto
+		float: left
+		margin: 0 0 0 90px
+		letter-spacing: -0.5px
+		line-height: 1.2
+	
+		&_target-font	
+			font-family: "PTsans55SF"
+			font-size: 24px
+			text-align: left
+			margin: 12px 13px 0px 1px
+			padding: 0px
+
+			&_normal
+				margin: 12px 13px 0px 1px
+				font-weight: 100
+
+			&_bold
+				font-weight: 700
