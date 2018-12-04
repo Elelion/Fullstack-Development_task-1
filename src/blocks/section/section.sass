@@ -1,0 +1,64 @@
+// ___borders___
+
+@mixin border-black
+	border: 1px solid black
+
+@mixin border-green
+	border: 1px solid green
+
+@mixin border-red
+	border: 1px solid red
+
+// ---
+
+@mixin wrapping
+	white-space: nowrap // Отменяем перенос текста
+	overflow: hidden // Обрезаем содержимое
+	text-overflow: ellipsis // Многоточие
+
+// ---
+
+.section
+	font-family: "PTsans55SF"
+	font-size: 24px
+	text-align: left
+	/* margin-left: 14px; */
+
+	&__paragraph
+		width: 320px
+		font-family: "PTsans77F" 	
+		text-transform: uppercase
+		font-size: 38px
+		letter-spacing: 4.7px
+		color: #056cb4
+		float: left
+		padding-right: -10px
+		@include wrapping
+
+	&__comment
+		width: 400px
+		font-family: "PTsans57F"
+		font-size: 38px
+		letter-spacing: 3.0px
+		float: left
+
+	&__description
+		font-family: "PTsans55SF"
+		font-size: 38px
+		letter-spacing: -0.1px
+		text-transform: uppercase
+		text-align: left
+
+	&__position
+		@include border-green
+		float: left
+		margin: 0px 0 0 14px //-34
+		padding: 0px
+		width: auto
+
+	&__text
+		/* pading: 0px; */
+		padding-left: 48px
+		padding-top: 2px
+		margin: 0px 54px 0 0
+		float: left

@@ -1,81 +1,43 @@
-/* ___borders___ */
-
-.border__black {	
-	border: 1px solid black; /* border-color: transparent; */
-}
-
-.border__green {	
-	border: 1px solid green; /* border-color: transparent; */
-}
-
-.border__red {	
-	border: 1px solid red; /* border-color: transparent; */
-}
-
-
-/**/
-
-.wrapping {
-	white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */    
-    text-overflow: ellipsis; /* Многоточие */
-}
-
-
-/**/
-
 .section {
-	font-family: "PTsans55SF"; 
-	font-size: 24px;
-	text-align: left;	
-	/* margin-left: 14px; */
-}
+  font-family: "PTsans55SF";
+  font-size: 24px;
+  text-align: left;
+  /* margin-left: 14px; */ }
+  .section__paragraph {
+    width: 320px;
+    font-family: "PTsans77F";
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 4.7px;
+    color: #056cb4;
+    float: left;
+    padding-right: -10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .section__comment {
+    width: 400px;
+    font-family: "PTsans57F";
+    font-size: 38px;
+    letter-spacing: 3px;
+    float: left; }
+  .section__description {
+    font-family: "PTsans55SF";
+    font-size: 38px;
+    letter-spacing: -0.1px;
+    text-transform: uppercase;
+    text-align: left; }
+  .section__position {
+    border: 1px solid green;
+    float: left;
+    margin: 0px 0 0 14px;
+    padding: 0px;
+    width: auto; }
+  .section__text {
+    /* pading: 0px; */
+    padding-left: 48px;
+    padding-top: 2px;
+    margin: 0px 54px 0 0;
+    float: left; }
 
-.section__paragraph {
-	width: 320px;
-
-	font-family: "PTsans77F"; 	
-	text-transform: uppercase;
-	font-size: 38px;
-	letter-spacing: 4.7px;	
-	color: #056cb4;
-	float: left;
-	padding-right: -10px;
-
-	.wrapping;
-}
-
-.section__comment {
-	width: 400px;
-	font-family: "PTsans57F"; 
-	font-size: 38px;
-	letter-spacing: 3.0px;
-
-	float: left;
-}
-
-.section__description {
-	font-family: "PTsans55SF"; 	
-	font-size: 38px;
-	letter-spacing: -0.1px;
-	text-transform: uppercase;
-	text-align: left;			
-}
-
-.section__position {
-	.border__green;
-
-	float: left;
-	margin: -34px 0 0 14px;
-	padding: 0px;
-	width: auto;
-}
-
-.section__text {
-	/* pading: 0px; */
-	padding-left: 48px;
-	padding-top: 2px;
-	margin: 0px 54px 0 0;
-
-	float: left;
-}
+/*# sourceMappingURL=section.css.map */
