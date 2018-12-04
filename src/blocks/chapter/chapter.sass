@@ -11,6 +11,18 @@
 
 // ---
 
+@mixin flex-enabled
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	-webkit-display: flex
+	-moz-display: flex
+	-ms-display: flex
+	-o-display: flex
+	display: flex
+
+// ---
 .chapter
 	@include border-green
 	height: 120px
@@ -39,7 +51,6 @@
 		height: auto
 		width: auto
 		float: left
-
 		font-family: "PTsans75SF"
 		font-size: 60px
 		text-transform: uppercase
@@ -58,9 +69,16 @@
 		min-width: 50px
 		float: left
 		margin-right: 20px
+		@include flex-enabled
+		justify-content: space-around
+		align-items: center
 
 	&__side_line
 		background: #056CB4
-		width: auto
+		width: 99%
 		height: 8px
-		margin: 56px 4px 0 4px
+		margin: 0px 4px 0 4px
+
+/**/
+	
+@import chapter-additional

@@ -38,11 +38,47 @@
     width: 100%;
     min-width: 50px;
     float: left;
-    margin-right: 20px; }
+    margin-right: 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
   .chapter__side_line {
     background: #056CB4;
-    width: auto;
+    width: 99%;
     height: 8px;
-    margin: 56px 4px 0 4px; }
+    margin: 0px 4px 0 4px; }
+
+/* */
+/* ___additional styles___ */
+.chapter__logo_education, .chapter__logo_experience, .chapter__logo_software {
+  margin-left: 83px; }
+
+/* */
+.chapter__title_target-font_profile {
+  letter-spacing: 2.8px;
+  margin: 20px 0 0 14px; }
+.chapter__title_target-font_education {
+  margin: 18px 0 0 28px;
+  letter-spacing: 4.6px; }
+.chapter__title_target-font_experience {
+  margin: 21px 0 0 28px;
+  letter-spacing: 2.6px; }
+.chapter__title_target-font_software {
+  margin: 20px 0 0 28px;
+  letter-spacing: 3.8px; }
+.chapter__title_target-font_contact {
+  margin: 20px 0 0 14px;
+  letter-spacing: 4.6px; }
+.chapter__title_target-font_skills {
+  margin: 22px 0 0 10px;
+  letter-spacing: 2px; }
 
 /*# sourceMappingURL=chapter.css.map */
