@@ -174,7 +174,14 @@ body {
 }
 
 html { 
-  overflow-x: hidden;
+	overflow-x: hidden;
+	font-family: "PTsans55SF";
+	color: black;	
+}
+
+html,
+body {
+	font-size: 10px;
 }
 
 /**/

@@ -8,25 +8,25 @@
     border: 1px solid black;
     height: auto;
     width: 360px;
-    margin-top: 129px;
-    margin-left: 245px; }
+    margin-top: 12.9rem;
+    margin-left: 32%; }
   .about__title {
     border: 1px solid red;
     height: auto;
-    min-width: 450px;
+    min-width: 4.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 105px; }
+    margin-top: 4rem;
+    margin-bottom: 10.5rem; }
     .about__title_name {
       border: 1px solid black;
       height: auto;
       width: 500px;
-      margin-left: 175px; }
+      margin-left: 23.1%; }
     .about__title_target-font_name {
       font-family: "PTsans55SF";
-      font-size: 82px;
-      letter-spacing: 1px;
+      font-size: 8.2rem;
+      letter-spacing: 0.1rem;
       line-height: 1em;
       text-transform: uppercase;
       text-align: center;
@@ -40,11 +40,11 @@
       border: 1px solid black;
       height: auto;
       width: 500px;
-      margin-left: 175px; }
+      margin-left: 23.1%; }
     .about__title_target-font_surname {
       font-family: "PTsans75SF";
-      font-size: 92px;
-      letter-spacing: 4.2px;
+      font-size: 9.2rem;
+      letter-spacing: 0.42rem;
       line-height: 0.8em;
       text-transform: uppercase;
       text-align: center;
@@ -57,14 +57,14 @@
       border: 1px solid black;
       height: auto;
       width: 500px;
-      margin-left: 175px; }
+      margin-left: 23.1%; }
     .about__title_target-font_proffesion {
       font-family: "PTsans75SF";
-      font-size: 38px;
-      letter-spacing: 0.1px;
+      font-size: 3.8rem;
+      letter-spacing: 0.01rem;
       text-transform: uppercase;
       text-align: center;
-      margin: 20px auto 0 auto;
+      margin: 2rem auto 0 auto;
       padding: 0; }
 
 /*# sourceMappingURL=about.css.map */

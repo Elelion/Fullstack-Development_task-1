@@ -1,15 +1,17 @@
 .bar__point {
   float: left;
-  margin: 10px 13px 0 0; }
+  margin: 11px 14.5px 0 0;
+  width: 28px; }
   .bar__point:first-of-type {
     margin-left: 36px; }
   .bar__point_target-size {
-    width: 30px;
-    height: 30px; }
+    width: 3rem;
+    height: 3rem; }
   .bar__point_empty {
     float: left;
-    margin: 10px 13px 0 0; }
+    margin: 1rem 14.5px 0 0;
+    width: 28px; }
   .bar__point:last-child, .bar__point_empty:last-child {
-    margin-right: 0px; }
+    margin-right: 0rem; }
 
 /*# sourceMappingURL=points.css.map */

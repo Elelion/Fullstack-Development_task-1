@@ -1,6 +1,6 @@
 .chapter {
   border: 1px solid green;
-  height: 120px;
+  height: 12rem;
   width: auto;
   display: -webkit-flex;
   display: -moz-flex;
@@ -11,20 +11,22 @@
   -ms-display: flex;
   -o-display: flex;
   display: flex;
-  margin-left: 0px; }
+  margin-left: 0rem; }
   .chapter__logo {
     border: 1px solid red;
     height: auto;
-    width: 116px;
-    float: left;
-    margin-left: 90px; }
+    width: 11.6rem;
+    margin-left: 9rem; }
+    .chapter__logo svg {
+      width: 12rem;
+      height: 12rem; }
   .chapter__title {
     border: 1px solid black;
     height: auto;
     width: auto;
     float: left;
     font-family: "PTsans75SF";
-    font-size: 60px;
+    font-size: 6rem;
     text-transform: uppercase;
     text-align: left;
     color: #056cb4;
@@ -36,9 +38,9 @@
     border: 1px solid black;
     height: auto;
     width: 100%;
-    min-width: 50px;
+    min-width: 5rem;
     float: left;
-    margin-right: 20px;
+    margin-right: 2rem;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -53,32 +55,32 @@
   .chapter__side_line {
     background: #056CB4;
     width: 99%;
-    height: 8px;
-    margin: 0px 4px 0 4px; }
+    height: 0.8rem;
+    margin: 0 0.4rem 0 0.4rem; }
 
 /* */
 /* ___additional styles___ */
 .chapter__logo_education, .chapter__logo_experience, .chapter__logo_software {
-  margin-left: 83px; }
+  margin-left: 8.3rem; }
 
 /* */
 .chapter__title_target-font_profile {
-  letter-spacing: 2.8px;
-  margin: 20px 0 0 14px; }
+  letter-spacing: 0.28rem;
+  margin: 2rem 0 0 1.4rem; }
 .chapter__title_target-font_education {
-  margin: 18px 0 0 28px;
-  letter-spacing: 4.6px; }
+  margin: 1.8rem 0 0 2.8rem;
+  letter-spacing: 0.46rem; }
 .chapter__title_target-font_experience {
-  margin: 21px 0 0 28px;
-  letter-spacing: 2.6px; }
+  margin: 2.1rem 0 0 2.8rem;
+  letter-spacing: 0.26rem; }
 .chapter__title_target-font_software {
-  margin: 20px 0 0 28px;
-  letter-spacing: 3.8px; }
+  margin: 2rem 0 0 2.8rem;
+  letter-spacing: 0.38rem; }
 .chapter__title_target-font_contact {
-  margin: 20px 0 0 14px;
-  letter-spacing: 4.6px; }
+  margin: 2rem 0 0 1.4rem;
+  letter-spacing: 0.46rem; }
 .chapter__title_target-font_skills {
-  margin: 22px 0 0 10px;
-  letter-spacing: 2px; }
+  margin: 2.2rem 0 0 1rem;
+  letter-spacing: 0.2rem; }
 
 /*# sourceMappingURL=chapter.css.map */
