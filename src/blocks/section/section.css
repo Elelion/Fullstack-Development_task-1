@@ -2,7 +2,7 @@
   font-size: 2.4rem;
   text-align: left; }
   .section__paragraph {
-    width: 32rem;
+    width: 31.5rem;
     font-family: "PTsans77F";
     text-transform: uppercase;
     font-size: 3.8rem;
@@ -13,11 +13,13 @@
     overflow: hidden;
     text-overflow: ellipsis; }
   .section__comment {
+    border: 1px solid green;
     width: 40rem;
     font-family: "PTsans57F";
     font-size: 3.8rem;
     letter-spacing: 0.3rem;
-    float: left; }
+    float: left;
+    margin-top: 0.1rem; }
   .section__description {
     font-size: 3.8rem;
     letter-spacing: -0.01rem;
@@ -33,7 +35,8 @@
     padding-left: 4.8rem;
     padding-top: 0.25rem;
     margin: 0 5.4rem 0 0;
-    float: left; }
+    float: left;
+    height: auto; }
 
 /* */
 /* ___additional styles___ */

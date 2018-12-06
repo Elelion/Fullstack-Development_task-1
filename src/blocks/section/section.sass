@@ -12,8 +12,8 @@
 // ---
 
 @mixin wrapping
-	white-space: nowrap // Отменяем перенос текста
-	overflow: hidden // Обрезаем содержимое
+	white-space: nowrap 		// Отменяем перенос текста
+	overflow: hidden 				// Обрезаем содержимое
 	text-overflow: ellipsis // Многоточие
 
 // ---
@@ -23,7 +23,7 @@
 	text-align: left
 
 	&__paragraph
-		width: 32rem
+		width: 31.5rem
 		font-family: "PTsans77F" 	
 		text-transform: uppercase
 		font-size: 3.8rem
@@ -33,11 +33,13 @@
 		@include wrapping
 
 	&__comment
+		@include border-green
 		width: 40rem
 		font-family: "PTsans57F"
 		font-size: 3.8rem
 		letter-spacing: .3rem
 		float: left
+		margin-top: .1rem
 
 	&__description
 		font-size: 3.8rem
@@ -57,6 +59,7 @@
 		padding-top: 0.25rem
 		margin: 0 5.4rem 0 0
 		float: left
+		height: auto
 
 /**/
 	
