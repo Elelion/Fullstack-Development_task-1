@@ -5,6 +5,8 @@ refactoring-events
 template HTML
 src/images/templates
 src/maket
+# src/.sass-cache
+# src/styles.css.map
 
 
 # ___about___
