@@ -1,18 +1,17 @@
 body
 	main.content
-		section.content__block.content__block_left
-			.content__block_top
+		section.content__block.content__block_left.content__block_top
 			//- header include
 			include ../about/about
-			include ../profile/profile
-			
-			.content__block_bottom
-			//- footer include
-			include ../contact/contact
-			include ../skills/skills
-			
+			include ../profile/profile	
+		
 		section.content__block.content__block_right.content__block_center
 			//- main include
 			include ../education/education
 			include ../experience/experience
 			include ../software/software
+
+		section.content__block.content__block_left.content__block_bottom
+			//- footer include
+			include ../contact/contact
+			include ../skills/skills

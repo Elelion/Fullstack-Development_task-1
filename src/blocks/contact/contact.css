@@ -11,6 +11,22 @@
     float: left;
     margin: 0.1rem 0 0 9rem;
     line-height: 1.2; }
+    @media screen and (max-width: 1540px) {
+      .contact__block {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content: center;
+        float: none; } }
+    @media screen and (max-width: 1540px) {
+      .contact__block_target {
+        justify-content: center; } }
     .contact__block_target-table {
       margin-top: 2rem;
       border-collapse: collapse; }

@@ -4,6 +4,9 @@
   width: 28px; }
   .bar__point:first-of-type {
     margin-left: 36px; }
+    @media screen and (max-width: 1895px) {
+      .bar__point:first-of-type {
+        margin-left: 1rem; } }
   .bar__point_target-size {
     width: 3rem;
     height: 3rem; }

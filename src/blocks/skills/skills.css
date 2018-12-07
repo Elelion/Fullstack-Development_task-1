@@ -4,6 +4,9 @@
   width: 100%;
   height: auto;
   margin-bottom: 21.9rem; }
+  @media screen and (max-width: 1540px) {
+    .skills {
+      margin-bottom: 14rem; } }
   .skills__statistic {
     border: 1px solid red;
     width: auto; }
@@ -38,6 +41,9 @@
       width: 28.7vw;
       height: 5vh;
       margin: 0 auto 0 auto; }
+      @media screen and (max-width: 1895px) {
+        .skills__statistic_target-block_bar {
+          width: 52rem; } }
       .skills__statistic_target-block_bar_creative {
         margin-top: 0.1rem; }
       .skills__statistic_target-block_bar_teamwork {

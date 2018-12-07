@@ -1,8 +1,7 @@
 .about {
   border: 1px solid black;
   height: auto;
-  width: 40%;
-  min-width: 760px;
+  width: 100%;
   float: left; }
   .about__logo {
     border: 1px solid black;
@@ -10,10 +9,13 @@
     width: 360px;
     margin-top: 12.9rem;
     margin-left: 32%; }
+    @media screen and (max-width: 1895px) {
+      .about__logo {
+        margin-left: auto;
+        margin-right: auto; } }
   .about__title {
     border: 1px solid red;
     height: auto;
-    min-width: 4.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
@@ -21,8 +23,15 @@
     .about__title_name {
       border: 1px solid black;
       height: auto;
-      width: 500px;
+      width: 50rem;
       margin-left: 23.1%; }
+      @media screen and (max-width: 1895px) {
+        .about__title_name {
+          margin-left: auto;
+          margin-right: auto; } }
+      @media screen and (max-width: 1280px) {
+        .about__title_name {
+          width: auto; } }
     .about__title_target-font_name {
       font-family: "PTsans55SF";
       font-size: 8.2rem;
@@ -39,8 +48,15 @@
     .about__title_surname {
       border: 1px solid black;
       height: auto;
-      width: 500px;
+      width: 50rem;
       margin-left: 23.1%; }
+      @media screen and (max-width: 1895px) {
+        .about__title_surname {
+          margin-left: auto;
+          margin-right: auto; } }
+      @media screen and (max-width: 1280px) {
+        .about__title_surname {
+          width: auto; } }
     .about__title_target-font_surname {
       font-family: "PTsans75SF";
       font-size: 9.2rem;
@@ -56,8 +72,15 @@
     .about__title_profession {
       border: 1px solid black;
       height: auto;
-      width: 500px;
+      width: 50rem;
       margin-left: 23.1%; }
+      @media screen and (max-width: 1895px) {
+        .about__title_profession {
+          margin-left: auto;
+          margin-right: auto; } }
+      @media screen and (max-width: 1280px) {
+        .about__title_profession {
+          width: auto; } }
     .about__title_target-font_proffesion {
       font-family: "PTsans75SF";
       font-size: 3.8rem;
