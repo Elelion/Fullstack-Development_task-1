@@ -52,11 +52,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center; }
-  .chapter__side_line {
-    background: #056CB4;
-    width: 99%;
-    height: 0.8rem;
-    margin: 0 0.4rem 0 0.4rem; }
+    .chapter__side_line {
+      background: #056CB4;
+      width: 99%;
+      height: 0.8rem;
+      margin: 0 0.4rem 0 0.4rem; }
 
 /* */
 /* ___additional styles___ */

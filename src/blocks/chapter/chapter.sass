@@ -9,8 +9,6 @@
 @mixin border-red
 	border: 1px solid red
 
-// ---
-
 @mixin flex-enabled
 	display: -webkit-flex
 	display: -moz-flex
@@ -23,6 +21,7 @@
 	display: flex
 
 // ---
+
 .chapter
 	@include border-green
 	height: 12rem
@@ -43,7 +42,6 @@
 		@include border-red
 		height: auto
 		width: 11.6rem
-		// float: left
 		margin-left: 9rem
 
 		& svg
@@ -61,6 +59,7 @@
 		text-align: left
 		color: #056cb4
 
+		// FIXME: Раскомментировать для общих настройках, при отключенном chapter-additional.sass/css
 		/* for general setting's: */
 		/* letter-spacing: 3.4px; */
 		/* margin-top: 20px;  */
@@ -77,11 +76,11 @@
 		justify-content: space-around
 		align-items: center
 
-	&__side_line
-		background: #056CB4
-		width: 99%
-		height: .8rem
-		margin: 0 .4rem 0 .4rem
+		&_line
+			background: #056CB4
+			width: 99%
+			height: .8rem
+			margin: 0 .4rem 0 .4rem
 
 /**/
 	

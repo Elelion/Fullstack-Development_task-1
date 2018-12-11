@@ -12,36 +12,39 @@
 /* ___additional styles___ */
 
 .section
-	&__paragraph_education
-		padding-left: .8rem
-		padding-top: .5rem
-		float: left
-		font-weight: 700
+	&__paragraph
+		&_education
+			padding-left: .8rem
+			padding-top: .5rem
+			float: left
+			font-weight: 700
 
-	&__paragraph_experience
-		padding-left: .6rem
-		padding-top: .2rem
-		letter-spacing: .56rem
-		float: left
-		font-weight: 700
-
-		// ---
-
-	&__comment_education
-		margin: 0 0 0 0
-
-	&__comment_experience
-		margin: 0 0 0 0
+		&_experience
+			padding-left: .6rem
+			padding-top: .2rem
+			letter-spacing: .56rem
+			float: left
+			font-weight: 700
 
 	// ---
 
-	&__description_education,
-	&__description_experience
-		@include border-red
-		padding-left: 4.6rem
-		padding-top: 0rem
-		margin-top: .6rem
-		margin-left: 1.4rem
-		margin-bottom: .4rem
-		float: left
-		clear: both
+	&__comment
+		&_education
+			margin: 0 0 0 0
+
+		&_experience
+			margin: 0 0 0 0
+
+	// ---
+
+	&__description
+		&_education,
+		&_experience
+			@include border-red
+			padding-left: 4.6rem
+			padding-top: 0rem
+			margin-top: .6rem
+			margin-left: 1.4rem
+			margin-bottom: .4rem
+			float: left
+			clear: both

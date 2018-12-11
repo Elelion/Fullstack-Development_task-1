@@ -25,6 +25,7 @@
 		float: left
 		margin: 0.1rem 0 0 9rem
 		line-height: 1.2
+
 		@media screen and (max-width: 1540px)
 			display: -webkit-flex
 			display: -moz-flex
@@ -41,6 +42,7 @@
 		&_target
 			@media screen and (max-width: 1540px)
 				justify-content: center
+				
 			&-table
 				margin-top: 2rem
 				border-collapse: collapse
@@ -56,45 +58,46 @@
 					min-width: 19.4rem
 
 			// ---
+			
+			&-text
+				&_title
+					font-family: "PTsans77F"
+					text-transform: uppercase
+					letter-spacing: .46rem
+					font-size: 2.9rem
+					margin-left: .1rem
+					width: auto
+					font-weight: 900
 
-			&-text_title
-				font-family: "PTsans77F"
-				text-transform: uppercase
-				letter-spacing: .46rem
-				font-size: 2.9rem
-				margin-left: .1rem
-				width: auto
-				font-weight: 900				
+				&_content
+					font-family: "PTsans55SF"
+					font-size: 2.8rem
+					margin-left: 0px
+					letter-spacing: .11rem
 
-			&-text_content
-				font-family: "PTsans55SF"
-				font-size: 2.8rem
-				margin-left: 0px
-				letter-spacing: .11rem
+				// ---
 
-			// ---
+				&_link
+					color: #056DB6
+					text-decoration: none
+					text-transform: lowercase
+					font-family: "PTsans55SF"
+					font-size: 2.8rem
+					margin-left: 0rem
+					text-decoration: none
+					-webkit-transition: 0.7s
+					transition: 0.7s
 
-			&-text_link
-				color: #056DB6
-				text-decoration: none
-				text-transform: lowercase
-				font-family: "PTsans55SF"
-				font-size: 2.8rem
-				margin-left: 0rem
-				text-decoration: none
-				-webkit-transition: 0.7s
-				transition: 0.7s
+					&:hover
+						color: #E75735
+						-webkit-transition: 0.7s
+						transition: 0.7s
 
-			&-text_link:hover
-				color: #E75735
-				-webkit-transition: 0.7s
-				transition: 0.7s
+					&-mail
+						letter-spacing: .17rem
 
-			&-text_link-mail
-				letter-spacing: .17rem
+					&-phone
+						letter-spacing: .12rem
 
-			&-text_link-phone
-				letter-spacing: .12rem
-
-			&-text_link-site
-				letter-spacing: .25rem
+					&-site
+						letter-spacing: .25rem

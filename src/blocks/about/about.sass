@@ -9,8 +9,6 @@
 @mixin border-red
 	border: 1px solid red
 
-// ---
-
 @mixin wrapping
 	white-space: nowrap 		// Отменяем перенос текста
 	overflow: hidden 				// Обрезаем содержимое
@@ -36,7 +34,8 @@ $leftSpacing: 23.1%
 		height: auto
 		width: 360px
 		margin-top: 12.9rem
-		margin-left: 32% //~245px
+		margin-left: 32%
+
 		@media screen and (max-width: 1895px)
 			margin-left: auto
 			margin-right: auto
@@ -56,9 +55,11 @@ $leftSpacing: 23.1%
 			height: auto
 			width: $nameWidth
 			margin-left: $leftSpacing
+
 			@media screen and (max-width: 1895px)
 				margin-left: auto
 				margin-right: auto
+
 			@media screen and (max-width: 1280px)
 				width: auto
 
@@ -80,9 +81,11 @@ $leftSpacing: 23.1%
 			height: auto
 			width: $surnameWidth
 			margin-left: $leftSpacing
+
 			@media screen and (max-width: 1895px)
 				margin-left: auto
 				margin-right: auto
+
 			@media screen and (max-width: 1280px)
 				width: auto
 
@@ -103,9 +106,11 @@ $leftSpacing: 23.1%
 			height: auto
 			width: $professionWidth
 			margin-left: $leftSpacing
+
 			@media screen and (max-width: 1895px)
 				margin-left: auto
 				margin-right: auto
+
 			@media screen and (max-width: 1280px)
 				width: auto
 
