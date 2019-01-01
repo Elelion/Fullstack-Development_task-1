@@ -1,34 +1,29 @@
 /* ___Fonts___ */
 
-@font-face
-	font-family: "PTsans55F"
-	src: url(fonts/PTC55F.ttf)
-
-@font-face
-	font-family: "PTsans75F"
-	src: url(fonts/PTC75F.ttf)
-
+	// bold section -> comment
 @font-face
 	font-family: "PTsans57F"
 	src: url(fonts/PTN57F.ttf)
 
+	// bold section -> paragraph
 @font-face
 	font-family: "PTsans77F"
 	src: url(fonts/PTN77F.ttf)
 
+	// normal
 @font-face
 	font-family: "PTsans55SF"
 	src: url(fonts/PTS55F.ttf)
 
+	// bold
 @font-face
 	font-family: "PTsans75SF"
 	src: url(fonts/PTS75F.ttf)
 
-@font-face
-	font-family: "LatoBold"
-	src: url(fonts/Lato/Lato-Bold.ttf)
+@mixin font-family__section_paragraph
+	font-family: Helvetica, Arial, sans-serif
 
-/* ___General___ */
+/**/
 
 html
 	overflow-x: hidden
@@ -43,3 +38,25 @@ body
 	padding: 0
 	margin: 0
 	width: 100%
+
+// ---
+
+@import ./blocks/content/content
+@import ./blocks/chapter/chapter
+@import ./blocks/points/points
+@import ./blocks/section/section
+
+// ---
+
+//- header
+@import ./blocks/about/about
+@import ./blocks/profile/profile
+
+//- main
+@import ./blocks/education/education
+@import ./blocks/experience/experience
+@import ./blocks/software/software
+
+//- footer
+@import ./blocks/contact/contact
+@import ./blocks/skills/skills

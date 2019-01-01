@@ -1,3 +1,26 @@
+/* ___Fonts___ */
+@font-face {
+  font-family: "PTsans55F";
+  src: url(fonts/PTC55F.ttf); }
+@font-face {
+  font-family: "PTsans75F";
+  src: url(fonts/PTC75F.ttf); }
+@font-face {
+  font-family: "PTsans57F";
+  src: url(fonts/PTN57F.ttf); }
+@font-face {
+  font-family: "PTsans77F";
+  src: url(fonts/PTN77F.ttf); }
+@font-face {
+  font-family: "PTsans55SF";
+  src: url(fonts/PTS55F.ttf); }
+@font-face {
+  font-family: "PTsans75SF";
+  src: url(fonts/PTS75F.ttf); }
+@font-face {
+  font-family: "LatoBold";
+  src: url(fonts/Lato/Lato-Bold.ttf); }
+/* */
 .experience {
   margin-top: 7.2rem;
   float: left;

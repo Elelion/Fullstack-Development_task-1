@@ -1,0 +1,31 @@
+// ___borders___
+
+@mixin border-black
+	border: 1px solid black
+
+@mixin border-green
+	border: 1px solid green
+
+@mixin border-red
+	border: 1px solid red
+
+
+// ___general___
+
+@mixin wrapping
+	// disabled wrap text
+	white-space: nowrap
+	
+	overflow: hidden 	
+	text-overflow: ellipsis
+
+@mixin flex-enabled
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	-webkit-display: flex
+	-moz-display: flex
+	-ms-display: flex
+	-o-display: flex
+	display: flex

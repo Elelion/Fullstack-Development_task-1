@@ -9,6 +9,11 @@ src/.sass-cache
 src/styles.css.map
 
 
+# ___templates___
+
+src/templates.css.map
+
+
 # ___about___
 
 src/blocks/about/.sass-cache
