@@ -51,17 +51,17 @@
 			// ---
 			
 			&-text
-				&_title
-					font-family: "PTsans77F"
+				&_title					
+					@include font-family__bold
 					text-transform: uppercase
-					letter-spacing: .46rem
+					letter-spacing: .12rem
 					font-size: 2.9rem
-					margin-left: .1rem
+					margin-left: .0rem
 					width: auto
 					font-weight: 900
 
 				&_content
-					font-family: "PTsans55SF"
+					@include font-family__normal
 					font-size: 2.8rem
 					margin-left: 0px
 					letter-spacing: .11rem
@@ -72,7 +72,7 @@
 					color: #056DB6
 					text-decoration: none
 					text-transform: lowercase
-					font-family: "PTsans55SF"
+					@include font-family__normal
 					font-size: 2.8rem
 					margin-left: 0rem
 					text-decoration: none

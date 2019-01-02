@@ -8,7 +8,7 @@
 
 	&__paragraph
 		width: 31.5rem
-		font-family: "PTsans77F" 	
+		@include font-family__section_paragraph
 		text-transform: uppercase
 		font-size: 3.8rem
 		letter-spacing: .47rem
@@ -19,7 +19,8 @@
 	&__comment
 		@include border-green
 		width: 40rem
-		font-family: "PTsans57F"
+		// font-family: "PTsans57F"
+		@include font-family__section_comment
 		font-size: 3.8rem
 		letter-spacing: .3rem
 		float: left
