@@ -593,51 +593,48 @@ body {
         display: flex;
         justify-content: center;
         float: none; } }
-    @media screen and (max-width: 1540px) {
-      .contact__block_target {
-        justify-content: center; } }
-    .contact__block_target-table {
-      margin-top: 2rem;
-      border-collapse: collapse; }
-      .contact__block_target-table_tr {
-        width: auto; }
-      .contact__block_target-table_td {
-        border: 1px solid green;
-        margin-top: 3rem;
-        height: 8.1rem;
-        width: auto;
-        min-width: 19.4rem; }
-    .contact__block_target-text_title {
-      font-family: "PTsans75SF", "Arial", "sans-serif";
-      text-transform: uppercase;
-      letter-spacing: 0.12rem;
-      font-size: 2.9rem;
-      margin-left: 0rem;
-      width: auto;
-      font-weight: 900; }
-    .contact__block_target-text_content {
-      font-size: 2.8rem;
-      margin-left: 0px;
-      letter-spacing: 0.11rem; }
-    .contact__block_target-text_link {
-      color: #056DB6;
-      text-decoration: none;
-      text-transform: lowercase;
-      font-size: 2.8rem;
-      margin-left: 0rem;
-      text-decoration: none;
+  .contact__list {
+    margin-top: 2rem;
+    border-collapse: collapse; }
+  .contact__item {
+    width: auto; }
+  .contact__row {
+    border: 1px solid green;
+    margin-top: 3rem;
+    height: 8.1rem;
+    width: auto;
+    min-width: 19.4rem; }
+  .contact__title {
+    font-family: "PTsans75SF", "Arial", "sans-serif";
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    font-size: 2.9rem;
+    margin-left: 0rem;
+    width: auto;
+    font-weight: 900; }
+  .contact__content {
+    font-size: 2.8rem;
+    margin-left: 0px;
+    letter-spacing: 0.11rem; }
+  .contact__link {
+    color: #056DB6;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 2.8rem;
+    margin-left: 0rem;
+    text-decoration: none;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+    .contact__link:hover {
+      color: #E75735;
       -webkit-transition: 0.7s;
       transition: 0.7s; }
-      .contact__block_target-text_link:hover {
-        color: #E75735;
-        -webkit-transition: 0.7s;
-        transition: 0.7s; }
-      .contact__block_target-text_link-mail {
-        letter-spacing: 0.17rem; }
-      .contact__block_target-text_link-phone {
-        letter-spacing: 0.12rem; }
-      .contact__block_target-text_link-site {
-        letter-spacing: 0.25rem; }
+    .contact__link-mail {
+      letter-spacing: 0.17rem; }
+    .contact__link-phone {
+      letter-spacing: 0.12rem; }
+    .contact__link-site {
+      letter-spacing: 0.25rem; }
 
 /* */
 .skills {
