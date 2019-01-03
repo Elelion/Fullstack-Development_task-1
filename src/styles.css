@@ -1,5 +1,4 @@
 /* ___Fonts___ */
-/* ___Fonts___ */
 @font-face {
   font-family: "PTsans57F";
   src: url(fonts/PTN57F.ttf); }
@@ -26,7 +25,6 @@ body {
   margin: 0;
   width: 100%; }
 
-/* ___Fonts___ */
 /* */
 .content {
   border: 1px solid black;
@@ -77,7 +75,6 @@ body {
     .content__block_top, .content__block_bottom, .content__block_center {
       float: none; } }
 
-/* ___Fonts___ */
 /* */
 .chapter {
   border: 1px solid green;
@@ -183,7 +180,6 @@ body {
   .bar__point:last-child, .bar__point_empty:last-child {
     margin-right: 0rem; }
 
-/* ___Fonts___ */
 /* */
 .section {
   font-size: 2.4rem;
@@ -226,7 +222,6 @@ body {
     height: auto; }
 
 /* */
-/* ___Fonts___ */
 /* ___additional styles___ */
 .section__paragraph_education {
   padding-left: 0.8rem;
@@ -256,7 +251,6 @@ body {
   float: left;
   clear: both; }
 
-/* ___Fonts___ */
 /* */
 .about {
   border: 1px solid black;
@@ -351,7 +345,6 @@ body {
       margin: 2rem auto 0 auto;
       padding: 0; }
 
-/* ___Fonts___ */
 /* */
 .profile {
   border: 1px solid black;
@@ -379,7 +372,6 @@ body {
       .profile__text_target-font_bold {
         font-weight: 700; }
 
-/* ___Fonts___ */
 /* */
 .education {
   margin-top: 10.8rem;
@@ -420,7 +412,6 @@ body {
         .education__text_target-block_list:nth-child(3) {
           margin-bottom: 0.05rem; }
 
-/* ___Fonts___ */
 /* */
 .experience {
   margin-top: 7.2rem;
@@ -461,7 +452,6 @@ body {
         .experience__text_target-block_list:nth-child(2) {
           margin-bottom: 1rem; }
 
-/* ___Fonts___ */
 /* */
 .software {
   border: 1px solid red;
@@ -576,7 +566,6 @@ body {
           .software__block_target-progress_right:nth-child(6) {
             margin-left: 1.3rem; } }
 
-/* ___Fonts___ */
 /* */
 .contact {
   border: 1px solid black;
@@ -650,7 +639,6 @@ body {
       .contact__block_target-text_link-site {
         letter-spacing: 0.25rem; }
 
-/* ___Fonts___ */
 /* */
 .skills {
   float: left;
