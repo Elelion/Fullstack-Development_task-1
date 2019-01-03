@@ -1,4 +1,5 @@
 /* ___Fonts___ */
+/* ___Fonts___ */
 @font-face {
   font-family: "PTsans57F";
   src: url(fonts/PTN57F.ttf); }
@@ -14,8 +15,7 @@
 /* */
 html {
   overflow-x: hidden;
-  font-family: "PTsans55SF";
-  color: black; }
+  font-family: "PTsans55SF", "Arial", "sans-serif"; }
 
 html,
 body {
@@ -26,6 +26,7 @@ body {
   margin: 0;
   width: 100%; }
 
+/* ___Fonts___ */
 /* */
 .content {
   border: 1px solid black;
@@ -76,6 +77,7 @@ body {
     .content__block_top, .content__block_bottom, .content__block_center {
       float: none; } }
 
+/* ___Fonts___ */
 /* */
 .chapter {
   border: 1px solid green;
@@ -181,6 +183,7 @@ body {
   .bar__point:last-child, .bar__point_empty:last-child {
     margin-right: 0rem; }
 
+/* ___Fonts___ */
 /* */
 .section {
   font-size: 2.4rem;
@@ -223,6 +226,7 @@ body {
     height: auto; }
 
 /* */
+/* ___Fonts___ */
 /* ___additional styles___ */
 .section__paragraph_education {
   padding-left: 0.8rem;
@@ -239,6 +243,9 @@ body {
   margin: 0 0 0 0; }
 .section__comment_experience {
   margin: 0 0 0 0; }
+@media screen and (max-width: 890px) {
+  .section__comment {
+    margin-left: 1.5em; } }
 .section__description_education, .section__description_experience {
   border: 1px solid red;
   padding-left: 4.6rem;
@@ -249,6 +256,7 @@ body {
   float: left;
   clear: both; }
 
+/* ___Fonts___ */
 /* */
 .about {
   border: 1px solid black;
@@ -283,9 +291,10 @@ body {
           margin-right: auto; } }
       @media screen and (max-width: 1280px) {
         .about__title_name {
-          width: auto; } }
+          width: auto;
+          margin-left: 1em;
+          margin-right: 1em; } }
     .about__title_target-font_name {
-      font-family: "PTsans55SF", "Arial", "sans-serif";
       font-size: 8.2rem;
       letter-spacing: 0.1rem;
       line-height: 1em;
@@ -342,6 +351,7 @@ body {
       margin: 2rem auto 0 auto;
       padding: 0; }
 
+/* ___Fonts___ */
 /* */
 .profile {
   border: 1px solid black;
@@ -359,7 +369,6 @@ body {
     letter-spacing: -0.05rem;
     line-height: 1.2; }
     .profile__text_target-font {
-      font-family: "PTsans55SF", "Arial", "sans-serif";
       font-size: 2.4rem;
       text-align: left;
       margin: 1.2rem 1.3rem 0 0.1rem;
@@ -370,6 +379,7 @@ body {
       .profile__text_target-font_bold {
         font-weight: 700; }
 
+/* ___Fonts___ */
 /* */
 .education {
   margin-top: 10.8rem;
@@ -410,6 +420,7 @@ body {
         .education__text_target-block_list:nth-child(3) {
           margin-bottom: 0.05rem; }
 
+/* ___Fonts___ */
 /* */
 .experience {
   margin-top: 7.2rem;
@@ -450,6 +461,7 @@ body {
         .experience__text_target-block_list:nth-child(2) {
           margin-bottom: 1rem; }
 
+/* ___Fonts___ */
 /* */
 .software {
   border: 1px solid red;
@@ -501,7 +513,6 @@ body {
         .software__block_target-position_right {
           margin-right: 15rem; } }
     .software__block_target-font_left, .software__block_target-font_right {
-      font-family: "PTsans55SF", "Arial", "sans-serif";
       font-size: 3.8rem;
       text-transform: uppercase;
       text-align: left;
@@ -565,6 +576,7 @@ body {
           .software__block_target-progress_right:nth-child(6) {
             margin-left: 1.3rem; } }
 
+/* ___Fonts___ */
 /* */
 .contact {
   border: 1px solid black;
@@ -615,7 +627,6 @@ body {
       width: auto;
       font-weight: 900; }
     .contact__block_target-text_content {
-      font-family: "PTsans55SF", "Arial", "sans-serif";
       font-size: 2.8rem;
       margin-left: 0px;
       letter-spacing: 0.11rem; }
@@ -623,7 +634,6 @@ body {
       color: #056DB6;
       text-decoration: none;
       text-transform: lowercase;
-      font-family: "PTsans55SF", "Arial", "sans-serif";
       font-size: 2.8rem;
       margin-left: 0rem;
       text-decoration: none;
@@ -640,6 +650,7 @@ body {
       .contact__block_target-text_link-site {
         letter-spacing: 0.25rem; }
 
+/* ___Fonts___ */
 /* */
 .skills {
   float: left;
@@ -654,7 +665,6 @@ body {
     border: 1px solid red;
     width: auto; }
     .skills__statistic_target-text {
-      font-family: "PTsans55SF", "Arial", "sans-serif";
       font-size: 3.8rem;
       letter-spacing: -0.01rem;
       text-transform: uppercase;

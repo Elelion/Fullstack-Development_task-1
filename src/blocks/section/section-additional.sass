@@ -1,13 +1,4 @@
-// ___borders___
-
-@mixin border-black
-	border: 1px solid black
-
-@mixin border-green
-	border: 1px solid green
-
-@mixin border-red
-	border: 1px solid red
+@import ../../templates
 
 /* ___additional styles___ */
 
@@ -30,10 +21,13 @@
 
 	&__comment
 		&_education
-			margin: 0 0 0 0
+			margin: 0 0 0 0					
 
 		&_experience
 			margin: 0 0 0 0
+
+		@media screen and (max-width: 890px)
+			margin-left: 1.5em
 
 	// ---
 
