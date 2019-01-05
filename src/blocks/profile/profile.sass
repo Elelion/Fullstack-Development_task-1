@@ -10,7 +10,7 @@
 	margin-right: auto
 	float: left
 
-	&__text
+	&__list
 		@include border-black
 		height: auto
 		width: auto
@@ -19,15 +19,15 @@
 		letter-spacing: -.05rem
 		line-height: 1.2
 	
-		&_target-font				
-			font-size: 2.4rem
-			text-align: left
+	&__content
+		font-size: 2.4rem
+		text-align: left
+		margin: 1.2rem 1.3rem 0 .1rem
+		padding: 0
+
+		&_normal-font
 			margin: 1.2rem 1.3rem 0 .1rem
-			padding: 0
+			font-weight: 100
 
-			&_normal
-				margin: 1.2rem 1.3rem 0 .1rem
-				font-weight: 100
-
-			&_bold
-				font-weight: 700
+		&_bold-font
+			font-weight: 700

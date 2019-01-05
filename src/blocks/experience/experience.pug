@@ -1,37 +1,38 @@
-section.experience
-  +chapter('experience', 3)
+mixin experienceList
+  section.experience
+    +chapter('experience', 3)
 
-  .experience__text
-    ul.experience__text_target-block
-      li.experience__text_target-block_list
-        +section('experience',
-                  'Constantine Of Constantinople',
-                  '// Feb 2011 - Jun 2014',
-                  'Constantine Of Constantinople',
-                  'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-                  elit. Aenean commodo ligula eget dolor. Aenean massa. \
-                  Cum sociis natoque penatibus et magnis dis parturient \
-                  montes, nascetur ridiculus mus. Donec quam felis, \
-                  ultricies nec, pellentesque.')
+    .experience__list
+      ul.experience__item
+        li.experience__content
+          +section('experience',
+                    'Constantine Of Constantinople',
+                    '// Feb 2011 - Jun 2014',
+                    'Constantine Of Constantinople',
+                    'Lorem ipsum dolors sit amet, consectetuer adipiscing \
+                    elit. Aenean commodo ligula eget dolor. Aenean massa. \
+                    Cum sociis natoque penatibus et magnis dis parturient \
+                    montes, nascetur ridiculus mus. Donec quam felis, \
+                    ultricies nec, pellentesque.')
 
-      li.experience__text_target-block_list
-        +section('experience',
-                  'Company name',
-                  '// Feb 2011 - Jun 2014',
-                  'Your job here',
-                  'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-                  elit. Aenean commodo ligula eget dolor. Aenean massa. \
-                  Cum sociis natoque penatibus et magnis dis parturient \
-                  montes, nascetur ridiculus mus. Donec quam felis, \
-                  ultricies nec, pellentesque.')
+        li.experience__content
+          +section('experience',
+                    'Company name',
+                    '// Feb 2011 - Jun 2014',
+                    'Your job here',
+                    'Lorem ipsum dolors sit amet, consectetuer adipiscing \
+                    elit. Aenean commodo ligula eget dolor. Aenean massa. \
+                    Cum sociis natoque penatibus et magnis dis parturient \
+                    montes, nascetur ridiculus mus. Donec quam felis, \
+                    ultricies nec, pellentesque.')
 
-      li.experience__text_target-block_list
-        +section('experience',
-                  'Company name',
-                  '// Feb 2011 - Jun 2014',
-                  'Your job here',
-                  'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-                  elit. Aenean commodo ligula eget dolor. Aenean massa. \
-                  Cum sociis natoque penatibus et magnis dis parturient \
-                  montes, nascetur ridiculus mus. Donec quam felis, \
-                  ultricies nec, pellentesque.')
+        li.experience__content
+          +section('experience',
+                    'Company name',
+                    '// Feb 2011 - Jun 2014',
+                    'Your job here',
+                    'Lorem ipsum dolors sit amet, consectetuer adipiscing \
+                    elit. Aenean commodo ligula eget dolor. Aenean massa. \
+                    Cum sociis natoque penatibus et magnis dis parturient \
+                    montes, nascetur ridiculus mus. Donec quam felis, \
+                    ultricies nec, pellentesque.')

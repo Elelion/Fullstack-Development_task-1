@@ -24,7 +24,7 @@ $leftSpacing: 23.1%
 			margin-left: auto
 			margin-right: auto
 
-	&__title
+	&__list
 		@include border-red
 		height: auto		
 		margin-left: auto
@@ -32,23 +32,23 @@ $leftSpacing: 23.1%
 		margin-top: 4rem
 		margin-bottom: 10.5rem
 	
-		// name here
-		&_name
-			@include border-black
-			height: auto
-			width: $nameWidth
-			margin-left: $leftSpacing
+	// name here
+	&__name
+		@include border-black
+		height: auto
+		width: $nameWidth
+		margin-left: $leftSpacing
 
-			@media screen and (max-width: 1895px)
-				margin-left: auto
-				margin-right: auto
+		@media screen and (max-width: 1895px)
+			margin-left: auto
+			margin-right: auto
 
-			@media screen and (max-width: 1280px)
-				width: auto
-				margin-left: 1em
-				margin-right: 1em
+		@media screen and (max-width: 1280px)
+			width: auto
+			margin-left: 1em
+			margin-right: 1em
 
-		&_target-font_name			
+		&-title
 			font-size: 8.2rem
 			letter-spacing: .1rem
 			line-height: 1em
@@ -59,21 +59,21 @@ $leftSpacing: 23.1%
 			height: auto
 			@include wrapping
 
-		// surname	
-		&_surname
-			@include border-black
-			height: auto
-			width: $surnameWidth
-			margin-left: $leftSpacing
+	// surname	
+	&__surname
+		@include border-black
+		height: auto
+		width: $surnameWidth
+		margin-left: $leftSpacing
 
-			@media screen and (max-width: 1895px)
-				margin-left: auto
-				margin-right: auto
+		@media screen and (max-width: 1895px)
+			margin-left: auto
+			margin-right: auto
 
-			@media screen and (max-width: 1280px)
-				width: auto
+		@media screen and (max-width: 1280px)
+			width: auto
 
-		&_target-font_surname
+		&-title
 			@include font-family__bold
 			font-size: 9.2rem
 			letter-spacing: .42rem
@@ -84,21 +84,21 @@ $leftSpacing: 23.1%
 			margin: 0
 			@include wrapping
 
-		// profession / graphic designer
-		&_profession
-			@include border-black
-			height: auto
-			width: $professionWidth
-			margin-left: $leftSpacing
+	// profession / graphic designer
+	&__profession
+		@include border-black
+		height: auto
+		width: $professionWidth
+		margin-left: $leftSpacing
 
-			@media screen and (max-width: 1895px)
-				margin-left: auto
-				margin-right: auto
+		@media screen and (max-width: 1895px)
+			margin-left: auto
+			margin-right: auto
 
-			@media screen and (max-width: 1280px)
-				width: auto
+		@media screen and (max-width: 1280px)
+			width: auto
 
-		&_target-font_proffesion
+		&-title
 			@include font-family__bold
 			font-size: 3.8rem
 			letter-spacing: .01rem

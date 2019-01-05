@@ -8,7 +8,7 @@
 	height: auto
 	width: auto
 
-	&__text 
+	&__list 
 		@include border-black
 		height: auto
 		width: auto
@@ -17,32 +17,32 @@
 		letter-spacing: -.04rem
 		line-height: 1.2
 
-		&_target-block
-			padding-left: 2rem
-			padding-top: .9rem
+	&__item
+		padding-left: 2rem
+		padding-top: .9rem
 
-			/* pointer */
-			&_list:before
-				content: ''
-				display: inline-block				
-				height: 32px
-				width: 32px
-				vertical-align: middle
-				border-radius: 50%
-				background-color: #000
-				margin: 1.3rem 2.5rem 0 0
-				float: left				
+	/* pointer */
+	&__content:before
+		content: ''
+		display: inline-block				
+		height: 32px
+		width: 32px
+		vertical-align: middle
+		border-radius: 50%
+		background-color: #000
+		margin: 1.3rem 2.5rem 0 0
+		float: left				
 
-			&_list				
-				@include border-black
-				padding-top: 1rem
-				margin-bottom: .01rem
-				float: left
-				list-style-type: none
-				height: auto //195
+	&__content
+		@include border-black
+		padding-top: 1rem
+		margin-bottom: .01rem
+		float: left
+		list-style-type: none
+		height: auto //195
 
-				&:nth-child(2)
-					margin-bottom: .02rem
+		&:nth-child(2)
+			margin-bottom: .02rem
 
-				&:nth-child(3)
-					margin-bottom: .05rem
+		&:nth-child(3)
+			margin-bottom: .05rem

@@ -1,6 +1,6 @@
 block chapter
 
-  //- svg:
+  //- NOTE: svg:
   mixin svgProfile
     svg(width='120px', height='120px')
       circle(r='56', cx='58', cy='50.7%', fill='none', stroke='#056cb4', stroke-width='2')
@@ -71,11 +71,11 @@ block chapter
           50 -126 50 -66 0 -84 -3 -97 -18z')
 
 
-  //- title with svg:
+  //- NOTE: title with svg:
   mixin chapter(title, index)
     .chapter
       case index
-        //- basic template:
+        //- NOTE: basic template
         //- when 1: +svgProfile
         //- when 2: +svgEducation
         //- when 3: +svgExperience
@@ -83,51 +83,45 @@ block chapter
         //- when 5: +svgContact
         //- when 6: +svgSkills
 
-        when 1: .chapter__logo.chapter__logo_profile
-          .chapter__logo_target-block_profile
-            +svgProfile
+        when 1: .chapter__logo.chapter__logo-profile          
+          +svgProfile
 
-        when 2: .chapter__logo.chapter__logo_education
-          .chapter__logo_target-block_education
-            +svgEducation
+        when 2: .chapter__logo.chapter__logo-education          
+          +svgEducation
 
-        when 3: .chapter__logo.chapter__logo_experience
-          .chapter__logo_target-block_experience
-            +svgExperience
+        when 3: .chapter__logo.chapter__logo-experience          
+          +svgExperience
 
-        when 4: .chapter__logo.chapter__logo_software
-          .chapter__logo_target-block_software
-            +svgSoftware
+        when 4: .chapter__logo.chapter__logo-software          
+          +svgSoftware
         
-        when 5: .chapter__logo.chapter__logo_contact
-          .chapter__logo_target-block_contact
-            +svgContact
+        when 5: .chapter__logo.chapter__logo-contact          
+          +svgContact
         
-        when 6: .chapter__logo.chapter__logo_skills
-          .chapter__logo_target-block_skills
-            +svgSkills
+        when 6: .chapter__logo.chapter__logo-skills          
+          +svgSkills
 
-      .chapter__title
-        //- basic template:
+      .chapter__list
+        //- NOTE: basic template
         //- p= title
 
         if (title === 'profile')
-          p.chapter__title_target-font_profile= title
+          p.chapter__profile= title
 
         if (title === 'education')
-          p.chapter__title_target-font_education= title
+          p.chapter__education= title
 
         if (title === 'experience')
-          p.chapter__title_target-font_experience= title
+          p.chapter__experience= title
 
         if (title === 'software')
-          p.chapter__title_target-font_software= title
+          p.chapter__software= title
 
         if (title === 'contact')
-          p.chapter__title_target-font_contact= title
+          p.chapter__contact= title
 
         if (title === 'skills')
-          p.chapter__title_target-font_skills= title
+          p.chapter__skills= title
 
       .chapter__side
-        .chapter__side_line
+        .chapter__side-line

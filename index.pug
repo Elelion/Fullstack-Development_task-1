@@ -1,14 +1,32 @@
-//- head including
-extends src/blocks/head/head
+//- ___NOTE: general block's___
 
-
-//- ___Mixin's:___
-
-//- chapter including
+//- NOTE: chapter for all block's
 include src/blocks/chapter/chapter
 
-//- points for footer -> skills block
+//- NOTE: points for footer -> skills block
 include src/blocks/points/points
 
-//- content for education & Experience
+//- NOTE: content for education & Experience
 include src/blocks/section/section
+
+
+//- ___NOTE: content block's___
+
+//- NOTE: including header blocks
+include src/blocks/about/about
+include src/blocks/profile/profile
+
+//- NOTE: including main blocks
+include src/blocks/education/education
+include src/blocks/experience/experience
+include src/blocks/software/software
+
+//- NOTE: including footer blocks
+include src/blocks/contact/contact
+include src/blocks/skills/skills
+
+
+//- ___NOTE: launch content!!!___
+
+include src/blocks/head/head
++headList

@@ -8,7 +8,7 @@
 	width: auto
 	margin-bottom: 6.8rem
 
-	&__text
+	&__list
 		@include border-red
 		height: auto
 		width: auto
@@ -17,32 +17,32 @@
 		letter-spacing: -.04rem
 		line-height: 1.17
 
-		&_target-block
-			padding-left: 1.8rem
-			margin-top: 4.9rem
+	&__item
+		padding-left: 1.8rem
+		margin-top: 4.9rem
 
-			&_list:before
-				content: ''
-				display: inline-block
-				height: 32px
-				width: 32px
-				vertical-align: middle
-				border-radius: 50%
-				background-color: #000
-				margin: .9rem 2.5rem 0 0
-				float: left
+	&__content:before
+		content: ''
+		display: inline-block
+		height: 32px
+		width: 32px
+		vertical-align: middle
+		border-radius: 50%
+		background-color: #000
+		margin: .9rem 2.5rem 0 0
+		float: left
 
-			&_list
-				@include border-black
-				padding-top: 1rem
-				margin-bottom: .5rem
-				margin-left: .2rem
-				float: left
-				list-style-type: none
-				height: auto
+	&__content
+		@include border-black
+		padding-top: 1rem
+		margin-bottom: .5rem
+		margin-left: .2rem
+		float: left
+		list-style-type: none
+		height: auto
 
-				&:nth-child(1)
-					margin-bottom: .2rem
+		&:nth-child(1)
+			margin-bottom: .2rem
 
-				&:nth-child(2)
-					margin-bottom: 1rem
+		&:nth-child(2)
+			margin-bottom: 1rem

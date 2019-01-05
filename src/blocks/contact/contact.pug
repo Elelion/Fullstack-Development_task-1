@@ -1,33 +1,35 @@
-section.contact
-  +chapter('contact', 5)
-  
-  .contact__block
-    table.contact__list
-      tr.contact__item
-        td.contact__row
-          span.contact__title Address
-        td.contact__row
-          span.contact__content Main Street, City.
+//- mixin contact(options = {address: 'Main Street, City'})
+mixin contactList(address='Main Street, City', email='contact@domain.com', phone='555-555-555', website='www.yourweb.com')
+  section.contact
+    +chapter('contact', 5)
+    
+    .contact__block
+      table.contact__list
+        tr.contact__item
+          td.contact__row
+            span.contact__title Address
+          td.contact__row
+            span.contact__content= address
 
-      tr.contact__table-item
-        td.contact__row
-          span.contact__title E-Mail
-        td.contact__row
-          a.contact__link.contact__link-mail(
-            href='mailto: contact@domain.com') contact@domain.com.
+        tr.contact__table-item
+          td.contact__row
+            span.contact__title E-Mail
+          td.contact__row
+            a.contact__link.contact__link-mail(
+              href=`mailto: ${email}`)= email + '.'
 
-      tr.contact__item
-        td.contact__row
-          span.contact__title Phone
-        td.contact__row
-          a.contact__link.contact__link-phone(
-            href='tel: +74951234567') 555-555-555.
+        tr.contact__item
+          td.contact__row
+            span.contact__title Phone
+          td.contact__row
+            a.contact__link.contact__link-phone(
+              href=`tel: +${phone}`)= phone + '.'
 
-      tr.contact__item
-        td.contact__row
-          span.contact__title Website
-        td.contact__row
-          a.contact__link.contact__link-site(
-            href='www.yourweb.com', 
-            target='_blank', 
-            rel='noopener noreferrer') www.yourweb.com.
+        tr.contact__item
+          td.contact__row
+            span.contact__title Website
+          td.contact__row
+            a.contact__link.contact__link-site(
+              href=`${website}`,
+              target='_blank', 
+              rel='noopener noreferrer')= website + '.'

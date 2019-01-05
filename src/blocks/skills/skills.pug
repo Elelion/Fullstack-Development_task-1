@@ -1,26 +1,25 @@
-block point
+mixin skillsList
+  section.skills
+    +chapter('skills', 6)
+    
+    .skills__list
+      ul.skills__item
+        li.skills__point-block
+          p.skills__title creative
+          .skills__point.skills__point-creative
+            +points('4')
 
-section.skills
-  +chapter('skills', 6)
-  
-  .skills__statistic
-    ul.skills__statistic_target-block
-      li.skills__statistic_target-block_list
-        p.skills__statistic_target-text creative
-        .skills__statistic_target-block_bar.skills__statistic_target-block_bar_creative
-          +points('4')
+        li.skills__point-block
+          p.skills__title teamwork
+          .skills__point.skills__point-teamwork
+            +points('11')
 
-      li.skills__statistic_target-block_list
-        p.skills__statistic_target-text teamwork
-        .skills__statistic_target-block_bar.skills__statistic_target-block_bar_teamwork
-          +points('11')
+        li.skills__point-block
+          p.skills__title innovate
+          .skills__point.skills__point-innovate
+            +points('8')
 
-      li.skills__statistic_target-block_list
-        p.skills__statistic_target-text innovate
-        .skills__statistic_target-block_bar.skills__statistic_target-block_bar_innovate
-          +points('8')
-
-      li.skills__statistic_target-block_list
-        p.skills__statistic_target-text communication
-        .skills__statistic_target-block_bar.skills__statistic_target-block_bar_communication
-          +points('18')
+        li.skills__point-block
+          p.skills__title communication
+          .skills__point.skills__point-communication
+            +points('18')

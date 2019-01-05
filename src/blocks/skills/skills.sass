@@ -12,59 +12,59 @@
 	@media screen and (max-width: 1540px)
 		margin-bottom: 14rem
 
-	&__statistic
+	&__list
 		@include border-red
 		width: auto
+		
+	&__title
+		font-size: 3.8rem
+		letter-spacing: -.01rem
+		text-transform: uppercase
+		text-align: left
+		margin-top: 2rem
+		margin-left: 1.4rem
+		text-align: center
+		margin: 1.5rem 0 0 3rem
+		letter-spacing: .11rem
 
-		&_target
-			&-text				
-				font-size: 3.8rem
-				letter-spacing: -.01rem
-				text-transform: uppercase
-				text-align: left
-				margin-top: 2rem
-				margin-left: 1.4rem
-				text-align: center
-				margin: 1.5rem 0 0 3rem
-				letter-spacing: .11rem
+			// -block
+	&__item
+		@include border-red
+		width: auto
+		height: auto
+		margin: .4rem auto 0 auto
 
-			&-block
-				@include border-red
-				width: auto
-				height: auto
-				margin: .4rem auto 0 auto				
+	&__point-block
+		@include border-green
+		list-style-type: none
+		height: 11.5rem
 
-				&_list
-					@include border-green
-					list-style-type: none
-					height: 11.5rem
+		&:first-child
+			margin-top: 1rem
 
-					&:first-child
-						margin-top: 1rem
+		&:nth-child(2)
+			margin-bottom: .1rem
 
-					&:nth-child(2)
-						margin-bottom: .1rem
+		&:nth-child(3)
+			margin-bottom: .2rem
 
-					&:nth-child(3)
-						margin-bottom: .2rem
+	&__point
+		@include border-red
+		width: 28.7vw
+		height: 5vh
+		margin: 0 auto 0 auto
+			
+		@media screen and (max-width: 1895px)
+			width: 52rem
 
-				&_bar
-					@include border-red
-					width: 28.7vw
-					height: 5vh
-					margin: 0 auto 0 auto
-					
-					@media screen and (max-width: 1895px)
-						width: 52rem
+		&-creative					
+			margin-top: .1rem
 
-					&_creative					
-						margin-top: .1rem
+		&-teamwork
+			margin-top: .3rem
 
-					&_teamwork
-						margin-top: .3rem
+		&-innovate
+			margin-top: .3rem
 
-					&_innovate
-						margin-top: .3rem
-
-					&_communication
-						margin-top: 0rem
+		&-communication
+			margin-top: 0rem
