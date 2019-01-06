@@ -1,20 +1,41 @@
-mixin profileList
+mixin profileList(parameter)
+  -var parameter = parameter || {}
+  -var normalFont = parameter.normalFont || 'Lorem ipsum dolors sit amet,'
+    -normalFont += 'consectetuer adipiscing elit. Aenean commodo ligula eget'
+    -normalFont += 'dolor. Aenean massa. Cum sociis natoque penatibus et '
+    -normalFont += 'magnis dis parturient montes, nascetur ridiculus mus. '
+    -normalFont += 'Donec quam felis, ultricies nec, pellentesque eu, pretium '
+    -normalFont += 'quis, sem. Nulla consequat massa quis enum, Donec pede '
+    -normalFont += 'justo, fringilla vel, aliquet nec, vukoutate eget, arcu. '
+    -normalFont += 'In enim justo, rhoncus ut, imperdiet a, venenatis vitate, '
+    -normalFont += 'justo. Nullam dictum felis eu '
+
+  -var boldFont = parameter.boldFont || 'pede mollis pretium. Integer '
+    -boldFont += 'tincidunt. Cras dapibus. Vivamus elementum semper nisi.'
+    -boldFont += 'Aenean vulputate eleifend tellus. Aenean leo logula, '
+    -boldFont += 'porttitor eu, consequat vitae vitae, eleifend ac enim. '
+    -boldFont += 'Aliquanm lorem ante, dapibus in, viverra quis,  feugiat a, '
+    -boldFont += 'tellus. Phasellus viverra nulla ut metus varius loareet. '
+    -boldFont += 'Quisque rutrum.'    
+
+  //- 
+  
   section.profile
     +chapter('profile', 1)
 
     .profile__list
       blockquote.profile__content
-        p.profile__content_normal-font
-          | Lorem ipsum dolors sit amet, consectetuer adipiscing elit. Aenean
-          | commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          | et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
-          | felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
-          | consequat massa quis enum, Donec pede justo, fringilla vel, aliquet 
-          | nec, vukoutate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
-          | venenatis vitate, justo. Nullam dictum felis eu 
-          span.profile__content_bold-font
-            | pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
-            | elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
-            | logula, porttitor eu, consequat vitae vitae, eleifend ac enim.
-            | Aliquanm lorem ante, dapibus in, viverra quis,  feugiat a, tellus.
-            | Phasellus viverra nulla ut metus varius loareet. Quisque rutrum.
+        p.profile__content_normal-font= normalFont
+          //- | Lorem ipsum dolors sit amet, consectetuer adipiscing elit. Aenean
+          //- | commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          //- | et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+          //- | felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
+          //- | consequat massa quis enum, Donec pede justo, fringilla vel, aliquet 
+          //- | nec, vukoutate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+          //- | venenatis vitate, justo. Nullam dictum felis eu 
+          span.profile__content_bold-font= boldFont
+            //- | pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+            //- | elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+            //- | logula, porttitor eu, consequat vitae vitae, eleifend ac enim.
+            //- | Aliquanm lorem ante, dapibus in, viverra quis,  feugiat a, tellus.
+            //- | Phasellus viverra nulla ut metus varius loareet. Quisque rutrum.

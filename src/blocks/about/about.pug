@@ -1,4 +1,11 @@
-mixin aboutList
+mixin aboutList(parameter)
+  -var parameter = parameter || {}
+  -var name = parameter.name || 'Constantine Of Constantinople'
+  -var surname = parameter.surname || 'surname'
+  -var profession = parameter.profession || 'graphic designer'  
+
+  //- 
+
   section.about
     .about__logo
       svg(width='360px', height='360px')
@@ -9,8 +16,8 @@ mixin aboutList
 
     .about__list
       .about__name
-        h1.about__name-title Constantine Of Constantinople
+        h1.about__name-title= name
       .about__surname
-        h2.about__surname-title surname
+        h2.about__surname-title= surname
       .about__profession
-        h3.about__profession-title graphic designer
+        h3.about__profession-title= profession

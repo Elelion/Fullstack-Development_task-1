@@ -2,8 +2,11 @@ body
 	main.content
 		section.content__block.content__block-left.content__block-top
 			//- NOTE: header include
+
+			//- NOTE: ({name: '', surname: '', profession: ''})
 			+aboutList
-			+profileList
+			+profileList({normalFont: '123 \
+				asd'})
 		
 		section.content__block.content__block-right.content__block-center
 			//- NOTE: main include
@@ -14,6 +17,6 @@ body
 		section.content__block.content__block-left.content__block-bottom
 			//- NOTE: footer include
 
-			//- NOTE: (address, email, phone, website) or default
+			//- NOTE: ({address: '', email: '', phone: '', website: ''})
 			+contactList
 			+skillsList

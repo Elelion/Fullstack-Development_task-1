@@ -1,5 +1,12 @@
-//- mixin contact(options = {address: 'Main Street, City'})
-mixin contactList(address='Main Street, City', email='contact@domain.com', phone='555-555-555', website='www.yourweb.com')
+mixin contactList(parameter)
+  -var parameter = parameter || {}
+  -var address = parameter.address || 'Main Street, City'
+  -var email = parameter.email || 'contact@domain.com'
+  -var phone = parameter.phone || '555-555-555'
+  -var website = parameter.website || 'www.yourweb.com'
+
+  //-
+
   section.contact
     +chapter('contact', 5)
     
