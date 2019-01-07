@@ -1,22 +1,35 @@
 body
 	main.content
 		section.content__block.content__block-left.content__block-top
-			//- NOTE: header include
-
-			//- NOTE: ({name: '', surname: '', profession: ''})
+			//- NOTE: header include			
 			+aboutList
-			+profileList({normalFont: '123 \
-				asd'})
+			+profileList
 		
 		section.content__block.content__block-right.content__block-center
 			//- NOTE: main include
 			+educationList
+			//- +educationListSettings
+			
 			+experienceList
-			+softwareList
+
+			
+			+softwareList({photoshop: 85, illustrator: 62, indesign: 44, 
+										dreamweaver: 70, afterEffects: 51, htmlCss: 97})
 
 		section.content__block.content__block-left.content__block-bottom
 			//- NOTE: footer include
+			+contactList({address: 'Main Street, City town'})
+			+skillsList({creative: 5, innovate: 7})
 
-			//- NOTE: ({address: '', email: '', phone: '', website: ''})
-			+contactList
-			+skillsList
+		//- NOTE:				
+		//- format for all objects: ({email: 'test@test.ru', phone: 555})
+		//- if any parameter is NOT specified, value will be - the default
+		//- 
+		//- aboutList: name, surname, profession
+		//- profileList: normalText, boldText
+		//- educationList: ...
+		//- experienceList: ...
+		//- softwareList: photoshop, illustrator, indesign, 
+		//- 							dreamweaver, afterEffects, htmlCss
+		//- contactList: address, email, phone, website
+		//- skillsList: creative, teamwork, innovate, communication
