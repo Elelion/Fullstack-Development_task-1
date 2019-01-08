@@ -2,87 +2,24 @@ mixin educationList
   section.education
     +chapter('education', 2)
 
-    .education__list
-      ul.education__item
-        //- mixin educationListSettings 
-        li.education__content
-          span.education__content-paragraph
-            | Master Degree
+mixin educationListSettings(parameter)
+  -var parameter = parameter || {}
+  -var paragraph = parameter.paragraph || 'Constantine Of Constantinople'
+  -var comment = parameter.comment || 'Feb 2011 - Jun 2014'
+  -var description = parameter.description || 'Constantine Of Constantinople'
+  -
+    var mockText = 
+      'Lorem ipsum dolors sit amet, consectetuer adipiscing ' +
+      'elit. Aenean commodo ligula eget dolor. Aenean massa. ' +
+      'Cum sociis natoque penatibus et magnis dis parturient ' +
+      'montes, nascetur ridiculus mus. Donec quam felis, ' +
+      'ultricies nec, pellentesque.'
+  -var text = parameter.text || mockText
 
-          p.education__content-comment
-            | // Feb 2011 - Jun 2014
-
-          p.education__content-description
-            | University name
-
-          //- .section__position
-          p.education__content-text
-            | Lorem ipsum dolors sit amet, consectetuer adipiscing
-            | elit. Aenean commodo ligula eget dolor. Aenean massa.
-            | Cum sociis natoque penatibus et magnis dis parturient
-            | montes, nascetur ridiculus mus. Donec quam felis,
-            | ultricies nec, pellentesque.
-
-        //- .section          
-          //- span.section__paragraph.section__paragraph-education
-            | Master Degree
-
-          //- p.section__comment-education
-            | // Feb 2011 - Jun 2014
-
-          //- p.section__description-education
-          //-   | University name
-
-          //- .section__position
-          //-   p.section__content
-          //-     | Lorem ipsum dolors sit amet, consectetuer adipiscing
-          //-     | elit. Aenean commodo ligula eget dolor. Aenean massa.
-          //-     | Cum sociis natoque penatibus et magnis dis parturient
-          //-     | montes, nascetur ridiculus mus. Donec quam felis,
-          //-     | ultricies nec, pellentesque.
-
-      //- (parameter)
-        -var parameter = parameter || {}  
-        -var paragraph = parameter.paragraph || 'Constantine Of Constantinople'
-        -var comment = parameter.comment || 'Feb 2011 - Jun 2014'
-        -var description = parameter.description || 'Constantine Of Constantinople'
-
-        -
-          var mockText = 
-            'Lorem ipsum dolors sit amet, consectetuer adipiscing' +
-            'elit. Aenean commodo ligula eget dolor. Aenean massa.' +
-            'Cum sociis natoque penatibus et magnis dis parturient' +
-            'montes, nascetur ridiculus mus. Donec quam felis,' +
-            'ultricies nec, pellentesque.'
-        -var text = parameter.text || mockText
-
-        //- 
-
-        li.education__content
-          +section('education',
-                    paragraph,
-                    '// ' + comment,
-                    description,
-                    mockText)
-
-        //- li.education__content
-        //-   +section('education',
-        //-             'Master Degree',
-        //-             '// Feb 2011 - Jun 2014',
-        //-             'University name',
-        //-             'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-        //-             elit. Aenean commodo ligula eget dolor. Aenean massa. \
-        //-             Cum sociis natoque penatibus et magnis dis parturient \
-        //-             montes, nascetur ridiculus mus. Donec quam felis, \
-        //-             ultricies nec, pellentesque.')
-
-        //- li.education__content
-        //-   +section('education',
-        //-             'Master Degree',
-        //-             '// Feb 2011 - Jun 2014',
-        //-             'University name',
-        //-             'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-        //-             elit. Aenean commodo ligula eget dolor. Aenean massa. \
-        //-             Cum sociis natoque penatibus et magnis dis parturient \
-        //-             montes, nascetur ridiculus mus. Donec quam felis, \
-        //-             ultricies nec, pellentesque.')
+  //- 
+  
+  .education__content
+    span.education__content-paragraph= paragraph
+    p.education__content-comment= '// ' + comment
+    p.education__content-description= description
+    p.education__content-text= text

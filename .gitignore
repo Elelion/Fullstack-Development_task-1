@@ -64,13 +64,6 @@ src/blocks/profile/.sass-cache
 src/blocks/profile/profile.css.map
 
 
-# ___section___
-
-src/blocks/section/.sass-cache
-src/blocks/section/section.css.map
-src/blocks/section/section-additional.css.map
-
-
 # ___skills___
 
 src/blocks/skills/.sass-cache

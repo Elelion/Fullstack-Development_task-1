@@ -8,11 +8,20 @@ body
 		section.content__block.content__block-right.content__block-center
 			//- NOTE: main include
 			+educationList
-			//- +educationListSettings
-			
+			+educationListSettings
+			+educationListSettings({paragraph: 'master degree', 
+				description: 'universiti name'})
+			+educationListSettings({paragraph: 'master degree', 
+				description: 'universiti name'})
+			+educationListSettings({paragraph: 'master degree', 
+				description: 'universiti name'})
+						
 			+experienceList
+			+experienceListSettings({paragraph: 'master degree', 
+				description: 'universiti name'})
+			+experienceListSettings
+			+experienceListSettings
 
-			
 			+softwareList({photoshop: 85, illustrator: 62, indesign: 44, 
 										dreamweaver: 70, afterEffects: 51, htmlCss: 97})
 
@@ -24,12 +33,23 @@ body
 		//- NOTE:				
 		//- format for all objects: ({email: 'test@test.ru', phone: 555})
 		//- if any parameter is NOT specified, value will be - the default
-		//- 
+
 		//- aboutList: name, surname, profession
+
 		//- profileList: normalText, boldText
-		//- educationList: ...
-		//- experienceList: ...
+		
+		//- educationList:
+		//-		educationList - main block
+		//- 	educationListSettings - block with parameters:
+		//- 							paragraph, comment, description, text
+
+		//- experienceList: - main block
+		//- experienceListSettings - block with parameters:
+		//- 							paragraph, comment, description, text
+
 		//- softwareList: photoshop, illustrator, indesign, 
 		//- 							dreamweaver, afterEffects, htmlCss
+
 		//- contactList: address, email, phone, website
+
 		//- skillsList: creative, teamwork, innovate, communication

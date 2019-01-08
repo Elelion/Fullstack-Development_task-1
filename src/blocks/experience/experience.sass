@@ -3,23 +3,10 @@
 /**/
 
 .experience
-	margin-top: 7.2rem
+	margin-top: 7.1rem
 	float: left
-	width: auto
-	margin-bottom: 6.8rem
-
-	&__list
-		@include border-red
-		height: auto
-		width: auto
-		float: left
-		margin: .2rem 0 0 8.3rem
-		letter-spacing: -.04rem
-		line-height: 1.17
-
-	&__item
-		padding-left: 1.8rem
-		margin-top: 4.9rem
+	width: 100%
+	margin-bottom: 5.1rem
 
 	&__content:before
 		content: ''
@@ -34,15 +21,67 @@
 
 	&__content
 		@include border-black
-		padding-top: 1rem
-		margin-bottom: .5rem
-		margin-left: .2rem
+		margin: 0rem 0 .15rem 8.3rem
 		float: left
 		list-style-type: none
 		height: auto
+		width: auto
 
-		&:nth-child(1)
-			margin-bottom: .2rem
+		padding-left: 1.9rem
+		padding-top: .9rem
 
-		&:nth-child(2)
-			margin-bottom: 1rem
+		font-size: 2.4rem
+		text-align: left
+		letter-spacing: -.04rem
+		line-height: 1.2
+
+		// NOTE: adjust the design for the layout
+		&:nth-child(9)					
+			margin-top: .6rem
+
+		&-paragraph
+			width: 31.5rem
+			@include font-family__section_paragraph
+			@include wrapping
+			text-transform: uppercase
+			font-size: 3.8rem
+			letter-spacing: .47rem
+			color: #056cb4
+			float: left
+			padding-left: .8rem
+			padding-top: .0rem
+			float: left
+			font-weight: 700
+		
+		&-comment
+			@include border-green
+			@include font-family__section_comment
+			width: 40rem
+			font-size: 3.8rem
+			letter-spacing: .3rem
+			float: left			
+			margin: .1rem 0 0 0
+			padding: .0rem 0 0 .2rem			
+
+			@media screen and (max-width: 890px)
+				margin-left: 1.5em
+
+		&-description
+			@include border-red
+			font-size: 3.8rem
+			letter-spacing: -0.01rem
+			text-transform: uppercase
+			text-align: left			
+			margin: .3rem 0 .4rem 1.4rem
+			padding: 0rem 0 0 4.6rem			
+			float: left
+			clear: both
+
+		&-text
+			@include border-green
+			margin: 0 0 0 1.4rem
+			padding: .5rem 5.4rem 0 4.95rem
+			float: left
+			height: auto
+			width: auto
+			min-width: 30rem

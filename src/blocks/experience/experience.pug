@@ -2,37 +2,24 @@ mixin experienceList
   section.experience
     +chapter('experience', 3)
 
-    .experience__list
-      ul.experience__item
-        li.experience__content
-          +section('experience',
-                    'Constantine Of Constantinople',
-                    '// Feb 2011 - Jun 2014',
-                    'Constantine Of Constantinople',
-                    'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-                    elit. Aenean commodo ligula eget dolor. Aenean massa. \
-                    Cum sociis natoque penatibus et magnis dis parturient \
-                    montes, nascetur ridiculus mus. Donec quam felis, \
-                    ultricies nec, pellentesque.')
+mixin experienceListSettings(parameter)
+  -var parameter = parameter || {}
+  -var paragraph = parameter.paragraph || 'Constantine Of Constantinople'
+  -var comment = parameter.comment || 'Feb 2011 - Jun 2014'
+  -var description = parameter.description || 'Your job here'
+  -
+    var mockText = 
+      'Lorem ipsum dolors sit amet, consectetuer adipiscing ' +
+      'elit. Aenean commodo ligula eget dolor. Aenean massa. ' +
+      'Cum sociis natoque penatibus et magnis dis parturient ' +
+      'montes, nascetur ridiculus mus. Donec quam felis, ' +
+      'ultricies nec, pellentesque.'
+  -var text = parameter.text || mockText
 
-        li.experience__content
-          +section('experience',
-                    'Company name',
-                    '// Feb 2011 - Jun 2014',
-                    'Your job here',
-                    'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-                    elit. Aenean commodo ligula eget dolor. Aenean massa. \
-                    Cum sociis natoque penatibus et magnis dis parturient \
-                    montes, nascetur ridiculus mus. Donec quam felis, \
-                    ultricies nec, pellentesque.')
-
-        li.experience__content
-          +section('experience',
-                    'Company name',
-                    '// Feb 2011 - Jun 2014',
-                    'Your job here',
-                    'Lorem ipsum dolors sit amet, consectetuer adipiscing \
-                    elit. Aenean commodo ligula eget dolor. Aenean massa. \
-                    Cum sociis natoque penatibus et magnis dis parturient \
-                    montes, nascetur ridiculus mus. Donec quam felis, \
-                    ultricies nec, pellentesque.')
+  //- 
+  
+  .experience__content
+    span.experience__content-paragraph= paragraph
+    p.experience__content-comment= '// ' + comment
+    p.experience__content-description= description
+    p.experience__content-text= text
