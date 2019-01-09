@@ -28,6 +28,7 @@ body {
 /* */
 .content {
   border: 1px solid black;
+  border-color: transparent;
   height: auto;
   width: 100%;
   margin: 0 auto; }
@@ -61,12 +62,14 @@ body {
         width: auto; } }
   .content__block-left {
     border: 1px solid green;
+    border-color: transparent;
     float: left; }
     @media screen and (max-width: 1540px) {
       .content__block-left {
         float: none; } }
   .content__block-right {
     border: 1px solid green;
+    border-color: transparent;
     float: right; }
     @media screen and (max-width: 1540px) {
       .content__block-right {
@@ -78,6 +81,7 @@ body {
 /* */
 .chapter {
   border: 1px solid green;
+  border-color: transparent;
   height: 12rem;
   width: auto;
   display: -webkit-flex;
@@ -92,6 +96,7 @@ body {
   margin-left: 0rem; }
   .chapter__logo {
     border: 1px solid red;
+    border-color: transparent;
     height: auto;
     width: 11.6rem;
     margin-left: 9rem; }
@@ -100,6 +105,7 @@ body {
       height: 12rem; }
   .chapter__list {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: auto;
     float: left;
@@ -114,6 +120,7 @@ body {
     /* margin-left: 14px; */ }
   .chapter__side {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: 100%;
     min-width: 5rem;
@@ -183,11 +190,13 @@ body {
 /* */
 .about {
   border: 1px solid black;
+  border-color: transparent;
   height: auto;
   width: 100%;
   float: left; }
   .about__logo {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: 360px;
     margin-top: 12.9rem;
@@ -198,6 +207,7 @@ body {
         margin-right: auto; } }
   .about__list {
     border: 1px solid red;
+    border-color: transparent;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -205,6 +215,7 @@ body {
     margin-bottom: 10.5rem; }
   .about__name {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: 50rem;
     margin-left: 23.1%; }
@@ -231,6 +242,7 @@ body {
       text-overflow: ellipsis; }
   .about__surname {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: 50rem;
     margin-left: 23.1%; }
@@ -255,6 +267,7 @@ body {
       text-overflow: ellipsis; }
   .about__profession {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: 50rem;
     margin-left: 23.1%; }
@@ -277,6 +290,7 @@ body {
 /* */
 .profile {
   border: 1px solid black;
+  border-color: transparent;
   height: auto;
   width: auto;
   margin-left: auto;
@@ -284,6 +298,7 @@ body {
   float: left; }
   .profile__list {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: auto;
     float: left;
@@ -320,6 +335,7 @@ body {
     float: left; }
   .education__content {
     border: 1px solid black;
+    border-color: transparent;
     margin: 2.1rem 0 0.01rem 8.3rem;
     float: left;
     list-style-type: none;
@@ -352,6 +368,7 @@ body {
       font-weight: 700; }
     .education__content-comment {
       border: 1px solid green;
+      border-color: transparent;
       font-family: "PTsans57F", "Arial", "sans-serif";
       width: 40rem;
       font-size: 3.8rem;
@@ -364,6 +381,7 @@ body {
           margin-left: 1.5em; } }
     .education__content-description {
       border: 1px solid red;
+      border-color: transparent;
       font-size: 3.8rem;
       letter-spacing: 0.08rem;
       text-transform: uppercase;
@@ -374,6 +392,7 @@ body {
       clear: both; }
     .education__content-text {
       border: 1px solid green;
+      border-color: transparent;
       margin: 0 0 0 1.4rem;
       padding: 0.5rem 5.4rem 0 4.95rem;
       float: left;
@@ -399,6 +418,7 @@ body {
     float: left; }
   .experience__content {
     border: 1px solid black;
+    border-color: transparent;
     margin: 0rem 0 0.15rem 8.3rem;
     float: left;
     list-style-type: none;
@@ -429,6 +449,7 @@ body {
       font-weight: 700; }
     .experience__content-comment {
       border: 1px solid green;
+      border-color: transparent;
       font-family: "PTsans57F", "Arial", "sans-serif";
       width: 40rem;
       font-size: 3.8rem;
@@ -441,6 +462,7 @@ body {
           margin-left: 1.5em; } }
     .experience__content-description {
       border: 1px solid red;
+      border-color: transparent;
       font-size: 3.8rem;
       letter-spacing: -0.01rem;
       text-transform: uppercase;
@@ -451,6 +473,7 @@ body {
       clear: both; }
     .experience__content-text {
       border: 1px solid green;
+      border-color: transparent;
       margin: 0 0 0 1.4rem;
       padding: 0.5rem 5.4rem 0 4.95rem;
       float: left;
@@ -461,6 +484,7 @@ body {
 /* */
 .software {
   border: 1px solid red;
+  border-color: transparent;
   margin-top: 6.8rem;
   margin-left: 0rem;
   width: 100%;
@@ -468,6 +492,7 @@ body {
   height: auto; }
   .software__list {
     border: 1px solid green;
+    border-color: transparent;
     height: auto;
     width: 100%;
     float: left;
@@ -496,6 +521,7 @@ body {
         justify-content: center; } }
   .software__item-left {
     border: 1px solid red;
+    border-color: transparent;
     float: left;
     width: auto; }
     @media screen and (max-width: 1840px) {
@@ -503,6 +529,7 @@ body {
         margin-right: 15rem; } }
   .software__item-right {
     border: 1px solid green;
+    border-color: transparent;
     float: right;
     width: auto;
     margin-right: 15.7rem; }
@@ -576,12 +603,14 @@ body {
 /* */
 .contact {
   border: 1px solid black;
+  border-color: transparent;
   height: auto;
   width: 100%;
   margin-top: 6rem;
   float: left; }
   .contact__block {
     border: 1px solid black;
+    border-color: transparent;
     height: auto;
     width: auto;
     float: left;
@@ -607,6 +636,7 @@ body {
     width: auto; }
   .contact__row {
     border: 1px solid green;
+    border-color: transparent;
     margin-top: 3rem;
     height: 8.1rem;
     width: auto;
@@ -655,6 +685,7 @@ body {
       margin-bottom: 14rem; } }
   .skills__list {
     border: 1px solid red;
+    border-color: transparent;
     width: auto; }
   .skills__title {
     font-size: 3.8rem;
@@ -668,11 +699,13 @@ body {
     letter-spacing: 0.11rem; }
   .skills__item {
     border: 1px solid red;
+    border-color: transparent;
     width: auto;
     height: auto;
     margin: 0.4rem auto 0 auto; }
   .skills__point-block {
     border: 1px solid green;
+    border-color: transparent;
     list-style-type: none;
     height: 11.5rem; }
     .skills__point-block:first-child {
@@ -683,6 +716,7 @@ body {
       margin-bottom: 0.2rem; }
   .skills__point {
     border: 1px solid red;
+    border-color: transparent;
     width: 28.7vw;
     height: 5vh;
     margin: 0 auto 0 auto; }
