@@ -6,7 +6,7 @@ const path = require('path');
  * add the "Extract Text Plugin" . It is 
  * responsible for moving CSS to a separate file.
  */
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // ---
 
@@ -26,16 +26,23 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader'] //, 'sass-loader'
-        })
+        use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader'
+          ]
+      },
+      {
+        test: /\.(ttf|otf)$/,
+        use: [
+          'file-loader'
+        ]
       }
     ]
   },
 
   // NOTE: for disable - WARNING in configuration
-  mode: "development",
+  // mode: "development"
 
   /**
    * NOTE: 
@@ -43,7 +50,7 @@ module.exports = {
    * know that all CSS-files must be combined into a separate 
    * file and call it" styles.css".
    */
-  plugins: [
-    new ExtractTextPlugin('./styles.css')
-   ]
+  // plugins: [
+  //   new ExtractTextPlugin('./styles.css')
+  //  ]
 };
