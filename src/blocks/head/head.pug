@@ -19,5 +19,8 @@ mixin headList
 			//- NOTE: CSS's		
 			link(rel='stylesheet', href='src/styles.css')
 
+			//- NOTE: for webpack build
+			script(src='src/bundle.js' defer)
+
 		//- NOTE: building the project (mixin's)
 		include ../content/content

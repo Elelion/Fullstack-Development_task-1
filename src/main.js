@@ -1,13 +1,16 @@
-import './styles.css';
-import _ from 'lodash';
+// NOTE: for import css/sass
+import './styles.css'
 
-console.log(_.isEqual(1, 2));
+// import './styles.css';
+// import _ from 'lodash';
 
-var obj = {
-    field: 111,
-    someFn() {
-        console.log('someFn');
-    }
-};
+// console.log(_.isEqual(1, 2));
 
-obj.someFn();
+// var obj = {
+//     field: 111,
+//     someFn() {
+//         console.log('someFn');
+//     }
+// };
+
+// obj.someFn();
