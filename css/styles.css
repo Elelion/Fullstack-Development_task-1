@@ -30,9 +30,14 @@
 	src: url(../fonts/PTS75F.ttf); 
 }
 
+@font-face { 
+	font-family: "LatoBold";
+	src: url(../fonts/Lato/Lato-Bold.ttf); 
+}
+
 /**/
 
-/*surname*/
+/* surname */
 .title_h1 {
 	font-family: "PTsans55SF"; 	
 	font-size: 82px; /*82*/
@@ -42,7 +47,7 @@
 	margin-top: -8px;
 }
 
-/*name here*/
+/* name here */
 .title_h2 {
 	font-family: "PTsans75SF"; 	
 	font-size: 92px;
@@ -52,7 +57,7 @@
 	margin-top: -22px;	
 }
 
-/*graphic designer*/
+/* graphic designer */
 .title_h3 { 
 	font-family: "PTsans75SF"; 	
 	font-size: 38px;	
@@ -63,35 +68,71 @@
 	
 }
 
-/*profile, contact...*/
-.title__chapper { 
+/* profile, contact... */
+.title__chapter { 
 	font-family: "PTsans75SF"; 	
-	font-size: 60px; /*33*/
-	letter-spacing: 2.8px;
+	font-size: 60px;
+	letter-spacing: 3.4px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+	color: #056cb4;
+}
+
+/* skills -> creative..., education -> universiti name... */
+.description__chapter {
+	font-family: "PTsans55SF"; 	
+	font-size: 38px;
+	letter-spacing: -0.8x;
 	text-transform: uppercase;
 	text-align: left;
 	margin-top: 20px; 
 	margin-left: 14px;
 }
 
-/*education -> universiti name. skills -> creative...*/
-.description__chapper {
+/* small text */
+.smallText__chapter {
+	font-family: "PTsans55SF"; 	
+	font-size: 24px;
+	text-align: left;
+	margin-top: 20px; 
+	margin-left: 14px;
+}
+
+.text__chapter b {
+	font-family: "LatoBold";
+	font-size: 22px;
+	text-align: left;	
+	letter-spacing: 0.6px;
+}
+
+/* middle text */
+.middleText__chapter {
+	font-family: "PTsans55SF"; 	
+	font-size: 28px;	
+	margin-left: 2px;
+	margin-top: 44px;
+}
+
+.middleText__chapter b {
+	font-family: "PTsans77F"; 	
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 3.5px;	
+}
+
+.middleText__chapter span {
+	letter-spacing: 1.1px;
+}
+
+/* contact -> address, e-mail, phone... */
+.paragraph__chapter {
 	;
 }
 
-/*small text*/
-.text__chapper {
-	;
-}
-
-
-/*contact -> address, e-mail, phone...*/
-.paragraph__chapper {
-	;
-}
-
-/*//Feb 2011-Jun 2014...*/
-.comment__chapper {
+/* //Feb 2011-Jun 2014... */
+.comment__chapter {
 	;
 }
 
@@ -105,38 +146,90 @@ body {
 }
 
 html { 
-	/*hide horizontall scroll*/
   overflow-x: hidden;
 }
 
 /**/
 
-/*height header*/
-@HeaderHeight: @ContentHeight / 2 + 80px;
+/* height header */
+@HeaderHeight: @ContentHeight / 2 + 47px;
 @HeaderWidth: 40%;
 
-/*height footer*/
-@FooterHeight: @ContentHeight / 2 - 80px;
-@FooterWidth: 40%;
-
-/*height content*/
+/* height content */
 @ContentHeight: 2800px;
 @ContentWidth: 59.7%;
 
+/* height footer */
+@FooterHeight: @ContentHeight / 2 - 47px;
+@FooterWidth: 40%;
 
+/* general chapter */
+@chapterLogoHeight: 120px;
+@chapterLogoWidth: 116px;
 
+@chapterTitleHeight: 120px;
+@chapterTitleWidth: auto;
+
+@chapterHeight: 120px;
+@chapterLineHeight: 120px;
+@chapterLineMinWidth: 150px;
+
+/* chapter profile */
+@chapterProfileLineWidth: 268px;
+
+/* chapter contact */
+@chapterContactLineWidth: 246px;
+
+/* chapter skills */
+@chapterSkillsLineWidth: 304px;
+
+/**/
+
+.chapter {
+	border: 1px solid green; border-color: transparent;
+
+	height: 120px;		
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;
+}
+
+.chapter__logo {
+	border: 1px solid red; border-color: transparent;
+
+	height: @chapterLogoHeight;
+	width: @chapterLogoWidth;	
+	float: left;
+	margin-left: 90px;
+}
+
+.chapter__title {
+	border: 1px solid black; border-color: transparent;
+
+	height: @chapterTitleHeight;
+	width: @chapterTitleWidth;	
+	float: left;
+}
 
 /* ___Header___ */
 
 header {
-	border: 1px solid black;
+	border: 1px solid black; border-color: transparent;
+
 	height: @HeaderHeight;
 	width: @HeaderWidth;
 	float: left;
 }
 
 .header__logo { 
-	border :1px solid black;
+	border :1px solid black; border-color: transparent;
+
 	height: 357px;
 	width: 360px;
 	margin-top: 135px;
@@ -144,7 +237,8 @@ header {
 }
 
 .header__titles {
-	border :1px solid black;
+	border :1px solid black; border-color: transparent;
+
 	height: 240px;	
 	min-width: 450px;
 	margin-left: auto;
@@ -153,28 +247,32 @@ header {
 }
 
 .header__titles--text1 {
-	border :1px solid black;
+	border :1px solid black; border-color: transparent;
+
 	height: 85px;
 	width: 500px;
 	margin-left: 175px;
 }
 
 .header__titles--text2 {
-	border :1px solid black;
+	border :1px solid black; border-color: transparent;
+
 	height: 90px;
 	width: 500px;
 	margin-left: 175px;
 }
 
 .header__titles--text3 {
-	border :1px solid black;
+	border :1px solid black; border-color: transparent;
+
 	height: 60px;
 	width: 500px;
 	margin-left: 175px;
 }
 
 .header__profile {
-	border :1px solid black;
+	border :1px solid black; border-color: transparent;
+
 	height: auto;
 	width: auto;
 	margin-left: auto;
@@ -182,15 +280,38 @@ header {
 	margin-top: 100px;
 }
 
-.header__profile--title {
+/**/
 
+.chapter__profile--line {
+	border: 1px solid black; border-color: transparent;
+
+	height: @chapterLineHeight;
+	width: @chapterProfileLineWidth;	
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__profile--text {
+	border: 1px solid black; border-color: transparent;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__profile--text blockquote, .chapter__profile--text p {
+	margin: 12px 13px 12px 1px;
 }
 
 
 /* ___Main Content___ */
 
 main {
-	border: 1px solid black;
+	border: 1px solid black; border-color: transparent;
+
 	height: @ContentHeight;
 	width: @ContentWidth;	
 	float: right;
@@ -200,8 +321,101 @@ main {
 /* ___Footer___ */
 
 footer {
-	border: 1px solid black;
+	border: 1px solid black; border-color: transparent;
+
 	height: @FooterHeight;
 	width: @FooterWidth;
 	float: left;
+}
+
+.footer__contact {	
+	border :1px solid black; border-color: transparent;
+
+	height: auto;
+	width: auto;
+	float: left;	
+}
+
+.chapter__contact--line {
+	border: 1px solid black; border-color: transparent;
+
+	height: @chapterLineHeight;
+	width: @chapterContactLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__contact--text {
+	border: 1px solid black; border-color: transparent;
+
+	height: auto;
+	width: auto;
+	float: left;
+	margin: 0 0 0 90px;
+	letter-spacing: -0.5px;
+	line-height: 1.2;
+}
+
+.chapter__contact--text table {	
+	margin-top: 20px;		
+	border-collapse: collapse;	
+}
+
+.chapter__contact--text table tr, td {
+	margin-top: 30px;	
+	height: 82px;	
+	width: 194px;
+	min-width: 194px;
+}
+
+/**/
+
+.footer__skills {
+	margin-top: 40px;
+	float: left;
+	width: auto;
+}
+
+.chapter__skills--line {
+	border: 1px solid black; border-color: transparent;
+
+	height: @chapterLineHeight;
+	width: @chapterSkillsLineWidth;
+	min-width: @chapterLineMinWidth;
+	float: left;
+}
+
+.chapter__skills--text {
+	border: 2px solid red; border-color: transparent;
+
+	widows: auto;
+}
+
+.chapter__skills--text li:first-child  {
+	margin-top: 10px;
+}
+
+.chapter__skills--text li {
+	border: 1px solid green; border-color: transparent;
+
+	list-style-type: none;	
+	height: 115px;
+}
+
+.chapter__skills--text li p {
+	margin: 16px 0 0 64px;
+	text-align: center;
+}
+
+.chapter__skills--text li p:nth-child(2n+1) {
+	margin: 16px 0 0 56px;
+}
+
+.skills__point:first-of-type {
+	margin-left: 118px;
+}
+
+.skills__point--template, .skills__point {
+	float: left;
+	margin: 10px 12px 0 0;
 }
