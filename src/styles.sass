@@ -1,0 +1,59 @@
+@import ./templates
+
+/* ___fonts___ */
+
+// NOTE: bold section -> comment
+@font-face
+	font-family: "PTsans57F"
+	src: url(fonts/PTN57F.ttf)
+
+// NOTE: bold section -> paragraph
+@font-face
+	font-family: "PTsans77F"
+	src: url(fonts/PTN77F.ttf)
+
+// NOTE: normal
+@font-face
+	font-family: "PTsans55SF"
+	src: url(fonts/PTS55F.ttf)
+
+// NOTE: bold
+@font-face
+	font-family: "PTsans75SF"
+	src: url(fonts/PTS75F.ttf)
+
+/**/
+
+html
+	overflow-x: hidden
+	@include font-family__normal
+
+html,
+body
+	font-size: 10px
+
+body
+	padding: 0
+	margin: 0
+	width: 100%
+
+// ---
+
+@import ./blocks/content/content
+@import ./blocks/chapter/chapter
+@import ./blocks/points/points
+
+// ---
+
+// NOTE: header
+@import ./blocks/about/about
+@import ./blocks/profile/profile
+
+// NOTE: main
+@import ./blocks/education/education
+@import ./blocks/experience/experience
+@import ./blocks/software/software
+
+// NOTE: footer
+@import ./blocks/contact/contact
+@import ./blocks/skills/skills

@@ -1,0 +1,25 @@
+mixin experienceList
+  section.experience
+    +chapter('experience', 3)
+
+mixin experienceListSettings(parameter)
+  -var parameter = parameter || {}
+  -var paragraph = parameter.paragraph || 'Constantine Of Constantinople'
+  -var comment = parameter.comment || 'Feb 2011 - Jun 2014'
+  -var description = parameter.description || 'Your job here'
+  -
+    var mockText = 
+      'Lorem ipsum dolors sit amet, consectetuer adipiscing ' +
+      'elit. Aenean commodo ligula eget dolor. Aenean massa. ' +
+      'Cum sociis natoque penatibus et magnis dis parturient ' +
+      'montes, nascetur ridiculus mus. Donec quam felis, ' +
+      'ultricies nec, pellentesque.'
+  -var text = parameter.text || mockText
+
+  //- 
+  
+  .experience__content
+    span.experience__content-paragraph= paragraph
+    p.experience__content-comment= '// ' + comment
+    p.experience__content-description= description
+    p.experience__content-text= text

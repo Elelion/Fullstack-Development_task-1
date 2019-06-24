@@ -1,0 +1,79 @@
+@import ../../templates
+
+/**/
+
+.contact
+	@include border-black
+	height: auto
+	width: 100%
+	margin-top: 6rem
+	float: left
+
+	&__block
+		@include border-black
+		height: auto
+		width: auto
+		float: left
+		margin: 0.1rem 0 0 9rem
+		line-height: 1.2
+
+		@media screen and (max-width: 1540px)
+			@include flex-enabled	
+			justify-content: center
+			float: none
+				
+	&__list
+		margin-top: 2rem
+		border-collapse: collapse
+
+	&__item
+		width: auto
+
+	&__row
+		@include border-green
+		margin-top: 3rem
+		height: 8.1rem
+		width: auto
+		min-width: 19.4rem
+
+	// ---
+	
+	&__title
+		@include font-family__bold
+		text-transform: uppercase
+		letter-spacing: .12rem
+		font-size: 2.9rem
+		margin-left: .0rem
+		width: auto
+		font-weight: 900
+
+	&__content
+		font-size: 2.8rem
+		margin-left: 0px
+		letter-spacing: .11rem
+
+		// ---
+
+	&__link
+		color: #056DB6
+		text-decoration: none
+		text-transform: lowercase					
+		font-size: 2.8rem
+		margin-left: 0rem
+		text-decoration: none
+		-webkit-transition: 0.7s
+		transition: 0.7s
+
+		&:hover
+			color: #E75735
+			-webkit-transition: 0.7s
+			transition: 0.7s
+
+		&-mail
+			letter-spacing: .17rem
+
+		&-phone
+			letter-spacing: .12rem
+
+		&-site
+			letter-spacing: .25rem

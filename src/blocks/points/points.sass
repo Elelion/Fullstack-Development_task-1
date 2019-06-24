@@ -1,0 +1,21 @@
+.bar__point
+	float: left
+	margin: 11px 14.5px 0 0
+	width: 28px
+
+	&:first-of-type
+		margin-left: 36px
+		@media screen and (max-width: 1895px)
+					margin-left: 1rem
+
+	&-size
+		width: 3rem
+		height: 3rem
+
+	&-empty
+		float: left
+		margin: 1rem 14.5px 0 0
+		width: 28px
+
+	&:last-child, &-empty:last-child
+		margin-right: 0rem

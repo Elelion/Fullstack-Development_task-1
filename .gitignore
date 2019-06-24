@@ -1,0 +1,78 @@
+# ___general___
+
+.vscode
+refactoring-events
+template HTML
+src/images/templates
+src/maket
+src/.sass-cache
+src/styles.css.map
+src/node_modules
+src/dist
+
+
+# ___templates___
+
+src/templates.css.map
+
+
+# ___about___
+
+src/blocks/about/.sass-cache
+src/blocks/about/about.css.map
+
+
+# ___chapter___
+
+src/blocks/chapter/.sass-cache
+src/blocks/chapter/chapter.css.map
+src/blocks/chapter/chapter-additional.css.map
+
+
+
+# ___contact___
+
+src/blocks/contact/.sass-cache
+src/blocks/contact/contact.css.map
+
+
+# ___content___
+
+src/blocks/content/.sass-cache
+src/blocks/content/content.css.map
+
+
+# ___education___
+
+src/blocks/education/.sass-cache
+src/blocks/education/education.css.map
+
+
+# ___experience___
+
+src/blocks/experience/.sass-cache
+src/blocks/experience/experience.css.map
+
+
+# ___points___
+
+src/blocks/points/.sass-cache
+src/blocks/points/points.css.map
+
+
+# ___profile___
+
+src/blocks/profile/.sass-cache
+src/blocks/profile/profile.css.map
+
+
+# ___skills___
+
+src/blocks/skills/.sass-cache
+src/blocks/skills/skills.css.map
+
+
+# ___software___
+
+src/blocks/software/.sass-cache
+src/blocks/software/software.css.map

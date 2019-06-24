@@ -1,0 +1,25 @@
+mixin educationList
+  section.education
+    +chapter('education', 2)
+
+mixin educationListSettings(parameter)
+  -var parameter = parameter || {}
+  -var paragraph = parameter.paragraph || 'Constantine Of Constantinople'
+  -var comment = parameter.comment || 'Feb 2011 - Jun 2014'
+  -var description = parameter.description || 'Constantine Of Constantinople'
+  -
+    var mockText = 
+      'Lorem ipsum dolors sit amet, consectetuer adipiscing ' +
+      'elit. Aenean commodo ligula eget dolor. Aenean massa. ' +
+      'Cum sociis natoque penatibus et magnis dis parturient ' +
+      'montes, nascetur ridiculus mus. Donec quam felis, ' +
+      'ultricies nec, pellentesque.'
+  -var text = parameter.text || mockText
+
+  //- 
+  
+  .education__content
+    span.education__content-paragraph= paragraph
+    p.education__content-comment= '// ' + comment
+    p.education__content-description= description
+    p.education__content-text= text
